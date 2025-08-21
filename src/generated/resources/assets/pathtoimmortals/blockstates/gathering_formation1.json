@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "pathtoimmortals:block/gathering_formation1",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "pathtoimmortals:block/gathering_formation1"
+    },
+    "facing=south": {
+      "model": "pathtoimmortals:block/gathering_formation1",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "pathtoimmortals:block/gathering_formation1",
+      "y": 270
+    }
+  }
+}
