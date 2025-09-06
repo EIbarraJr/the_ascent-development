@@ -11,6 +11,7 @@ import net.minecraft.client.model.HierarchicalModel;
 import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.model.geom.PartPose;
 import net.minecraft.client.model.geom.builders.*;
+import net.minecraft.util.Mth;
 
 public class HereticModel<T extends HereticEntity> extends HierarchicalModel<T> {
 	// This layer location should be baked with EntityRendererProvider.Context in the entity renderer and passed into this model's constructor
@@ -102,7 +103,18 @@ public class HereticModel<T extends HereticEntity> extends HierarchicalModel<T> 
 	@Override
 	public void setupAnim(HereticEntity entity, float limbSwing, float limbSwingAmount, float ageInTicks, float netHeadYaw, float headPitch) {
 		this.root().getAllParts().forEach(ModelPart::resetPose);
-		this.animateWalk(HereticAnimations.HERETIC_WALK, limbSwing, limbSwingAmount, 1f, 1.2f);
+		// Walk cycle
+		// real per-tick ground speed
+		float horiz = (float)entity.getDeltaMovement().horizontalDistance();
+
+		// Frequency: how fast to loop the walk clip (in Hz). 0.28f is fairly brisk, so scale aggressively.
+		// Try 80 first; go to 92–100 if it still slides.
+		float cycleHz = Mth.clamp(horiz * 92.0f, 1.2f, 4.2f);
+
+		// Amplitude: how far limbs swing. Derive from speed, not limbSwingAmount.
+		// Bump the multiplier if steps still feel short (try 20 → 24 → 28).
+		float amp = Mth.clamp(horiz * 28.0f, 0.35f, 1.75f);
+		this.animateWalk(HereticAnimations.HERETIC_WALK, limbSwing, 1.0f,cycleHz,amp);
 		this.animate(entity.idleHereticState, HereticAnimations.HERETIC_IDLE, ageInTicks, 1f);
 		this.animate(entity.hereticAttackingState, HereticAnimations.HERETIC_ATTACK, ageInTicks, 1f);
 	}

@@ -15,8 +15,17 @@ public class ModBlockEntities {
     public static final RegistryObject<BlockEntityType<InfusionTable1Entity>> INFUSION_TABLE_BLOCK1 =
             BLOCK_ENTITIES.register("infusion_table_block1", () ->
                     BlockEntityType.Builder.of(InfusionTable1Entity::new,
-                            ModBlocks.INFUSTION_TABLE_T1.get()).build(null));
+                            ModBlocks.INFUSION_TABLE_1.get()).build(null));
 
+    public static final RegistryObject<BlockEntityType<HumanGradeInfuserBlockEntity>> HUMAN_GRADE_INFUSER_BE =
+            BLOCK_ENTITIES.register("human_grade_infuser", ()->
+                    BlockEntityType.Builder.of(HumanGradeInfuserBlockEntity::new,
+                            ModBlocks.HUMAN_GRADE_INFUSER_BLOCK.get()).build(null));
+
+    public static final RegistryObject<BlockEntityType<HumanGradeDivineAltarBlockEntity>> HUMAN_GRADE_DIVINE_ALTAR_BE =
+            BLOCK_ENTITIES.register("human_grade_divine_altar", ()->
+                    BlockEntityType.Builder.of(HumanGradeDivineAltarBlockEntity::new,
+                            ModBlocks.HUMAN_GRADE_DIVINE_ALTAR_BLOCK.get()).build(null));
 
 
     public static void register(IEventBus eventBus){

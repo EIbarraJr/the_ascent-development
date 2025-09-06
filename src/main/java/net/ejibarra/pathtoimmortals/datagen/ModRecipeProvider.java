@@ -2,6 +2,7 @@ package net.ejibarra.pathtoimmortals.datagen;
 
 import net.ejibarra.pathtoimmortals.PathToImmortals;
 import net.ejibarra.pathtoimmortals.block.ModBlocks;
+import net.ejibarra.pathtoimmortals.datagen.custom.HumanGradeInfuserRecipeBuilder;
 import net.ejibarra.pathtoimmortals.datagen.custom.InfusionTableRecipeBuilder;
 import net.ejibarra.pathtoimmortals.item.ModItems;
 import net.minecraft.advancements.critereon.ItemPredicate;
@@ -121,6 +122,17 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         new InfusionTableRecipeBuilder(ModItems.BEAST_BLOOD.get(), ModItems.BEAST_OIL.get(), 1)
                 .unlockedBy("has_beast_blood", has(ModItems.BEAST_BLOOD.get())).save(pWriter);
 
+
+
+        new HumanGradeInfuserRecipeBuilder(Items.IRON_INGOT, ModItems.SPIRIT_IRON_TIER1.get(), 1)
+                .unlockedBy("has_iron", has(Items.IRON_INGOT)).save(pWriter);
+        new HumanGradeInfuserRecipeBuilder(ModItems.JADE.get(), ModItems.INFUSED_JADE.get(), 1)
+                .unlockedBy("has_jade", has(ModItems.JADE.get())).save(pWriter);
+        new HumanGradeInfuserRecipeBuilder(ModBlocks.JADE_BLOCK.get(), ModBlocks.INFUSED_JADE_BLOCK.get(), 1)
+                .unlockedBy("has_jade_block", has(ModBlocks.JADE_BLOCK.get())).save(pWriter);
+        new HumanGradeInfuserRecipeBuilder(ModItems.BEAST_BLOOD.get(), ModItems.BEAST_OIL.get(), 1)
+                .unlockedBy("has_beast_blood", has(ModItems.BEAST_BLOOD.get())).save(pWriter);
+
         // ===== Sun Steel Armor (uses your ingot item) =====
         // Helmet
         ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.HUMAN_GRADE_HELMET.get()).define('S', ModItems.SPIRIT_IRON_TIER1.get()).pattern("SSS").pattern("S S").unlockedBy("has_spirit_iron_tier1", has(ModItems.SPIRIT_IRON_TIER1.get())).save(pWriter);
@@ -156,17 +168,15 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         // S (sun_steel)
         // N (snowball)
         // I (stick)
-        /*ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.LOWER_HUMAN_SWORD.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.LOWER_HUMAN_GRADE_SABER.get())
                 .define('S', ModItems.SPIRIT_IRON_TIER1.get())
-                .define('N', Items.SNOWBALL)
                 .define('I', Items.STICK)
                 .pattern("S")
-                .pattern("N")
+                .pattern("S")
                 .pattern("I")
                 .unlockedBy("has_sun_steel", has(ModItems.SPIRIT_IRON_TIER1.get()))
                 .unlockedBy("has_stick", has(Items.STICK))
-                .unlockedBy("has_snowball", has(Items.SNOWBALL))
-                .save(pWriter);*/
+                .save(pWriter);
 
         // --- (Optional) If you use a TAG instead of the concrete ingot item ---
         // Ingredient sunSteel = Ingredient.of( /* TagKey<Item> */ );

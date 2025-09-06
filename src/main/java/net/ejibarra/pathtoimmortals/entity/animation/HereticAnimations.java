@@ -38,6 +38,7 @@ public class HereticAnimations {
 		.build();
 
 	public static final AnimationDefinition HERETIC_WALK = AnimationDefinition.Builder.withLength(4.0F)
+			.looping()
 		.addAnimation("right_arm", new AnimationChannel(AnimationChannel.Targets.ROTATION, 
 			new Keyframe(0.0F, KeyframeAnimations.degreeVec(0.0F, 0.0F, 0.0F), AnimationChannel.Interpolations.LINEAR),
 			new Keyframe(1.0F, KeyframeAnimations.degreeVec(27.5F, 0.0F, 0.0F), AnimationChannel.Interpolations.LINEAR),

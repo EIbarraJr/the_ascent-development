@@ -99,6 +99,7 @@ public class HoodedSpikedRatAnimations {
 		.build();
 
 	public static final AnimationDefinition HOODED_SPIKEDRAT_WALK = AnimationDefinition.Builder.withLength(4.0F)
+			.looping()
 		.addAnimation("head", new AnimationChannel(AnimationChannel.Targets.ROTATION, 
 			new Keyframe(0.0F, KeyframeAnimations.degreeVec(0.0F, 0.0F, 0.0F), AnimationChannel.Interpolations.LINEAR),
 			new Keyframe(1.0F, KeyframeAnimations.degreeVec(10.0F, 0.0F, 0.0F), AnimationChannel.Interpolations.LINEAR),

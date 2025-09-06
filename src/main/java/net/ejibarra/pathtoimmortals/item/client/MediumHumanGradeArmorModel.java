@@ -4,6 +4,7 @@ import net.ejibarra.pathtoimmortals.PathToImmortals;
 import net.ejibarra.pathtoimmortals.item.custom.StatArmorItems;
 import net.minecraft.resources.ResourceLocation;
 import software.bernie.geckolib.model.GeoModel;
+import software.bernie.geckolib.renderer.GeoArmorRenderer;
 
 public class MediumHumanGradeArmorModel extends GeoModel<StatArmorItems> {
     @Override
@@ -21,3 +22,4 @@ public class MediumHumanGradeArmorModel extends GeoModel<StatArmorItems> {
         return new ResourceLocation(PathToImmortals.MOD_ID, "animations/med_hum_arm_anim.json");
     }
 }
+

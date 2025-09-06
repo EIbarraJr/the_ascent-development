@@ -5,14 +5,13 @@ import net.ejibarra.pathtoimmortals.block.ModBlocks;
 import net.ejibarra.pathtoimmortals.util.ModTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
 import org.jetbrains.annotations.Nullable;
 
-import java.nio.file.Path;
 import java.util.concurrent.CompletableFuture;
 
 public class ModBlockTagGenerator extends BlockTagsProvider {
@@ -34,7 +33,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.DEEPSLATE_SAINT_ORE.get(),
                         ModBlocks.DIVINE_ORE.get(),
                         ModBlocks.DEEPSLATE_DIVINE_ORE.get(),
-                        ModBlocks.INFUSTION_TABLE_T1.get());//END OF NEEDS_NETHERITETOOL
+                        ModBlocks.INFUSION_TABLE_1.get());//END OF NEEDS_NETHERITETOOL
 
         this.tag(ModTags.Blocks.NEEDS_JADED_IRON_TOOL)
                 .add(ModBlocks.JADE_ORE.get());
@@ -57,7 +56,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.DIVINE_ORE.get(),
                         ModBlocks.DEEPSLATE_DIVINE_ORE.get(),
                        // ModBlocks.GATHERING_FORMATION_T1.get(),
-                        ModBlocks.INFUSTION_TABLE_T1.get(),
+                        ModBlocks.INFUSION_TABLE_1.get(),
                         ModBlocks.LIGHT_DIVINE_BRICK.get(),
                         ModBlocks.LIGHT_DIVINE_BRICK_RUNIC.get(),
                         ModBlocks.LIGHT_DIVINE_BRICK_CRACKED.get(),
@@ -152,6 +151,60 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.SPIRIT_BRICK_WALL.get(),
                         ModBlocks.PURPLE_BRICK_WALL.get(),
                         ModBlocks.SAINT_BRICK_WALL.get());//END OF WALLS TAG
+
+        this.tag(ModTags.Blocks.SPIRIT_MOSS_SPREADABLE)
+                .add(Blocks.DIRT)
+                .add(Blocks.GRASS_BLOCK)
+                .add(Blocks.RED_SAND)
+                .add(Blocks.SAND)
+                .add(Blocks.STONE);
+        this.tag(ModTags.Blocks.LEMON_MOSS_SPREADABLE)
+                .add(Blocks.DIRT)
+                .add(Blocks.GRASS_BLOCK)
+                .add(Blocks.RED_SAND)
+                .add(Blocks.SAND)
+                .add(Blocks.STONE);
+        this.tag(ModTags.Blocks.ROSY_MOSS_SPREADABLE)
+                .add(Blocks.DIRT)
+                .add(Blocks.GRASS_BLOCK)
+                .add(Blocks.RED_SAND)
+                .add(Blocks.SAND)
+                .add(Blocks.STONE);
+        this.tag(ModTags.Blocks.OCTOS_GROWTH_SPREADABLE)
+                .add(Blocks.DIRT)
+                .add(Blocks.GRASS_BLOCK)
+                .add(Blocks.RED_SAND)
+                .add(Blocks.SAND)
+                .add(Blocks.STONE);
+        this.tag(ModTags.Blocks.FEYS_SORROW_SPREADABLE)
+                .add(Blocks.DIRT)
+                .add(Blocks.GRASS_BLOCK)
+                .add(Blocks.RED_SAND)
+                .add(Blocks.SAND)
+                .add(Blocks.STONE);
+        this.tag(ModTags.Blocks.EVES_BLUES_SPREADABLE)
+                .add(Blocks.DIRT)
+                .add(Blocks.GRASS_BLOCK)
+                .add(Blocks.RED_SAND)
+                .add(Blocks.SAND)
+                .add(Blocks.STONE);
+
+        this.tag(BlockTags.DIRT)
+                .add(ModBlocks.SPIRIT_MOSS.get())
+                .add(ModBlocks.LEMON_MOSS.get())
+                .add(ModBlocks.ROSY_MOSS.get())
+                .add(ModBlocks.OCTOS_GROWTH.get())
+                .add(ModBlocks.FEYS_SORROW.get())
+                .add(ModBlocks.EVES_BLUES.get());
+
+        this.tag(BlockTags.NYLIUM)
+                .add(ModBlocks.SPIRIT_MOSS.get())
+                .add(ModBlocks.LEMON_MOSS.get())
+                .add(ModBlocks.ROSY_MOSS.get())
+                .add(ModBlocks.OCTOS_GROWTH.get())
+                .add(ModBlocks.FEYS_SORROW.get())
+                .add(ModBlocks.EVES_BLUES.get());
+
 
     }
 

@@ -108,7 +108,7 @@ public class InfusionTable1Menu extends AbstractContainerMenu {
     @Override
     public boolean stillValid(Player pPlayer) {
         return stillValid(ContainerLevelAccess.create(level, blockEntity.getBlockPos()),
-                pPlayer, ModBlocks.INFUSTION_TABLE_T1.get());
+                pPlayer, ModBlocks.INFUSION_TABLE_1.get());
     }
 
     private void addPlayerInventory(Inventory playerInventory) {

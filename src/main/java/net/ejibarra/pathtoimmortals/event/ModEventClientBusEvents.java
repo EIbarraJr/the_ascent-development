@@ -1,15 +1,20 @@
 package net.ejibarra.pathtoimmortals.event;
 
+import com.mojang.blaze3d.systems.RenderSystem;
 import net.ejibarra.pathtoimmortals.PathToImmortals;
+import net.ejibarra.pathtoimmortals.block.ModBlocks;
 import net.ejibarra.pathtoimmortals.block.custom.entity.ModBlockEntities;
 import net.ejibarra.pathtoimmortals.block.custom.entity.renderer.InfusionBlock1EntityRenderer;
-import net.ejibarra.pathtoimmortals.entity.client.DarklinModel;
-import net.ejibarra.pathtoimmortals.entity.client.HereticModel;
-import net.ejibarra.pathtoimmortals.entity.client.HoodedSpikedRatModel;
-import net.ejibarra.pathtoimmortals.entity.client.SpikedRatModel;
+import net.ejibarra.pathtoimmortals.effects.ModEffects;
+import net.ejibarra.pathtoimmortals.entity.client.*;
 import net.ejibarra.pathtoimmortals.entity.layers.ModModelLayers;
+import net.ejibarra.pathtoimmortals.particle.CustomLeafParticles;
+import net.ejibarra.pathtoimmortals.particle.ModParticles;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Font;
+import net.minecraft.client.gui.GuiGraphics;
+import net.minecraft.client.renderer.ItemBlockRenderTypes;
+import net.minecraft.client.renderer.RenderType;
 import net.minecraft.util.Mth;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ai.attributes.Attributes;
@@ -19,9 +24,12 @@ import net.minecraft.world.phys.HitResult;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.client.event.EntityRenderersEvent;
 import net.minecraftforge.client.event.RegisterGuiOverlaysEvent;
+import net.minecraftforge.client.event.RegisterParticleProvidersEvent;
+import net.minecraftforge.client.event.RenderGuiOverlayEvent;
 import net.minecraftforge.client.gui.overlay.VanillaGuiOverlay;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 
 @Mod.EventBusSubscriber(modid = PathToImmortals.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class ModEventClientBusEvents {
@@ -32,12 +40,51 @@ public class ModEventClientBusEvents {
     }
 
     @SubscribeEvent
+    public static void registerParticleFactories(RegisterParticleProvidersEvent event) {
+        event.registerSpriteSet(ModParticles.FIERO_LEAVES_PARTICLE.get(), CustomLeafParticles.Provider::new);
+        event.registerSpriteSet(ModParticles.JADED_LEAVES_PARTICLE.get(), CustomLeafParticles.Provider::new);
+        event.registerSpriteSet(ModParticles.JASMINE_LEAVES_PARTICLE.get(), CustomLeafParticles.Provider::new);
+        event.registerSpriteSet(ModParticles.KINDER_LEAVES_PARTICLE.get(), CustomLeafParticles.Provider::new);
+        event.registerSpriteSet(ModParticles.MANGO_LEAVES_PARTICLE.get(), CustomLeafParticles.Provider::new);
+        event.registerSpriteSet(ModParticles.SPIRIT_LEAVES_PARTICLE.get(), CustomLeafParticles.Provider::new);
+    }
+
+    @SubscribeEvent
     public static void registerLayer(EntityRenderersEvent.RegisterLayerDefinitions event){
         event.registerLayerDefinition(ModModelLayers.HERETIC_LAYER, HereticModel::createBodyLayer);
         event.registerLayerDefinition(ModModelLayers.SPIKEDRAT_LAYER, SpikedRatModel::createBodyLayer);
         event.registerLayerDefinition(ModModelLayers.DARKLIN_LAYER, DarklinModel::createBodyLayer);
         event.registerLayerDefinition(ModModelLayers.HOODEDRAT_LAYER, HoodedSpikedRatModel::createBodyLayer);
+        event.registerLayerDefinition(ModModelLayers.RAT_LORD_LAYER, RatLordModel::createBodyLayer);
+        event.registerLayerDefinition(ModModelLayers.OGRE_LAYER, Ogre::createBodyLayer);
+        event.registerLayerDefinition(ModModelLayers.SCORPION_LAYER, Scorpion::createBodyLayer);
     }
+
+    @Mod.EventBusSubscriber(
+            modid = PathToImmortals.MOD_ID, bus = Mod.EventBusSubscriber.Bus.FORGE, value = Dist.CLIENT // <— critical
+    )
+    public final class CheeseTouchOverlay {
+        @SubscribeEvent
+        public static void onOverlay(RenderGuiOverlayEvent.Post event) {
+            Minecraft mc = Minecraft.getInstance();
+            if (mc.player == null || mc.options.hideGui || mc.isPaused()) return;
+
+            if (mc.player.hasEffect(ModEffects.CHEESE_TOUCH.get())) {
+                GuiGraphics gui = event.getGuiGraphics();
+                int w = mc.getWindow().getGuiScaledWidth();
+                int h = mc.getWindow().getGuiScaledHeight();
+
+                // ARGB (alpha=0x22)
+                int color = 0x11FFF000;
+
+                // Blend is usually already set for GUI, but this is fine:
+                RenderSystem.enableBlend();
+                gui.fill(0, 0, w, h, color);
+                RenderSystem.disableBlend();
+            }
+        }
+    }
+
 
 
     //To Read Armor and Health and Display it

@@ -30,7 +30,7 @@ public class InfusionTableRecipeCategory implements IRecipeCategory<InfusionTabl
 
     public InfusionTableRecipeCategory(IGuiHelper helper) {
         this.background = helper.createDrawable(TEXTURE, 0,0,176,85);
-        this.icon = helper.createDrawableIngredient(VanillaTypes.ITEM_STACK, new ItemStack(ModBlocks.INFUSTION_TABLE_T1.get()));
+        this.icon = helper.createDrawableIngredient(VanillaTypes.ITEM_STACK, new ItemStack(ModBlocks.INFUSION_TABLE_1.get()));
     }
 
     @Override

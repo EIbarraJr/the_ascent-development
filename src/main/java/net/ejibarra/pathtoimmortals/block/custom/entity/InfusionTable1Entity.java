@@ -81,7 +81,7 @@ public class InfusionTable1Entity extends BlockEntity implements MenuProvider {
 
     protected final ContainerData data;
     private int progress = 0;
-    private int maxProgress = 20 * 20;
+    private int maxProgress = 20 * 10;
 
     private final ModEnergyStorage ENERGY_STORAGE = createEnergyStorge();
 

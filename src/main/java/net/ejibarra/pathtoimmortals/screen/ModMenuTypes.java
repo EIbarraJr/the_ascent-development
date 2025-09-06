@@ -17,6 +17,12 @@ public class ModMenuTypes {
     public static final RegistryObject<MenuType<InfusionTable1Menu>> INFUSIONTABLE_MENU_1 =
             registerMenuType(InfusionTable1Menu::new, "infusion_table_menu1");
 
+    public static final RegistryObject<MenuType<HumanGradeInfuserMenu>> HUMAN_GRADE_INFUSER_MENU =
+            registerMenuType(HumanGradeInfuserMenu::new, "human_grade_infuser_menu");
+
+    public static final RegistryObject<MenuType<HumanGradeDivineAltarMenu>> HUMAN_GRADE_DIVINE_ALTAR_MENU =
+            registerMenuType(HumanGradeDivineAltarMenu::new, "human_grade_divine_altar_menu");
+
     private static <T extends AbstractContainerMenu> RegistryObject<MenuType<T>> registerMenuType(IContainerFactory<T> factory, String name){
         return MENUS.register(name, ()-> IForgeMenuType.create(factory));
     }

@@ -1,0 +1,11 @@
+{
+  "replace": false,
+  "values": [
+    "minecraft:iron_golem",
+    "minecraft:skeleton",
+    "minecraft:wither_skeleton",
+    // add your mobs here, or yourmod:ogre, etc.
+    "pathtoimmortals:heretic",
+    "pathtoimmortals:scorpion"
+  ]
+}

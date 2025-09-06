@@ -9,8 +9,18 @@ import net.minecraft.world.item.Items;
 
 public class ModItemProperties {
     public static void addCustomItemProperties(){
-        //ItemProperties.register(ModItems.DAO_CANNON.get(), new ResourceLocation(PathToImmortals.MOD_ID, "on"),
-          //      (pStack, pLevel, pEntity, pSeed) -> );
+        ItemProperties.register(ModItems.LOWER_HUMAN_GRADE_SHIELD.get(), new ResourceLocation("blocking"), (itemStack, level, livingEntity, i) -> {
+            return livingEntity != null && livingEntity.isUsingItem() && livingEntity.getUseItem() == itemStack ? 1.0F : 0.0F;
+        });
+        ItemProperties.register(ModItems.MEDIUM_HUMAN_GRADE_SHIELD.get(), new ResourceLocation("blocking"), (itemStack, level, livingEntity, i) -> {
+            return livingEntity != null && livingEntity.isUsingItem() && livingEntity.getUseItem() == itemStack ? 1.0F : 0.0F;
+        });
+        ItemProperties.register(ModItems.UPPER_HUMAN_GRADE_SHIELD.get(), new ResourceLocation("blocking"), (itemStack, level, livingEntity, i) -> {
+            return livingEntity != null && livingEntity.isUsingItem() && livingEntity.getUseItem() == itemStack ? 1.0F : 0.0F;
+        });
+        ItemProperties.register(ModItems.DIVINE_HUMAN_GRADE_SHIELD.get(), new ResourceLocation("blocking"), (itemStack, level, livingEntity, i) -> {
+            return livingEntity != null && livingEntity.isUsingItem() && livingEntity.getUseItem() == itemStack ? 1.0F : 0.0F;
+        });
 
     }
 

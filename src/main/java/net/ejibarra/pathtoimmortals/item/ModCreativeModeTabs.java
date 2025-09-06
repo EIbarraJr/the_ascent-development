@@ -25,6 +25,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.PURPLE_CRYSTAL.get());
                         output.accept(ModItems.SAINT_CRYSTAL.get());
                         output.accept(ModItems.DIVINE_CRYSTAL.get());
+                        output.accept(ModItems.INFUSED_JADE.get());
                         output.accept(ModItems.JADE_COIN.get());
                         output.accept(ModItems.SPIRIT_COIN.get());
                         output.accept(ModItems.PURPLE_COIN.get());
@@ -35,15 +36,21 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.SPIRIT_IRON_TIER3.get());
                         output.accept(ModItems.SPIRIT_IRON_TIER4.get());
                         output.accept(ModItems.SPIRIT_IRON_TIER5.get());
+                        output.accept(ModItems.DIVINE_METAL_TIER1.get());
+                        output.accept(ModItems.HUMAN_GRADE_SOUL_LOWER.get());
+                        output.accept(ModItems.HUMAN_GRADE_SOUL_MEDIUM.get());
+                        output.accept(ModItems.HUMAN_GRADE_SOUL_UPPER.get());
                         output.accept(ModItems.BEAST_BLOOD.get());
                         output.accept(ModItems.BEAST_OIL.get());
-                        output.accept(ModItems.SOUL.get());
+                        output.accept(ModItems.ORIGIN_BERRIES.get());
+                        output.accept(ModItems.HUMAN_REALM_SEEDS.get());
 
                         //SPAWN EGGS
                         output.accept(ModItems.HERETIC_SPAWN_EGG.get());
                         output.accept(ModItems.SPIKEDRAT_SPAWN_EGG.get());
                         output.accept(ModItems.DARKLIN_SPAWN_EGG.get());
                         output.accept(ModItems.HOODED_RAT_SPAWN_EGG.get());
+                        output.accept(ModItems.RAT_LORD_SPAWN_EGG.get());
 
                         //CUSTOM ITEMS
                         output.accept(ModItems.DAO_CANNON.get());
@@ -56,12 +63,28 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.HUMAN_GRADE_BOOTS.get());
                         output.accept(ModItems.LOWER_HUMAN_GRADE_SABER.get());
                         output.accept(ModItems.HUMAN_GRADE_PAXEL.get());
+                        output.accept(ModItems.LOWER_HUMAN_GRADE_SHIELD.get());
                            //Tier 2
                         output.accept(ModItems.MEDIUM_HUMAN_GRADE_HELMET.get());
                         output.accept(ModItems.MEDIUM_HUMAN_GRADE_CHESTPLATE.get());
                         output.accept(ModItems.MEDIUM_HUMAN_GRADE_LEGGINGS.get());
                         output.accept(ModItems.MEDIUM_HUMAN_GRADE_BOOTS.get());
                         output.accept(ModItems.MEDIUM_HUMAN_GRADE_SABER.get());
+                        output.accept(ModItems.MEDIUM_HUMAN_GRADE_SHIELD.get());
+                                //Tier 3
+                        output.accept(ModItems.UPPER_HUMAN_GRADE_HELMET.get());
+                        output.accept(ModItems.UPPER_HUMAN_GRADE_CHESTPLATE.get());
+                        output.accept(ModItems.UPPER_HUMAN_GRADE_LEGGINGS.get());
+                        output.accept(ModItems.UPPER_HUMAN_GRADE_BOOTS.get());
+                        output.accept(ModItems.UPPER_HUMAN_GRADE_SABER.get());
+                        output.accept(ModItems.UPPER_HUMAN_GRADE_SHIELD.get());
+                                    //Divine
+                        output.accept(ModItems.DIVINE_HUMAN_GRADE_HELMET.get());
+                        output.accept(ModItems.DIVINE_HUMAN_GRADE_CHESTPLATE.get());
+                        output.accept(ModItems.DIVINE_HUMAN_GRADE_LEGGINGS.get());
+                        output.accept(ModItems.DIVINE_HUMAN_GRADE_BOOTS.get());
+                        output.accept(ModItems.DIVINE_HUMAN_GRADE_SABER.get());
+                        output.accept(ModItems.DIVINE_HUMAN_GRADE_SHIELD.get());
 
                         //ORES
                         output.accept(ModBlocks.JADE_ORE.get());
@@ -77,7 +100,14 @@ public class ModCreativeModeTabs {
 
                         //BLOCK ENTITIES & CUSTOM BLOCKS
                         //output.accept(ModBlocks.GATHERING_FORMATION_T1.get());
-                        output.accept(ModBlocks.INFUSTION_TABLE_T1.get());
+                        output.accept(ModBlocks.INFUSION_TABLE_1.get());
+                        output.accept(ModBlocks.HUMAN_GRADE_INFUSER_BLOCK.get());
+                        output.accept(ModBlocks.HUMAN_GRADE_DIVINE_ALTAR_BLOCK.get());
+
+                        output.accept(ModBlocks.INFUSED_JADE_BLOCK.get());
+
+                        //Blocks
+                        output.accept(ModBlocks.HUMAN_REALM_PORTAL.get());
                         output.accept(ModBlocks.JADE_BLOCK.get());
                         output.accept(ModBlocks.SPIRIT_BLOCK.get());
                         output.accept(ModBlocks.PURPLE_BLOCK.get());
@@ -96,6 +126,35 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.SPIRIT_BRICK.get());
                         output.accept(ModBlocks.PURPLE_BRICK.get());
                         output.accept(ModBlocks.SAINT_BRICK.get());
+                        output.accept(ModBlocks.SPIRIT_MOSS_CARPET.get());
+
+
+                        output.accept(ModItems.SPIRIT_MOSS_ITEM.get());
+                        output.accept(ModItems.LEMON_MOSS_ITEM.get());
+                        output.accept(ModItems.ROSY_MOSS_ITEM.get());
+                        output.accept(ModItems.OCTOS_GROWTH_ITEM.get());
+                        output.accept(ModItems.FEYS_SORROW_ITEM.get());
+                        output.accept(ModItems.EVES_BLUES_ITEM.get());
+                        output.accept(ModItems.SPIRIT_MOSS_CARPET_ITEM.get());
+                        output.accept(ModItems.LEMON_MOSS_CARPET_ITEM.get());
+                        output.accept(ModItems.ROSY_MOSS_CARPET_ITEM.get());
+                        output.accept(ModItems.OCTOS_GROWTH_CARPET_ITEM.get());
+                        output.accept(ModItems.FEYS_SORROW_CARPET_ITEM.get());
+                        output.accept(ModItems.EVES_BLUES_CARPET_ITEM.get());
+                        output.accept(ModItems.FEY_BLOCK_ITEM.get());
+                        output.accept(ModItems.FEY_CLUSTER_ITEM.get());
+                        output.accept(ModItems.LARGE_FEY_BUD_ITEM.get());
+                        output.accept(ModItems.MEDIUM_FEY_BUD_ITEM.get());
+                        output.accept(ModItems.SMALL_FEY_BUD_ITEM.get());
+                        output.accept(ModItems.TURQUOISE_BLOCK_ITEM.get());
+                        output.accept(ModItems.TURQUOISE_CLUSTER_ITEM.get());
+                        output.accept(ModItems.LARGE_TURQUOISE_BUD_ITEM.get());
+                        output.accept(ModItems.MEDIUM_TURQUOISE_BUD_ITEM.get());
+                        output.accept(ModItems.SMALL_TURQUOISE_BUD_ITEM.get());
+
+                        output.accept(ModBlocks.TRAPPED_SOUL_SAND.get());
+                        output.accept(ModBlocks.DESOLATE_SANDSTONE.get());
+                        output.accept(ModBlocks.DESOLATE_SAND.get());
 
                         //STAIRS
                         output.accept(ModBlocks.LIGHT_DIVINE_BRICK_STAIRS.get());
@@ -123,6 +182,26 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.SPIRIT_BRICK_WALL.get());
                         output.accept(ModBlocks.PURPLE_BRICK_WALL.get());
                         output.accept(ModBlocks.SAINT_BRICK_WALL.get());
+
+                        //TREES
+                        output.accept(ModItems.FIERO_LEAVES_ITEM.get());
+                        output.accept(ModItems.JASMINE_LEAVES_ITEM.get());
+                        output.accept(ModItems.JADED_LEAVES_ITEM.get());
+                        output.accept(ModItems.KINDER_LEAVES_ITEM.get());
+                        output.accept(ModItems.MANGO_LEAVES_ITEM.get());
+                        output.accept(ModItems.SPIRIT_LEAVES_ITEM.get());
+                        output.accept(ModBlocks.FIERO_LEAVES.get());
+                        output.accept(ModBlocks.JASMINE_LEAVES.get());
+                        output.accept(ModBlocks.KINDER_LEAVES.get());
+                        output.accept(ModBlocks.MANGO_LEAVES.get());
+                        output.accept(ModBlocks.SPIRIT_BLOSSOM_LEAVES.get());
+                        output.accept(ModBlocks.JADED_LEAVES.get());
+                        output.accept(ModBlocks.FIERO_SAPLING.get());
+                        output.accept(ModBlocks.JASMINE_SAPLING.get());
+                        output.accept(ModBlocks.KINDER_SAPLING.get());
+                        output.accept(ModBlocks.MANGO_SAPLING.get());
+                        output.accept(ModBlocks.SPIRIT_SAPLING.get());
+                        output.accept(ModBlocks.JADED_SAPLING.get());
 
                     }).build());
 

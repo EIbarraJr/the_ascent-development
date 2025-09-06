@@ -34,6 +34,7 @@ public class HereticEntity extends Monster implements Enemy {
 
     public final AnimationState hereticAttackingState = new AnimationState();
     public int hereticAttackingTimeout;
+    public final AnimationState walkState = new AnimationState();
 
     /*Boss Bar*/
     private final ServerBossEvent bossEvent=
@@ -45,9 +46,9 @@ public class HereticEntity extends Monster implements Enemy {
     }
 
     public static AttributeSupplier.Builder createAttributes(){
-        return Monster.createMobAttributes().add(Attributes.MAX_HEALTH, 75)
+        return Monster.createMobAttributes().add(Attributes.MAX_HEALTH, 100)
                 .add(Attributes.ARMOR_TOUGHNESS, 20f)
-                .add(Attributes.ARMOR, 44f)
+                .add(Attributes.ARMOR, 45f)
                 .add(Attributes.FOLLOW_RANGE, 40)
                 .add(Attributes.ATTACK_KNOCKBACK, 2.5f)
                 .add(Attributes.ATTACK_DAMAGE, 32)
@@ -75,20 +76,19 @@ public class HereticEntity extends Monster implements Enemy {
         }
     }
 
-    protected void updateWalkAnimation(float v) {
-        float f;
-        if (this.getPose() == Pose.STANDING) {
-            f = Math.min(v * 6.0F, 1.0F);
-        } else {
-            f = 0.0F;
-        }
-
-        this.walkAnimation.update(f, 0.8F);
-    }
-
     @Override
     public void tick() {
         super.tick();
+        if (level().isClientSide) {
+            boolean moving = this.getDeltaMovement().horizontalDistanceSqr() > 2.0E-5; // nice debounce
+            if (moving) {
+                if (!walkState.isStarted()) walkState.start(this.tickCount);
+                idleHereticState.stop();
+            } else {
+                if (!idleHereticState.isStarted()) idleHereticState.start(this.tickCount);
+                walkState.stop();
+            }
+        }
 
         if (this.level().isClientSide()) {
             this.setupAnimationStates();

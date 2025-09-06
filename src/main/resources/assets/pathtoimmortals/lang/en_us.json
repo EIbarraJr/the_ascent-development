@@ -15,28 +15,53 @@
   "item.pathtoimmortals.spirit_iron_tier3": "Ascended Iron",
   "item.pathtoimmortals.spirit_iron_tier4": "Transcended Iron",
   "item.pathtoimmortals.spirit_iron_tier5": "Immortal Iron",
+  "item.pathtoimmortals.divine_metal_tier1": "Divine Earth Metal",
   "item.pathtoimmortals.beast_blood": "Beast Blood",
   "item.pathtoimmortals.beast_oil": "Beast Oil",
-  "item.pathtoimmortals.souls": "Souls",
+  "item.pathtoimmortals.human_grade_soul_lower": "Human Grade Soul Lower",
+  "item.pathtoimmortals.human_grade_soul_medium": "Human Grade Soul Medium",
+  "item.pathtoimmortals.human_grade_soul_upper": "Human Grade Soul Upper",
+  "item.pathtoimmortals.infused_jade": "Infused Jade",
 
   //CUSTOM ITEMS
   "item.pathtoimmortals.dao_cannon": "Beast Core Cannon",
 
   //HUMAN GRADE GEAR
+  //Tier 1
   "item.pathtoimmortals.human_grade_helmet": "Lower Human Grade Helmet",
   "item.pathtoimmortals.human_grade_chestplate": "Lower Human Grade Chestplate",
   "item.pathtoimmortals.human_grade_leggings": "Lower Human Grade Leggings",
   "item.pathtoimmortals.human_grade_boots": "Lower Human Grade Boots",
   "item.pathtoimmortals.lower_human_saber": "Lower Human Grade Saber",
   "item.pathtoimmortals.human_grade_paxel": "Human Grade Paxel",
+  "item.pathtoimmortals.lower_human_grade_shield": "Lower Human Grade Shield",
     //Tier 2
   "item.pathtoimmortals.medium_human_grade_helmet": "Medium Human Grade Helmet",
   "item.pathtoimmortals.medium_human_grade_chestplate": "Medium Human Grade Chestplate",
   "item.pathtoimmortals.medium_human_grade_leggings": "Medium Human Grade Leggings",
   "item.pathtoimmortals.medium_human_grade_boots": "Medium Human Grade Boots",
   "item.pathtoimmortals.medium_human_saber": "Medium Human Grade Saber",
+  "item.pathtoimmortals.medium_human_grade_shield": "Medium Human Grade Shield",
+      //Tier 3
+  "item.pathtoimmortals.upper_human_grade_helmet": "Upper Human Grade Helmet",
+  "item.pathtoimmortals.upper_human_grade_chestplate": "Upper Human Grade Chestplate",
+  "item.pathtoimmortals.upper_human_grade_leggings": "Upper Human Grade Leggings",
+  "item.pathtoimmortals.upper_human_grade_boots": "Upper Human Grade Boots",
+  "item.pathtoimmortals.upper_human_saber": "Upper Human Grade Saber",
+  "item.pathtoimmortals.upper_human_grade_shield": "Upper Human Grade Shield",
+        //Divine
+  "item.pathtoimmortals.divine_human_grade_helmet": "Divine Human Grade Helmet",
+  "item.pathtoimmortals.divine_human_grade_chestplate": "Divine Human Grade Chestplate",
+  "item.pathtoimmortals.divine_human_grade_leggings": "Divine Human Grade Leggings",
+  "item.pathtoimmortals.divine_human_grade_boots": "Divine Human Grade Boots",
+  "item.pathtoimmortals.divine_human_saber": "Divine Human Grade Saber",
+  "item.pathtoimmortals.divine_human_grade_shield": "Divine Human Grade Shield",
 
   //BLOCKS
+  "block.pathtoimmortals.infused_jade_block": "Infused Jade Block",
+
+
+  "block.pathtoimmortals.human_portal": "Human Realm Portal Block",
   "block.pathtoimmortals.jade_block": "Jade Block",
   "block.pathtoimmortals.spirit_block": "Spirit Block",
   "block.pathtoimmortals.purple_block": "Purple Block",
@@ -55,6 +80,31 @@
   "block.pathtoimmortals.spirit_brick": "Spirit Brick",
   "block.pathtoimmortals.purple_brick": "Purple Brick",
   "block.pathtoimmortals.saint_bricks": "Saint Brick",
+  "block.pathtoimmortals.spirit_moss": "Spirit Moss",
+  "block.pathtoimmortals.spirit_moss_carpet": "Spirit Moss Carpet",
+  "block.pathtoimmortals.lemon_moss": "Lemon Moss",
+  "block.pathtoimmortals.lemon_moss_carpet": "Lemon Moss Carpet",
+  "block.pathtoimmortals.rosy_moss": "Rosy Moss",
+  "block.pathtoimmortals.rosy_moss_carpet": "Rosy Moss Carpet",
+  "block.pathtoimmortals.octos_growth": "Octos Growth",
+  "block.pathtoimmortals.octos_growth_carpet": "Octos Growth Carpet",
+  "block.pathtoimmortals.feys_sorrow": "Feys Sorrow",
+  "block.pathtoimmortals.feys_sorrow_carpet": "Feys Sorrow Carpet",
+  "block.pathtoimmortals.eves_blues": "Eves Blues",
+  "block.pathtoimmortals.eves_blues_carpet": "Eves Blues Carpet",
+  "block.pathtoimmortals.turquoise_block": "Turquoise Block",
+  "block.pathtoimmortals.turquoise_cluster": "Turquoise Cluster",
+  "block.pathtoimmortals.large_turquoise_bud": "Large Turquoise Bud",
+  "block.pathtoimmortals.medium_turquoise_bud": "Medium Turquoise Bud",
+  "block.pathtoimmortals.small_turquoise_bud": "Small Turquoise Bud",
+  "block.pathtoimmortals.feys_block": "Feys Block",
+  "block.pathtoimmortals.feys_cluster": "Feys Cluster",
+  "block.pathtoimmortals.large_feys_bud": "Large Feys Bud",
+  "block.pathtoimmortals.medium_feys_bud": "Medium Feys Bud",
+  "block.pathtoimmortals.small_feys_bud": "Small Feys Bud",
+  "block.pathtoimmortals.desolate_sand": "Desolate Sand",
+  "block.pathtoimmortals.desolate_sandstone": "Desolate Sandstone",
+  "block.pathtoimmortals.trapped_soul_sand": "Trapped Souls Sand",
 
   //STAIRS
   "block.pathtoimmortals.light_divine_brick_stairs": "Light Divine Bricks Stairs",
@@ -85,7 +135,13 @@
 
   //BLOCK ENTITIES & CUSTOM
   "block.pathtoimmortals:gathering_formation1": "Gathering Formation T1",
-  "block.pathtoimmortals:infusion_table1": "Infusion Table T1",
+  "pathtoimmortals:block/infusion_table1": "Infusion Table T1",
+  "block.pathtoimmortals:human_grade_infuser": "Human Grade Infuser",
+  "block.pathtoimmortals:human_grade_divine_altar": "Human Grade Divine Altar",
+
+  //CROPS
+  "item.pathtoimmortals.human_realm_seeds": "Origin Berry Seeds",
+  "item.pathtoimmortals.origin_berries": "Origin Berry",
 
   //ORES
   "block.pathtoimmortals.jade_ore": "Jade Ore",
@@ -98,5 +154,49 @@
   "block.pathtoimmortals.deepslate_saint_ore": "Deepslate Saint Ore",
   "block.pathtoimmortals.divine_ore": "Divine Ore",
   "block.pathtoimmortals.deepslate_divine_ore": "Deepslate Divine Ore",
-  "creativetab.course_tab": "Course Tab"
+
+  //Effects
+  "effect.pathtoimmortals.cheesed": "Cheese Touch - You smell(x_x)",
+
+  //Enchantments
+  "enchantment.pathtoimmortals.grievous_wounds": "Grievous Wounds",
+  "enchantment.pathtoimmortals.bleed": "Bleed",
+
+  //Creative Tabs
+  "creativetab.course_tab": "Course Tab",
+
+  //ToolTips ArmorStats
+  "tooltip.pathtoimmortals.stats": "Set Bonuses",
+  "tooltip.pathtoimmortals.hold_shift": "Hold §eShift§r for details",
+
+  "tooltip.pathtoimmortals.health": "Health",
+  "tooltip.pathtoimmortals.armor": "Armor",
+  "tooltip.pathtoimmortals.speed": "Speed",
+  "tooltip.pathtoimmortals.armor_attack_damage": "Attack Damage",
+  "tooltip.pathtoimmortals.armor_attack_damage_percent": "Attack Damage",
+
+  "tooltip.pathtoimmortals.health_detail": "+%s Health (§7~%s hearts§r)",
+  "tooltip.pathtoimmortals.armor_detail": "+%s Armor (§7~%s icons§r)",
+  "tooltip.pathtoimmortals.speed_detail": "+%s Movement Speed",
+  "tooltip.pathtoimmortals.armor_attack_damage_detail": "+%s Attack Damage",
+  "tooltip.pathtoimmortals.armor_attack_damage_percent_detail": "+%s Attack Damage",
+  //ToolTips SwordStats
+  "tooltip.pathtoimmortals.weapon_stats": "Weapon Bonuses",
+  "tooltip.pathtoimmortals.hold_alt": "Hold §eAlt§r for details",
+
+  /*"tooltip.pathtoimmortals.attack_damage": "Attack Damage",
+  "tooltip.pathtoimmortals.attack_damage_percent": "Attack Damage",
+  "tooltip.pathtoimmortals.attack_speed": "Attack Speed",
+  "tooltip.pathtoimmortals.attack_speed_percent": "Attack Speed",*/
+  "tooltip.pathtoimmortals.move_speed_while_held": "Move Speed (while held)",
+
+  "tooltip.pathtoimmortals.attack_damage_detail": "+%s Attack Damage",
+  "tooltip.pathtoimmortals.attack_damage_percent_detail": "+%s Attack Damage",
+  "tooltip.pathtoimmortals.attack_speed_detail": "%s Attack Speed",
+  "tooltip.pathtoimmortals.attack_speed_percent_detail": "%s Attack Speed",
+  "tooltip.pathtoimmortals.move_speed_while_held_detail": "%s Move Speed (while held)",
+
+  "tooltip.pathtoimmortals.total_attack_damage": "Total Attack Damage: %s",
+  "tooltip.pathtoimmortals.total_attack_speed": "Total Attack Speed: %s",
+  "tooltip.pathtoimmortals.est_dps": "Estimated DPS: %s"
 }

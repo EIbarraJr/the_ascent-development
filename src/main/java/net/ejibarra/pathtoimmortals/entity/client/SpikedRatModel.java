@@ -11,6 +11,7 @@ import net.minecraft.client.model.HierarchicalModel;
 import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.model.geom.PartPose;
 import net.minecraft.client.model.geom.builders.*;
+import net.minecraft.util.Mth;
 
 public class SpikedRatModel<T extends SpikedRatEntity> extends HierarchicalModel<T> {
 	// This layer location should be baked with EntityRendererProvider.Context in the entity renderer and passed into this model's constructor
@@ -473,7 +474,18 @@ public class SpikedRatModel<T extends SpikedRatEntity> extends HierarchicalModel
 		this.root().getAllParts().forEach(ModelPart::resetPose);
 		//DEBUG: comment out after testing
 		 //System.out.println("limbSwingAmount=" + LimbSwingAmount);
-		this.animateWalk(SpikedRatModelAnimation.SPIKEDRAT_WALK, LimbSwing, LimbSwingAmount, 1f,1.25f);
+		// Walk cycle
+		// real per-tick ground speed
+		float horiz = (float)entity.getDeltaMovement().horizontalDistance();
+
+		// Frequency: how fast to loop the walk clip (in Hz). 0.28f is fairly brisk, so scale aggressively.
+		// Try 80 first; go to 92–100 if it still slides.
+		float cycleHz = Mth.clamp(horiz * 110.0f, 1.2f, 4.2f);
+
+		// Amplitude: how far limbs swing. Derive from speed, not limbSwingAmount.
+		// Bump the multiplier if steps still feel short (try 20 → 24 → 28).
+		float amp = Mth.clamp(horiz * 36.0f, 0.35f, 1.75f);
+		this.animateWalk(SpikedRatModelAnimation.SPIKEDRAT_WALK, LimbSwing, 1.0f, cycleHz,amp);
 		this.animate(entity.idleSpikedRateState, SpikedRatModelAnimation.SPIKEDRAT_IDLE, ageInTicks, 1f);
 		this.animate(entity.spikedratAttackingState, SpikedRatModelAnimation.SPIKEDRAT_ATTACK, ageInTicks, 1f);
 	}

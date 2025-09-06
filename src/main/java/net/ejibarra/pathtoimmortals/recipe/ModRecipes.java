@@ -14,6 +14,9 @@ public class ModRecipes {
     public static final RegistryObject<RecipeSerializer<InfusionTableRecipe>> INFUSION_SERIALIZER =
             SERIALIZERS.register("infusion", ()-> InfusionTableRecipe.Serializer.INSTANCE);
 
+    public static final RegistryObject<RecipeSerializer<HumanGradeInfuserRecipe>> HUMAN_INFUSER_SERIALIZER =
+            SERIALIZERS.register("human_grade_infusion", ()-> HumanGradeInfuserRecipe.Serializer.INSTANCE);
+
     public static void register(IEventBus eventBus){
         SERIALIZERS.register(eventBus);
     }

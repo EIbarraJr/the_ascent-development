@@ -37,6 +37,7 @@ public class HoodedSpikedRatEntity extends Monster implements RangedAttackMob {
 
     public final AnimationState hoodedRatAttackingState = new AnimationState();
     public int hoodedRatAttackingTimeout;
+    public final AnimationState walkState = new AnimationState();
 
     /*Boss Bar*/
     private final ServerBossEvent bossEvent=
@@ -48,13 +49,13 @@ public class HoodedSpikedRatEntity extends Monster implements RangedAttackMob {
     }
 
     public static AttributeSupplier.Builder createAttributes(){
-        return Monster.createMobAttributes().add(Attributes.MAX_HEALTH, 45)
+        return Monster.createMobAttributes().add(Attributes.MAX_HEALTH, 60)
                 .add(Attributes.ARMOR_TOUGHNESS, 10f)
                 .add(Attributes.ARMOR, 28f)
                 .add(Attributes.FOLLOW_RANGE, 40)
                 .add(Attributes.ATTACK_KNOCKBACK, 2.2f)
                 .add(Attributes.ATTACK_DAMAGE, 1)
-                .add(Attributes.MOVEMENT_SPEED, (double)0.25F)
+                .add(Attributes.MOVEMENT_SPEED, (double)0.28F)
                 .add(Attributes.ATTACK_SPEED, 1);
     }
 
@@ -78,20 +79,19 @@ public class HoodedSpikedRatEntity extends Monster implements RangedAttackMob {
         }
     }
 
-    protected void updateWalkAnimation(float v) {
-        float f;
-        if (this.getPose() == Pose.STANDING) {
-            f = Math.min(v * 6.0F, 1.0F);
-        } else {
-            f = 0.0F;
-        }
-
-        this.walkAnimation.update(f, 0.45F);
-    }
-
     @Override
     public void tick() {
         super.tick();
+        if (level().isClientSide) {
+            boolean moving = this.getDeltaMovement().horizontalDistanceSqr() > 2.0E-5; // nice debounce
+            if (moving) {
+                if (!walkState.isStarted()) walkState.start(this.tickCount);
+                idleHoodedRatState.stop();
+            } else {
+                if (!idleHoodedRatState.isStarted()) idleHoodedRatState.start(this.tickCount);
+                walkState.stop();
+            }
+        }
 
         if (this.level().isClientSide()) {
             this.setupAnimationStates();
@@ -115,7 +115,7 @@ public class HoodedSpikedRatEntity extends Monster implements RangedAttackMob {
         proj.setOwner(this);
         proj.setPos(this.getX(), this.getEyeY() - 0.1, this.getZ());
 
-         float dmg = 35f;
+         float dmg = 45f;
         proj.setBaseDamage(dmg);
 
         // 3) Now aim from the projectile’s position to the target
