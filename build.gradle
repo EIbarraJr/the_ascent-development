@@ -75,6 +75,7 @@ minecraft {
             // Please read: https://stackoverflow.com/questions/2031163/when-to-use-the-different-log-levels
             property 'forge.logging.console.level', 'debug'
 
+
             mods {
                 "${mod_id}" {
                     source sourceSets.main
@@ -83,6 +84,13 @@ minecraft {
         }
 
         client {
+            // Make Mixin remap GeckoLib’s obf refmap to Mojmap at runtime
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
+
+            // helpful diagnostics if something still fails
+            jvmArgs "-Dmixin.debug.export=true",
+                    "-Dmixin.dumpTargetOnFailure=true"
             // Comma-separated list of namespaces to load gametests from. Empty = all namespaces.
             property 'forge.enabledGameTestNamespaces', mod_id
         }
@@ -90,6 +98,9 @@ minecraft {
         server {
             property 'forge.enabledGameTestNamespaces', mod_id
             args '--nogui'
+            //I added
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
         }
 
         // This run config launches GameTestServer and runs all registered gametests, then exits.
@@ -105,6 +116,10 @@ minecraft {
 
             // Specify the modid for data generation, where to output the resulting resource, and where to look for existing resources.
             args '--mod', mod_id, '--all', '--output', file('src/generated/resources/'), '--existing', file('src/main/resources/')
+
+            //Added
+            property 'mixin.env.remapRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
         }
     }
 }
@@ -121,6 +136,28 @@ repositories {
     // flatDir {
     //     dir 'libs'
     // }
+    maven {
+        // location of the maven that hosts JEI files since January 2023
+        name = "Jared's maven"
+        url = "https://maven.blamejared.com/"
+    }
+    maven { url = "https://cursemaven.com" }
+    maven {
+        name = 'GeckoLib'
+        url 'https://dl.cloudsmith.io/public/geckolib3/geckolib/maven/'
+        content {
+            includeGroupByRegex("software\\.bernie.*")
+            includeGroup("com.eliotlash.mclib")
+        }
+    }
+    maven { url = "https://api.modrinth.com/maven" }
+    maven { url = "https://www.cursemaven.com" }
+    // Modrinth (fast + lets us pick Forge/MC filters)
+    exclusiveContent {
+        forRepository { maven { name = "Modrinth"; url = "https://api.modrinth.com/maven" } }
+        forRepositories(fg.repository) // required with ForgeGradle
+        filter { includeGroup "maven.modrinth" }
+    }
 }
 
 dependencies {
@@ -136,6 +173,31 @@ dependencies {
     // compileOnly fg.deobf("mezz.jei:jei-${mc_version}-common-api:${jei_version}")
     // compileOnly fg.deobf("mezz.jei:jei-${mc_version}-forge-api:${jei_version}")
     // runtimeOnly fg.deobf("mezz.jei:jei-${mc_version}-forge:${jei_version}")
+
+    // compile against the JEI API but do not include it at runtime
+    compileOnly(fg.deobf("mezz.jei:jei-${minecraft_version}-common-api:${jei_version}"))
+    compileOnly(fg.deobf("mezz.jei:jei-${minecraft_version}-forge-api:${jei_version}"))
+    // at runtime, use the full JEI jar for Forge
+    runtimeOnly(fg.deobf("mezz.jei:jei-${minecraft_version}-forge:${jei_version}"))
+
+    // GeckoLib for Forge 1.20.1 (latest)
+    implementation fg.deobf("software.bernie.geckolib:geckolib-forge-1.20.1:4.7.4")
+
+    // AppleSkin (Forge 1.20.1)
+    runtimeOnly fg.deobf("curse.maven:appleskin-248787:4605078")
+
+    // Jade (Forge 1.20.1)
+    compileOnly fg.deobf("curse.maven:jade-324717:5884237")
+    runtimeOnly fg.deobf("curse.maven:jade-324717:5884237")
+
+    //Overloaded
+    runtimeOnly fg.deobf("curse.maven:overloaded-armor-bar-314002:4631133")
+    //Attribute Fix
+    runtimeOnly fg.deobf("curse.maven:attributefix-280510:4648448")
+    // Colorful Hearts (Forge 1.20.1) – use 4.3.13 to avoid the refmap issue in dev
+    compileOnly fg.deobf("maven.modrinth:colorful-hearts:4.3.13-forge,1.20.1")
+    runtimeOnly  fg.deobf("maven.modrinth:colorful-hearts:4.3.13-forge,1.20.1")
+
 
     // Example mod dependency using a mod jar from ./libs with a flat dir repository
     // This maps to ./libs/coolmod-${mc_version}-${coolmod_version}.jar

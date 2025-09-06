@@ -1,1 +1,7 @@
-// 1.20.1	2025-08-20T13:53:58.6154034	Block Tags
+// 1.20.1	2025-09-01T20:31:10.8182986	Block Tags
+d2632170ff1e69eca7af9f714d14663ae784b5df data/forge/tags/blocks/needs_netherite_tool.json
+cfdb64982e603bb66cda6422511babe96f2b9e44 data/minecraft/tags/blocks/mineable/pickaxe.json
+4ad886b92cb2ca9c39e0fd3e5dcf0c493b5377f8 data/minecraft/tags/blocks/needs_iron_tool.json
+247f08f106b5f0737a3c8aa70d7444b3db442496 data/minecraft/tags/blocks/walls.json
+82362cfbd1836db13c7e9d36c8712821e795ac55 data/pathtoimmortals/tags/blocks/mineable/paxel.json
+d11b6a1c820d58914a600c8c1a3a6d07f2864cab data/pathtoimmortals/tags/blocks/needs_jaded_iron_tool.json

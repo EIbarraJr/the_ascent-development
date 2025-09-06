@@ -111,11 +111,10 @@ public class DaoCoreProjectile extends Projectile {
                 4F, 1F);
 
         LivingEntity livingentity = owner instanceof LivingEntity ? (LivingEntity)owner : null;
-        float damage = 1000f;
+        float damage = 20f;
         boolean hurt = hitEntity.hurt(this.damageSources().mobProjectile(this, livingentity), damage);
         if (hurt) {
             if(hitEntity instanceof LivingEntity livingHitEntity) {
-                livingHitEntity.addEffect(new MobEffectInstance(MobEffects.WEAKNESS, 60, 3), owner);
                 livingHitEntity.addEffect(new MobEffectInstance(MobEffects.GLOWING, 1200, 3), owner);
             }
         }

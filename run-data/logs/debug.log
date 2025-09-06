@@ -1,254 +1,395 @@
-[20Aug2025 22:43:00.628] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgedatauserdev, --assetIndex, 5, --assetsDir, C:\Users\admin\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.4.1, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mod, pathtoimmortals, --all, --output, G:\IntelliJ IDEA Community Edition 2025.1.1.1\the_ascent\forge-1.20.1-47.4.1-mdk\src\generated\resources, --existing, G:\IntelliJ IDEA Community Edition 2025.1.1.1\the_ascent\forge-1.20.1-47.4.1-mdk\src\main\resources]
-[20Aug2025 22:43:00.638] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.15 by Eclipse Adoptium; OS Windows 11 arch amd64 version 10.0
-[20Aug2025 22:43:00.711] [main/DEBUG] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Found launch services [fmlclientdev,forgeclient,minecraft,forgegametestserverdev,fmlserveruserdev,fmlclient,fmldatauserdev,forgeserverdev,forgeserveruserdev,forgeclientdev,forgeclientuserdev,forgeserver,forgedatadev,fmlserver,fmlclientuserdev,fmlserverdev,forgedatauserdev,testharness,forgegametestserveruserdev]
-[20Aug2025 22:43:00.758] [main/DEBUG] [cpw.mods.modlauncher.NameMappingServiceHandler/MODLAUNCHER]: Found naming services : [srgtomcp]
-[20Aug2025 22:43:00.795] [main/DEBUG] [cpw.mods.modlauncher.LaunchPluginHandler/MODLAUNCHER]: Found launch plugins: [mixin,eventbus,slf4jfixer,object_holder_definalize,runtime_enum_extender,capability_token_subclass,accesstransformer,runtimedistcleaner]
-[20Aug2025 22:43:00.832] [main/DEBUG] [cpw.mods.modlauncher.TransformationServicesHandler/MODLAUNCHER]: Discovering transformation services
-[20Aug2025 22:43:00.844] [main/DEBUG] [net.minecraftforge.fml.loading.FMLPaths/CORE]: Path GAMEDIR is G:\IntelliJ IDEA Community Edition 2025.1.1.1\the_ascent\forge-1.20.1-47.4.1-mdk\run-data
-[20Aug2025 22:43:00.845] [main/DEBUG] [net.minecraftforge.fml.loading.FMLPaths/CORE]: Path MODSDIR is G:\IntelliJ IDEA Community Edition 2025.1.1.1\the_ascent\forge-1.20.1-47.4.1-mdk\run-data\mods
-[20Aug2025 22:43:00.845] [main/DEBUG] [net.minecraftforge.fml.loading.FMLPaths/CORE]: Path CONFIGDIR is G:\IntelliJ IDEA Community Edition 2025.1.1.1\the_ascent\forge-1.20.1-47.4.1-mdk\run-data\config
-[20Aug2025 22:43:00.845] [main/DEBUG] [net.minecraftforge.fml.loading.FMLPaths/CORE]: Path FMLCONFIG is G:\IntelliJ IDEA Community Edition 2025.1.1.1\the_ascent\forge-1.20.1-47.4.1-mdk\run-data\config\fml.toml
-[20Aug2025 22:43:00.906] [main/DEBUG] [cpw.mods.modlauncher.TransformationServicesHandler/MODLAUNCHER]: Found additional transformation services from discovery services: 
-[20Aug2025 22:43:00.919] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgedatauserdev
-[20Aug2025 22:43:00.926] [main/DEBUG] [cpw.mods.modlauncher.TransformationServicesHandler/MODLAUNCHER]: Found transformer services : [mixin,fml]
-[20Aug2025 22:43:00.927] [main/DEBUG] [cpw.mods.modlauncher.TransformationServicesHandler/MODLAUNCHER]: Transformation services loading
-[20Aug2025 22:43:00.928] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Loading service mixin
-[20Aug2025 22:43:00.929] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Loaded service mixin
-[20Aug2025 22:43:00.929] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Loading service fml
-[20Aug2025 22:43:00.931] [main/DEBUG] [net.minecraftforge.fml.loading.LauncherVersion/CORE]: Found FMLLauncher version 1.0
-[20Aug2025 22:43:00.931] [main/DEBUG] [net.minecraftforge.fml.loading.FMLLoader/CORE]: FML 1.0 loading
-[20Aug2025 22:43:00.933] [main/DEBUG] [net.minecraftforge.fml.loading.FMLLoader/CORE]: FML found ModLauncher version : 10.0.9+10.0.9+main.dcd20f30
-[20Aug2025 22:43:00.933] [main/DEBUG] [net.minecraftforge.fml.loading.FMLLoader/CORE]: Requesting CoreMods to not apply the fix for ASMAPI.findFirstInstructionBefore by default
-[20Aug2025 22:43:00.934] [main/DEBUG] [net.minecraftforge.fml.loading.FMLLoader/CORE]: FML found AccessTransformer version : 8.0.4+66+master.c09db6d7
-[20Aug2025 22:43:00.934] [main/DEBUG] [net.minecraftforge.fml.loading.FMLLoader/CORE]: FML found EventBus version : 6.0.5+6.0.5+master.eb8e549b
-[20Aug2025 22:43:00.935] [main/DEBUG] [net.minecraftforge.fml.loading.FMLLoader/CORE]: Found Runtime Dist Cleaner
-[20Aug2025 22:43:00.937] [main/DEBUG] [net.minecraftforge.coremod.CoreModEngine/]: CoreMods will preserve legacy behavior of ASMAPI.findFirstInstructionBefore for backwards-compatibility
-[20Aug2025 22:43:00.937] [main/DEBUG] [net.minecraftforge.fml.loading.FMLLoader/CORE]: FML found CoreMod version : 5.2.4
-[20Aug2025 22:43:00.939] [main/DEBUG] [net.minecraftforge.fml.loading.FMLLoader/CORE]: Found ForgeSPI package implementation version 7.0.1+7.0.1+master.d2b38bf6
-[20Aug2025 22:43:00.939] [main/DEBUG] [net.minecraftforge.fml.loading.FMLLoader/CORE]: Found ForgeSPI package specification 5
-[20Aug2025 22:43:00.939] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Loaded service fml
-[20Aug2025 22:43:00.940] [main/DEBUG] [cpw.mods.modlauncher.TransformationServicesHandler/MODLAUNCHER]: Configuring option handling for services
-[20Aug2025 22:43:00.952] [main/DEBUG] [cpw.mods.modlauncher.TransformationServicesHandler/MODLAUNCHER]: Transformation services initializing
-[20Aug2025 22:43:00.955] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Initializing transformation service mixin
-[20Aug2025 22:43:00.976] [main/DEBUG] [mixin/]: MixinService [ModLauncher] was successfully booted in cpw.mods.cl.ModuleClassLoader@70e8f8e
-[20Aug2025 22:43:00.997] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/admin/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=CLIENT
-[20Aug2025 22:43:01.002] [main/DEBUG] [mixin/]: Initialising Mixin Platform Manager
-[20Aug2025 22:43:01.002] [main/DEBUG] [mixin/]: Adding mixin platform agents for container ModLauncher Root Container(ModLauncher:4f56a0a2)
-[20Aug2025 22:43:01.003] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for ModLauncher Root Container(ModLauncher:4f56a0a2)
-[20Aug2025 22:43:01.003] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container ModLauncher Root Container(ModLauncher:4f56a0a2)
-[20Aug2025 22:43:01.004] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for ModLauncher Root Container(ModLauncher:4f56a0a2)
-[20Aug2025 22:43:01.004] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container ModLauncher Root Container(ModLauncher:4f56a0a2)
-[20Aug2025 22:43:01.006] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Initialized transformation service mixin
-[20Aug2025 22:43:01.006] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Initializing transformation service fml
-[20Aug2025 22:43:01.008] [main/DEBUG] [net.minecraftforge.fml.loading.FMLServiceProvider/CORE]: Setting up basic FML game directories
-[20Aug2025 22:43:01.008] [main/DEBUG] [net.minecraftforge.fml.loading.FMLPaths/CORE]: Path GAMEDIR is G:\IntelliJ IDEA Community Edition 2025.1.1.1\the_ascent\forge-1.20.1-47.4.1-mdk\run-data
-[20Aug2025 22:43:01.009] [main/DEBUG] [net.minecraftforge.fml.loading.FMLPaths/CORE]: Path MODSDIR is G:\IntelliJ IDEA Community Edition 2025.1.1.1\the_ascent\forge-1.20.1-47.4.1-mdk\run-data\mods
-[20Aug2025 22:43:01.009] [main/DEBUG] [net.minecraftforge.fml.loading.FMLPaths/CORE]: Path CONFIGDIR is G:\IntelliJ IDEA Community Edition 2025.1.1.1\the_ascent\forge-1.20.1-47.4.1-mdk\run-data\config
-[20Aug2025 22:43:01.009] [main/DEBUG] [net.minecraftforge.fml.loading.FMLPaths/CORE]: Path FMLCONFIG is G:\IntelliJ IDEA Community Edition 2025.1.1.1\the_ascent\forge-1.20.1-47.4.1-mdk\run-data\config\fml.toml
-[20Aug2025 22:43:01.009] [main/DEBUG] [net.minecraftforge.fml.loading.FMLServiceProvider/CORE]: Loading configuration
-[20Aug2025 22:43:01.012] [main/DEBUG] [net.minecraftforge.fml.loading.FMLServiceProvider/CORE]: Preparing ModFile
-[20Aug2025 22:43:01.014] [main/DEBUG] [net.minecraftforge.fml.loading.FMLServiceProvider/CORE]: Preparing launch handler
-[20Aug2025 22:43:01.014] [main/DEBUG] [net.minecraftforge.fml.loading.FMLLoader/CORE]: Using forgedatauserdev as launch service
-[20Aug2025 22:43:01.031] [main/DEBUG] [net.minecraftforge.fml.loading.FMLLoader/CORE]: Received command line version data  : VersionInfo[forgeVersion=47.4.1, mcVersion=1.20.1, mcpVersion=20230612.114412, forgeGroup=net.minecraftforge]
-[20Aug2025 22:43:01.034] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Initialized transformation service fml
-[20Aug2025 22:43:01.034] [main/DEBUG] [cpw.mods.modlauncher.NameMappingServiceHandler/MODLAUNCHER]: Current naming domain is 'mcp'
-[20Aug2025 22:43:01.036] [main/DEBUG] [cpw.mods.modlauncher.NameMappingServiceHandler/MODLAUNCHER]: Identified name mapping providers {srg=srgtomcp:1234}
-[20Aug2025 22:43:01.036] [main/DEBUG] [cpw.mods.modlauncher.TransformationServicesHandler/MODLAUNCHER]: Transformation services begin scanning
-[20Aug2025 22:43:01.037] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Beginning scan trigger - transformation service mixin
-[20Aug2025 22:43:01.039] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: End scan trigger - transformation service mixin
-[20Aug2025 22:43:01.039] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Beginning scan trigger - transformation service fml
-[20Aug2025 22:43:01.039] [main/DEBUG] [net.minecraftforge.fml.loading.FMLServiceProvider/CORE]: Initiating mod scan
-[20Aug2025 22:43:01.060] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModListHandler/CORE]: Found mod coordinates from lists: []
-[20Aug2025 22:43:01.066] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/CORE]: Found Mod Locators : (mods folder:null),(maven libs:null),(exploded directory:null),(minecraft:null),(userdev classpath:null)
-[20Aug2025 22:43:01.067] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/CORE]: Found Dependency Locators : (JarInJar:null)
-[20Aug2025 22:43:01.079] [main/DEBUG] [net.minecraftforge.fml.loading.targets.CommonLaunchHandler/CORE]: Got mod coordinates pathtoimmortals%%G:\IntelliJ IDEA Community Edition 2025.1.1.1\the_ascent\forge-1.20.1-47.4.1-mdk\build\resources\main;pathtoimmortals%%G:\IntelliJ IDEA Community Edition 2025.1.1.1\the_ascent\forge-1.20.1-47.4.1-mdk\build\classes\java\main from env
-[20Aug2025 22:43:01.082] [main/DEBUG] [net.minecraftforge.fml.loading.targets.CommonLaunchHandler/CORE]: Found supplied mod coordinates [{pathtoimmortals=[G:\IntelliJ IDEA Community Edition 2025.1.1.1\the_ascent\forge-1.20.1-47.4.1-mdk\build\resources\main, G:\IntelliJ IDEA Community Edition 2025.1.1.1\the_ascent\forge-1.20.1-47.4.1-mdk\build\classes\java\main]}]
-[20Aug2025 22:43:01.445] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file forge-1.20.1-47.4.1_mapped_parchment_2023.09.03-1.20.1-recomp.jar with {minecraft} mods - versions {1.20.1}
-[20Aug2025 22:43:01.450] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\admin\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.4.1\97b774cead20444ed9d0c2de762881a15d872397\javafmllanguage-1.20.1-47.4.1.jar
-[20Aug2025 22:43:01.451] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\admin\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.4.1\97b774cead20444ed9d0c2de762881a15d872397\javafmllanguage-1.20.1-47.4.1.jar is missing mods.toml file
-[20Aug2025 22:43:01.455] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\admin\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.4.1\da4a2af4a4ebbbb33e35b292a16fe3f7122b236\lowcodelanguage-1.20.1-47.4.1.jar
-[20Aug2025 22:43:01.455] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\admin\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.4.1\da4a2af4a4ebbbb33e35b292a16fe3f7122b236\lowcodelanguage-1.20.1-47.4.1.jar is missing mods.toml file
-[20Aug2025 22:43:01.459] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\admin\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.4.1\75a8f0757adad78cbd8108dff9e0d39cbdb3d787\mclanguage-1.20.1-47.4.1.jar
-[20Aug2025 22:43:01.460] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\admin\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.4.1\75a8f0757adad78cbd8108dff9e0d39cbdb3d787\mclanguage-1.20.1-47.4.1.jar is missing mods.toml file
-[20Aug2025 22:43:01.463] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\admin\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.4.1\3061e70b85c05f936d9fa24477be4d4205d8f6b8\fmlcore-1.20.1-47.4.1.jar
-[20Aug2025 22:43:01.463] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\admin\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.4.1\3061e70b85c05f936d9fa24477be4d4205d8f6b8\fmlcore-1.20.1-47.4.1.jar is missing mods.toml file
-[20Aug2025 22:43:01.470] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate G:\IntelliJ IDEA Community Edition 2025.1.1.1\the_ascent\forge-1.20.1-47.4.1-mdk\build\resources\main
-[20Aug2025 22:43:01.482] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file main with {pathtoimmortals} mods - versions {0.1-1.20.1}
-[20Aug2025 22:43:01.486] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate /
-[20Aug2025 22:43:01.490] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file  with {forge} mods - versions {47.4.1}
-[20Aug2025 22:43:01.546] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.AbstractJarFileDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from forge-1.20.1-47.4.1_mapped_parchment_2023.09.03-1.20.1-recomp.jar, it does not contain dependency information.
-[20Aug2025 22:43:01.547] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.AbstractJarFileDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from , it does not contain dependency information.
-[20Aug2025 22:43:01.547] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.AbstractJarFileDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from main, it does not contain dependency information.
-[20Aug2025 22:43:01.547] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.AbstractJarFileDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from mclanguage-1.20.1-47.4.1.jar, it does not contain dependency information.
-[20Aug2025 22:43:01.548] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.AbstractJarFileDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from javafmllanguage-1.20.1-47.4.1.jar, it does not contain dependency information.
-[20Aug2025 22:43:01.548] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.AbstractJarFileDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from fmlcore-1.20.1-47.4.1.jar, it does not contain dependency information.
-[20Aug2025 22:43:01.548] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.AbstractJarFileDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from lowcodelanguage-1.20.1-47.4.1.jar, it does not contain dependency information.
-[20Aug2025 22:43:01.579] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
-[20Aug2025 22:43:01.582] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file forge-1.20.1-47.4.1_mapped_parchment_2023.09.03-1.20.1-recomp.jar with {minecraft} mods - versions {1.20.1}
-[20Aug2025 22:43:01.584] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Loading mod file C:\Users\admin\.gradle\caches\forge_gradle\minecraft_user_repo\net\minecraftforge\forge\1.20.1-47.4.1_mapped_parchment_2023.09.03-1.20.1\forge-1.20.1-47.4.1_mapped_parchment_2023.09.03-1.20.1-recomp.jar with languages [LanguageSpec[languageName=minecraft, acceptedVersions=1]]
-[20Aug2025 22:43:01.584] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate /
-[20Aug2025 22:43:01.585] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file  with {forge} mods - versions {47.4.1}
-[20Aug2025 22:43:01.586] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Loading mod file / with languages [LanguageSpec[languageName=javafml, acceptedVersions=[24,]]]
-[20Aug2025 22:43:01.661] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Found coremod field_to_method with Javascript path coremods/field_to_method.js
-[20Aug2025 22:43:01.661] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Found coremod field_to_instanceof with Javascript path coremods/field_to_instanceof.js
-[20Aug2025 22:43:01.662] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Found coremod add_bouncer_method with Javascript path coremods/add_bouncer_method.js
-[20Aug2025 22:43:01.662] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Found coremod method_redirector with Javascript path coremods/method_redirector.js
-[20Aug2025 22:43:01.662] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Found coremod coremods/field_to_method.js
-[20Aug2025 22:43:01.662] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Found coremod coremods/field_to_instanceof.js
-[20Aug2025 22:43:01.662] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Found coremod coremods/add_bouncer_method.js
-[20Aug2025 22:43:01.663] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Found coremod coremods/method_redirector.js
-[20Aug2025 22:43:01.663] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate G:\IntelliJ IDEA Community Edition 2025.1.1.1\the_ascent\forge-1.20.1-47.4.1-mdk\build\resources\main
-[20Aug2025 22:43:01.665] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file main with {pathtoimmortals} mods - versions {0.1-1.20.1}
-[20Aug2025 22:43:01.667] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Loading mod file G:\IntelliJ IDEA Community Edition 2025.1.1.1\the_ascent\forge-1.20.1-47.4.1-mdk\build\resources\main with languages [LanguageSpec[languageName=javafml, acceptedVersions=[47,)]]
-[20Aug2025 22:43:01.667] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: End scan trigger - transformation service fml
-[20Aug2025 22:43:01.686] [main/DEBUG] [net.minecraftforge.fml.loading.LanguageLoadingProvider/CORE]: Found 3 language providers
-[20Aug2025 22:43:01.687] [main/DEBUG] [net.minecraftforge.fml.loading.LanguageLoadingProvider/CORE]: Found language provider minecraft, version 1.0
-[20Aug2025 22:43:01.689] [main/DEBUG] [net.minecraftforge.fml.loading.LanguageLoadingProvider/CORE]: Found language provider lowcodefml, version 47
-[20Aug2025 22:43:01.689] [main/DEBUG] [net.minecraftforge.fml.loading.LanguageLoadingProvider/CORE]: Found language provider javafml, version 47
-[20Aug2025 22:43:01.704] [main/DEBUG] [net.minecraftforge.fml.loading.ModSorter/]: Configured system mods: [minecraft, forge]
-[20Aug2025 22:43:01.705] [main/DEBUG] [net.minecraftforge.fml.loading.ModSorter/]: Found system mod: minecraft
-[20Aug2025 22:43:01.705] [main/DEBUG] [net.minecraftforge.fml.loading.ModSorter/]: Found system mod: forge
-[20Aug2025 22:43:01.714] [main/DEBUG] [net.minecraftforge.fml.loading.ModSorter/LOADING]: Found 2 mod requirements (2 mandatory, 0 optional)
-[20Aug2025 22:43:01.717] [main/DEBUG] [net.minecraftforge.fml.loading.ModSorter/LOADING]: Found 0 mod requirements missing (0 mandatory, 0 optional)
-[20Aug2025 22:43:02.353] [main/DEBUG] [net.minecraftforge.fml.loading.MCPNamingService/CORE]: Loaded 34318 method mappings from methods.csv
-[20Aug2025 22:43:02.399] [main/DEBUG] [net.minecraftforge.fml.loading.MCPNamingService/CORE]: Loaded 31014 field mappings from fields.csv
-[20Aug2025 22:43:02.477] [main/DEBUG] [cpw.mods.modlauncher.TransformationServicesHandler/MODLAUNCHER]: Transformation services loading transformers
-[20Aug2025 22:43:02.479] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Initializing transformers for transformation service mixin
-[20Aug2025 22:43:02.480] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Initialized transformers for transformation service mixin
-[20Aug2025 22:43:02.481] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Initializing transformers for transformation service fml
-[20Aug2025 22:43:02.481] [main/DEBUG] [net.minecraftforge.fml.loading.FMLServiceProvider/CORE]: Loading coremod transformers
-[20Aug2025 22:43:02.481] [main/DEBUG] [net.minecraftforge.coremod.CoreModEngine/COREMOD]: Loading CoreMod from coremods/field_to_method.js
-[20Aug2025 22:43:03.043] [main/DEBUG] [net.minecraftforge.coremod.CoreModEngine/COREMOD]: CoreMod loaded successfully
-[20Aug2025 22:43:03.043] [main/DEBUG] [net.minecraftforge.coremod.CoreModEngine/COREMOD]: Loading CoreMod from coremods/field_to_instanceof.js
-[20Aug2025 22:43:03.216] [main/DEBUG] [net.minecraftforge.coremod.CoreModEngine/COREMOD]: CoreMod loaded successfully
-[20Aug2025 22:43:03.216] [main/DEBUG] [net.minecraftforge.coremod.CoreModEngine/COREMOD]: Loading CoreMod from coremods/add_bouncer_method.js
-[20Aug2025 22:43:03.283] [main/DEBUG] [net.minecraftforge.coremod.CoreModEngine/COREMOD]: CoreMod loaded successfully
-[20Aug2025 22:43:03.284] [main/DEBUG] [net.minecraftforge.coremod.CoreModEngine/COREMOD]: Loading CoreMod from coremods/method_redirector.js
-[20Aug2025 22:43:03.393] [main/DEBUG] [net.minecraftforge.coremod.CoreModEngine/COREMOD]: CoreMod loaded successfully
-[20Aug2025 22:43:03.428] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@6419a0e1 to Target : CLASS {Lnet/minecraft/world/level/biome/Biome;} {} {V}
-[20Aug2025 22:43:03.435] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@3679d92e to Target : CLASS {Lnet/minecraft/world/level/levelgen/structure/Structure;} {} {V}
-[20Aug2025 22:43:03.436] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@47b11ec7 to Target : CLASS {Lnet/minecraft/world/effect/MobEffectInstance;} {} {V}
-[20Aug2025 22:43:03.436] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@58fa5769 to Target : CLASS {Lnet/minecraft/world/level/block/LiquidBlock;} {} {V}
-[20Aug2025 22:43:03.436] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@36aa52d2 to Target : CLASS {Lnet/minecraft/world/item/BucketItem;} {} {V}
-[20Aug2025 22:43:03.436] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@4ee25d80 to Target : CLASS {Lnet/minecraft/world/level/block/StairBlock;} {} {V}
-[20Aug2025 22:43:03.436] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@16a35bd to Target : CLASS {Lnet/minecraft/world/level/block/FlowerPotBlock;} {} {V}
-[20Aug2025 22:43:03.437] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@ba17be6 to Target : CLASS {Lnet/minecraft/world/item/ItemStack;} {} {V}
-[20Aug2025 22:43:03.437] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@6f798482 to Target : CLASS {Lnet/minecraft/network/play/client/CClientSettingsPacket;} {} {V}
-[20Aug2025 22:43:03.437] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@332bcab0 to Target : CLASS {Lnet/minecraft/world/entity/animal/frog/Tadpole;} {} {V}
-[20Aug2025 22:43:03.437] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@332bcab0 to Target : CLASS {Lnet/minecraft/server/commands/RaidCommand;} {} {V}
-[20Aug2025 22:43:03.437] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@332bcab0 to Target : CLASS {Lnet/minecraft/world/level/levelgen/structure/structures/SwampHutPiece;} {} {V}
-[20Aug2025 22:43:03.437] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@332bcab0 to Target : CLASS {Lnet/minecraft/world/entity/monster/Evoker$EvokerSummonSpellGoal;} {} {V}
-[20Aug2025 22:43:03.437] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@332bcab0 to Target : CLASS {Lnet/minecraft/world/level/levelgen/structure/structures/WoodlandMansionPieces$WoodlandMansionPiece;} {} {V}
-[20Aug2025 22:43:03.438] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@332bcab0 to Target : CLASS {Lnet/minecraft/world/entity/monster/ZombieVillager;} {} {V}
-[20Aug2025 22:43:03.438] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@332bcab0 to Target : CLASS {Lnet/minecraft/world/entity/animal/horse/SkeletonTrapGoal;} {} {V}
-[20Aug2025 22:43:03.438] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@332bcab0 to Target : CLASS {Lnet/minecraft/world/entity/npc/Villager;} {} {V}
-[20Aug2025 22:43:03.438] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@332bcab0 to Target : CLASS {Lnet/minecraft/world/entity/raid/Raid;} {} {V}
-[20Aug2025 22:43:03.438] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@332bcab0 to Target : CLASS {Lnet/minecraft/world/entity/ai/village/VillageSiege;} {} {V}
-[20Aug2025 22:43:03.438] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@332bcab0 to Target : CLASS {Lnet/minecraft/world/level/levelgen/structure/structures/OceanRuinPieces$OceanRuinPiece;} {} {V}
-[20Aug2025 22:43:03.438] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@332bcab0 to Target : CLASS {Lnet/minecraft/world/level/levelgen/PatrolSpawner;} {} {V}
-[20Aug2025 22:43:03.438] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@332bcab0 to Target : CLASS {Lnet/minecraft/server/commands/SummonCommand;} {} {V}
-[20Aug2025 22:43:03.438] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@332bcab0 to Target : CLASS {Lnet/minecraft/world/entity/EntityType;} {} {V}
-[20Aug2025 22:43:03.439] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@332bcab0 to Target : CLASS {Lnet/minecraft/world/entity/monster/Spider;} {} {V}
-[20Aug2025 22:43:03.439] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@332bcab0 to Target : CLASS {Lnet/minecraft/world/entity/monster/Strider;} {} {V}
-[20Aug2025 22:43:03.439] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@332bcab0 to Target : CLASS {Lnet/minecraft/world/level/levelgen/structure/structures/OceanMonumentPieces$OceanMonumentPiece;} {} {V}
-[20Aug2025 22:43:03.439] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@332bcab0 to Target : CLASS {Lnet/minecraft/world/level/NaturalSpawner;} {} {V}
-[20Aug2025 22:43:03.439] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@332bcab0 to Target : CLASS {Lnet/minecraft/world/level/levelgen/structure/templatesystem/StructureTemplate;} {} {V}
-[20Aug2025 22:43:03.439] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@332bcab0 to Target : CLASS {Lnet/minecraft/world/entity/monster/Zombie;} {} {V}
-[20Aug2025 22:43:03.439] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@332bcab0 to Target : CLASS {Lnet/minecraft/world/entity/npc/CatSpawner;} {} {V}
-[20Aug2025 22:43:03.439] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@332bcab0 to Target : CLASS {Lnet/minecraft/world/level/levelgen/PhantomSpawner;} {} {V}
-[20Aug2025 22:43:03.439] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Initialized transformers for transformation service fml
-[20Aug2025 22:43:03.768] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:ModLauncher Root Container(ModLauncher:4f56a0a2)]
-[20Aug2025 22:43:03.768] [main/DEBUG] [mixin/]: Processing launch tasks for PlatformAgent[MixinPlatformAgentDefault:ModLauncher Root Container(ModLauncher:4f56a0a2)]
-[20Aug2025 22:43:03.768] [main/DEBUG] [mixin/]: Adding mixin platform agents for container SecureJarResource(minecraft)
-[20Aug2025 22:43:03.769] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for SecureJarResource(minecraft)
-[20Aug2025 22:43:03.769] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container SecureJarResource(minecraft)
-[20Aug2025 22:43:03.769] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for SecureJarResource(minecraft)
-[20Aug2025 22:43:03.769] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container SecureJarResource(minecraft)
-[20Aug2025 22:43:03.769] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(minecraft)]
-[20Aug2025 22:43:03.769] [main/DEBUG] [mixin/]: Adding mixin platform agents for container SecureJarResource(forge)
-[20Aug2025 22:43:03.769] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for SecureJarResource(forge)
-[20Aug2025 22:43:03.769] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container SecureJarResource(forge)
-[20Aug2025 22:43:03.769] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for SecureJarResource(forge)
-[20Aug2025 22:43:03.769] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container SecureJarResource(forge)
-[20Aug2025 22:43:03.770] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(forge)]
-[20Aug2025 22:43:03.770] [main/DEBUG] [mixin/]: Adding mixin platform agents for container SecureJarResource(pathtoimmortals)
-[20Aug2025 22:43:03.770] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for SecureJarResource(pathtoimmortals)
-[20Aug2025 22:43:03.770] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container SecureJarResource(pathtoimmortals)
-[20Aug2025 22:43:03.770] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for SecureJarResource(pathtoimmortals)
-[20Aug2025 22:43:03.770] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container SecureJarResource(pathtoimmortals)
-[20Aug2025 22:43:03.770] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(pathtoimmortals)]
-[20Aug2025 22:43:03.770] [main/DEBUG] [mixin/]: inject() running with 4 agents
-[20Aug2025 22:43:03.770] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:ModLauncher Root Container(ModLauncher:4f56a0a2)]
-[20Aug2025 22:43:03.771] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(minecraft)]
-[20Aug2025 22:43:03.771] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(forge)]
-[20Aug2025 22:43:03.771] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(pathtoimmortals)]
-[20Aug2025 22:43:03.772] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgedatauserdev' with arguments [--gameDir, ., --assetsDir, C:\Users\admin\.gradle\caches\forge_gradle\assets, --assetIndex, 5, --mod, pathtoimmortals, --all, --output, G:\IntelliJ IDEA Community Edition 2025.1.1.1\the_ascent\forge-1.20.1-47.4.1-mdk\src\generated\resources, --existing, G:\IntelliJ IDEA Community Edition 2025.1.1.1\the_ascent\forge-1.20.1-47.4.1-mdk\src\main\resources]
-[20Aug2025 22:43:03.881] [main/DEBUG] [mixin/]: Error cleaning class output directory: .mixin.out
-[20Aug2025 22:43:03.883] [main/DEBUG] [mixin/]: Preparing mixins for MixinEnvironment[DEFAULT]
-[20Aug2025 22:43:04.061] [main/DEBUG] [io.netty.util.internal.logging.InternalLoggerFactory/]: Using SLF4J as the default logging framework
-[20Aug2025 22:43:04.083] [main/DEBUG] [io.netty.util.ResourceLeakDetector/]: -Dio.netty.leakDetection.level: simple
-[20Aug2025 22:43:04.083] [main/DEBUG] [io.netty.util.ResourceLeakDetector/]: -Dio.netty.leakDetection.targetRecords: 4
-[20Aug2025 22:43:04.376] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [pathtoimmortals]
-[20Aug2025 22:43:04.746] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/entity/EntityType
-[20Aug2025 22:43:05.407] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/level/block/LiquidBlock
-[20Aug2025 22:43:05.448] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/level/block/StairBlock
-[20Aug2025 22:43:05.559] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/level/block/FlowerPotBlock
-[20Aug2025 22:43:06.802] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/item/ItemStack
-[20Aug2025 22:43:07.555] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/entity/animal/frog/Tadpole
-[20Aug2025 22:43:07.656] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/item/BucketItem
-[20Aug2025 22:43:08.972] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/entity/monster/Spider
-[20Aug2025 22:43:09.059] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/entity/monster/Zombie
-[20Aug2025 22:43:09.114] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/entity/monster/ZombieVillager
-[20Aug2025 22:43:09.184] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/entity/monster/Evoker$EvokerSummonSpellGoal
-[20Aug2025 22:43:09.548] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/entity/animal/horse/SkeletonTrapGoal
-[20Aug2025 22:43:09.575] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/entity/monster/Strider
-[20Aug2025 22:43:09.957] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/entity/npc/Villager
-[20Aug2025 22:43:10.243] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/effect/MobEffectInstance
-[20Aug2025 22:43:10.885] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/level/levelgen/structure/Structure
-[20Aug2025 22:43:10.939] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/level/levelgen/structure/structures/OceanRuinPieces$OceanRuinPiece
-[20Aug2025 22:43:10.947] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/level/levelgen/structure/structures/SwampHutPiece
-[20Aug2025 22:43:10.957] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/level/levelgen/structure/structures/OceanMonumentPieces$OceanMonumentPiece
-[20Aug2025 22:43:10.970] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/level/levelgen/structure/structures/WoodlandMansionPieces$WoodlandMansionPiece
-[20Aug2025 22:43:11.109] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/level/biome/Biome
-[20Aug2025 22:43:11.358] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Creating vanilla freeze snapshot
-[20Aug2025 22:43:11.364] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:block Sync: VANILLA -> ACTIVE
-[20Aug2025 22:43:11.375] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:fluid Sync: VANILLA -> ACTIVE
-[20Aug2025 22:43:11.376] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item Sync: VANILLA -> ACTIVE
-[20Aug2025 22:43:11.384] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:mob_effect Sync: VANILLA -> ACTIVE
-[20Aug2025 22:43:11.385] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event Sync: VANILLA -> ACTIVE
-[20Aug2025 22:43:11.394] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:potion Sync: VANILLA -> ACTIVE
-[20Aug2025 22:43:11.394] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:enchantment Sync: VANILLA -> ACTIVE
-[20Aug2025 22:43:11.395] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:entity_type Sync: VANILLA -> ACTIVE
-[20Aug2025 22:43:11.395] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:block_entity_type Sync: VANILLA -> ACTIVE
-[20Aug2025 22:43:11.396] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:particle_type Sync: VANILLA -> ACTIVE
-[20Aug2025 22:43:11.396] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:menu Sync: VANILLA -> ACTIVE
-[20Aug2025 22:43:11.397] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:painting_variant Sync: VANILLA -> ACTIVE
-[20Aug2025 22:43:11.397] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:recipe_type Sync: VANILLA -> ACTIVE
-[20Aug2025 22:43:11.397] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:recipe_serializer Sync: VANILLA -> ACTIVE
-[20Aug2025 22:43:11.398] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:attribute Sync: VANILLA -> ACTIVE
-[20Aug2025 22:43:11.398] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:stat_type Sync: VANILLA -> ACTIVE
-[20Aug2025 22:43:11.398] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:command_argument_type Sync: VANILLA -> ACTIVE
-[20Aug2025 22:43:11.399] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:villager_profession Sync: VANILLA -> ACTIVE
-[20Aug2025 22:43:11.399] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:point_of_interest_type Sync: VANILLA -> ACTIVE
-[20Aug2025 22:43:11.402] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:memory_module_type Sync: VANILLA -> ACTIVE
-[20Aug2025 22:43:11.402] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sensor_type Sync: VANILLA -> ACTIVE
-[20Aug2025 22:43:11.403] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:schedule Sync: VANILLA -> ACTIVE
-[20Aug2025 22:43:11.403] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:activity Sync: VANILLA -> ACTIVE
-[20Aug2025 22:43:11.403] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:worldgen/carver Sync: VANILLA -> ACTIVE
-[20Aug2025 22:43:11.403] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:worldgen/feature Sync: VANILLA -> ACTIVE
-[20Aug2025 22:43:11.404] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:chunk_status Sync: VANILLA -> ACTIVE
-[20Aug2025 22:43:11.404] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:worldgen/block_state_provider_type Sync: VANILLA -> ACTIVE
-[20Aug2025 22:43:11.404] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:worldgen/foliage_placer_type Sync: VANILLA -> ACTIVE
-[20Aug2025 22:43:11.404] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:worldgen/tree_decorator_type Sync: VANILLA -> ACTIVE
-[20Aug2025 22:43:11.404] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:worldgen/biome Sync: VANILLA -> ACTIVE
-[20Aug2025 22:43:11.412] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Vanilla freeze snapshot created
-[20Aug2025 22:43:11.474] [main/DEBUG] [io.netty.util.internal.PlatformDependent0/]: -Dio.netty.noUnsafe: false
-[20Aug2025 22:43:11.475] [main/DEBUG] [io.netty.util.internal.PlatformDependent0/]: Java version: 17
-[20Aug2025 22:43:11.478] [main/DEBUG] [io.netty.util.internal.PlatformDependent0/]: sun.misc.Unsafe.theUnsafe: available
-[20Aug2025 22:43:11.479] [main/DEBUG] [io.netty.util.internal.PlatformDependent0/]: sun.misc.Unsafe.copyMemory: available
-[20Aug2025 22:43:11.480] [main/DEBUG] [io.netty.util.internal.PlatformDependent0/]: sun.misc.Unsafe.storeFence: available
-[20Aug2025 22:43:11.480] [main/DEBUG] [io.netty.util.internal.PlatformDependent0/]: java.nio.Buffer.address: available
-[20Aug2025 22:43:11.481] [main/DEBUG] [io.netty.util.internal.PlatformDependent0/]: direct buffer constructor: unavailable
+[05Sep2025 20:51:22.226] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgedatauserdev, --assetIndex, 5, --assetsDir, C:\Users\admin\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.4.1, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mod, pathtoimmortals, --all, --output, G:\IntelliJ IDEA Community Edition 2025.1.1.1\the_ascent\forge-1.20.1-47.4.1-mdk\src\generated\resources, --existing, G:\IntelliJ IDEA Community Edition 2025.1.1.1\the_ascent\forge-1.20.1-47.4.1-mdk\src\main\resources]
+[05Sep2025 20:51:22.260] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.15 by Eclipse Adoptium; OS Windows 11 arch amd64 version 10.0
+[05Sep2025 20:51:22.377] [main/DEBUG] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Found launch services [fmlclientdev,forgeclient,minecraft,forgegametestserverdev,fmlserveruserdev,fmlclient,fmldatauserdev,forgeserverdev,forgeserveruserdev,forgeclientdev,forgeclientuserdev,forgeserver,forgedatadev,fmlserver,fmlclientuserdev,fmlserverdev,forgedatauserdev,testharness,forgegametestserveruserdev]
+[05Sep2025 20:51:22.415] [main/DEBUG] [cpw.mods.modlauncher.NameMappingServiceHandler/MODLAUNCHER]: Found naming services : [srgtomcp]
+[05Sep2025 20:51:22.442] [main/DEBUG] [cpw.mods.modlauncher.LaunchPluginHandler/MODLAUNCHER]: Found launch plugins: [mixin,eventbus,slf4jfixer,object_holder_definalize,runtime_enum_extender,capability_token_subclass,accesstransformer,runtimedistcleaner]
+[05Sep2025 20:51:22.460] [main/DEBUG] [cpw.mods.modlauncher.TransformationServicesHandler/MODLAUNCHER]: Discovering transformation services
+[05Sep2025 20:51:22.472] [main/DEBUG] [net.minecraftforge.fml.loading.FMLPaths/CORE]: Path GAMEDIR is G:\IntelliJ IDEA Community Edition 2025.1.1.1\the_ascent\forge-1.20.1-47.4.1-mdk\run-data
+[05Sep2025 20:51:22.472] [main/DEBUG] [net.minecraftforge.fml.loading.FMLPaths/CORE]: Path MODSDIR is G:\IntelliJ IDEA Community Edition 2025.1.1.1\the_ascent\forge-1.20.1-47.4.1-mdk\run-data\mods
+[05Sep2025 20:51:22.473] [main/DEBUG] [net.minecraftforge.fml.loading.FMLPaths/CORE]: Path CONFIGDIR is G:\IntelliJ IDEA Community Edition 2025.1.1.1\the_ascent\forge-1.20.1-47.4.1-mdk\run-data\config
+[05Sep2025 20:51:22.473] [main/DEBUG] [net.minecraftforge.fml.loading.FMLPaths/CORE]: Path FMLCONFIG is G:\IntelliJ IDEA Community Edition 2025.1.1.1\the_ascent\forge-1.20.1-47.4.1-mdk\run-data\config\fml.toml
+[05Sep2025 20:51:22.532] [main/DEBUG] [cpw.mods.modlauncher.TransformationServicesHandler/MODLAUNCHER]: Found additional transformation services from discovery services: 
+[05Sep2025 20:51:22.542] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgedatauserdev
+[05Sep2025 20:51:22.555] [main/DEBUG] [cpw.mods.modlauncher.TransformationServicesHandler/MODLAUNCHER]: Found transformer services : [mixin,fml]
+[05Sep2025 20:51:22.555] [main/DEBUG] [cpw.mods.modlauncher.TransformationServicesHandler/MODLAUNCHER]: Transformation services loading
+[05Sep2025 20:51:22.556] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Loading service mixin
+[05Sep2025 20:51:22.556] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Loaded service mixin
+[05Sep2025 20:51:22.556] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Loading service fml
+[05Sep2025 20:51:22.559] [main/DEBUG] [net.minecraftforge.fml.loading.LauncherVersion/CORE]: Found FMLLauncher version 1.0
+[05Sep2025 20:51:22.559] [main/DEBUG] [net.minecraftforge.fml.loading.FMLLoader/CORE]: FML 1.0 loading
+[05Sep2025 20:51:22.560] [main/DEBUG] [net.minecraftforge.fml.loading.FMLLoader/CORE]: FML found ModLauncher version : 10.0.9+10.0.9+main.dcd20f30
+[05Sep2025 20:51:22.560] [main/DEBUG] [net.minecraftforge.fml.loading.FMLLoader/CORE]: Requesting CoreMods to not apply the fix for ASMAPI.findFirstInstructionBefore by default
+[05Sep2025 20:51:22.561] [main/DEBUG] [net.minecraftforge.fml.loading.FMLLoader/CORE]: FML found AccessTransformer version : 8.0.4+66+master.c09db6d7
+[05Sep2025 20:51:22.563] [main/DEBUG] [net.minecraftforge.fml.loading.FMLLoader/CORE]: FML found EventBus version : 6.0.5+6.0.5+master.eb8e549b
+[05Sep2025 20:51:22.564] [main/DEBUG] [net.minecraftforge.fml.loading.FMLLoader/CORE]: Found Runtime Dist Cleaner
+[05Sep2025 20:51:22.568] [main/DEBUG] [net.minecraftforge.coremod.CoreModEngine/]: CoreMods will preserve legacy behavior of ASMAPI.findFirstInstructionBefore for backwards-compatibility
+[05Sep2025 20:51:22.568] [main/DEBUG] [net.minecraftforge.fml.loading.FMLLoader/CORE]: FML found CoreMod version : 5.2.4
+[05Sep2025 20:51:22.569] [main/DEBUG] [net.minecraftforge.fml.loading.FMLLoader/CORE]: Found ForgeSPI package implementation version 7.0.1+7.0.1+master.d2b38bf6
+[05Sep2025 20:51:22.569] [main/DEBUG] [net.minecraftforge.fml.loading.FMLLoader/CORE]: Found ForgeSPI package specification 5
+[05Sep2025 20:51:22.570] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Loaded service fml
+[05Sep2025 20:51:22.571] [main/DEBUG] [cpw.mods.modlauncher.TransformationServicesHandler/MODLAUNCHER]: Configuring option handling for services
+[05Sep2025 20:51:22.581] [main/DEBUG] [cpw.mods.modlauncher.TransformationServicesHandler/MODLAUNCHER]: Transformation services initializing
+[05Sep2025 20:51:22.582] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Initializing transformation service mixin
+[05Sep2025 20:51:22.607] [main/DEBUG] [mixin/]: MixinService [ModLauncher] was successfully booted in cpw.mods.cl.ModuleClassLoader@57c758ac
+[05Sep2025 20:51:22.628] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/admin/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=CLIENT
+[05Sep2025 20:51:22.636] [main/DEBUG] [mixin/]: Initialising Mixin Platform Manager
+[05Sep2025 20:51:22.637] [main/DEBUG] [mixin/]: Adding mixin platform agents for container ModLauncher Root Container(ModLauncher:4f56a0a2)
+[05Sep2025 20:51:22.638] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for ModLauncher Root Container(ModLauncher:4f56a0a2)
+[05Sep2025 20:51:22.640] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container ModLauncher Root Container(ModLauncher:4f56a0a2)
+[05Sep2025 20:51:22.641] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for ModLauncher Root Container(ModLauncher:4f56a0a2)
+[05Sep2025 20:51:22.641] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container ModLauncher Root Container(ModLauncher:4f56a0a2)
+[05Sep2025 20:51:22.645] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Initialized transformation service mixin
+[05Sep2025 20:51:22.645] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Initializing transformation service fml
+[05Sep2025 20:51:22.646] [main/DEBUG] [net.minecraftforge.fml.loading.FMLServiceProvider/CORE]: Setting up basic FML game directories
+[05Sep2025 20:51:22.646] [main/DEBUG] [net.minecraftforge.fml.loading.FMLPaths/CORE]: Path GAMEDIR is G:\IntelliJ IDEA Community Edition 2025.1.1.1\the_ascent\forge-1.20.1-47.4.1-mdk\run-data
+[05Sep2025 20:51:22.647] [main/DEBUG] [net.minecraftforge.fml.loading.FMLPaths/CORE]: Path MODSDIR is G:\IntelliJ IDEA Community Edition 2025.1.1.1\the_ascent\forge-1.20.1-47.4.1-mdk\run-data\mods
+[05Sep2025 20:51:22.647] [main/DEBUG] [net.minecraftforge.fml.loading.FMLPaths/CORE]: Path CONFIGDIR is G:\IntelliJ IDEA Community Edition 2025.1.1.1\the_ascent\forge-1.20.1-47.4.1-mdk\run-data\config
+[05Sep2025 20:51:22.647] [main/DEBUG] [net.minecraftforge.fml.loading.FMLPaths/CORE]: Path FMLCONFIG is G:\IntelliJ IDEA Community Edition 2025.1.1.1\the_ascent\forge-1.20.1-47.4.1-mdk\run-data\config\fml.toml
+[05Sep2025 20:51:22.647] [main/DEBUG] [net.minecraftforge.fml.loading.FMLServiceProvider/CORE]: Loading configuration
+[05Sep2025 20:51:22.650] [main/DEBUG] [net.minecraftforge.fml.loading.FMLServiceProvider/CORE]: Preparing ModFile
+[05Sep2025 20:51:22.653] [main/DEBUG] [net.minecraftforge.fml.loading.FMLServiceProvider/CORE]: Preparing launch handler
+[05Sep2025 20:51:22.655] [main/DEBUG] [net.minecraftforge.fml.loading.FMLLoader/CORE]: Using forgedatauserdev as launch service
+[05Sep2025 20:51:22.671] [main/DEBUG] [net.minecraftforge.fml.loading.FMLLoader/CORE]: Received command line version data  : VersionInfo[forgeVersion=47.4.1, mcVersion=1.20.1, mcpVersion=20230612.114412, forgeGroup=net.minecraftforge]
+[05Sep2025 20:51:22.674] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Initialized transformation service fml
+[05Sep2025 20:51:22.674] [main/DEBUG] [cpw.mods.modlauncher.NameMappingServiceHandler/MODLAUNCHER]: Current naming domain is 'mcp'
+[05Sep2025 20:51:22.675] [main/DEBUG] [cpw.mods.modlauncher.NameMappingServiceHandler/MODLAUNCHER]: Identified name mapping providers {srg=srgtomcp:1234}
+[05Sep2025 20:51:22.675] [main/DEBUG] [cpw.mods.modlauncher.TransformationServicesHandler/MODLAUNCHER]: Transformation services begin scanning
+[05Sep2025 20:51:22.677] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Beginning scan trigger - transformation service mixin
+[05Sep2025 20:51:22.677] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: End scan trigger - transformation service mixin
+[05Sep2025 20:51:22.677] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Beginning scan trigger - transformation service fml
+[05Sep2025 20:51:22.677] [main/DEBUG] [net.minecraftforge.fml.loading.FMLServiceProvider/CORE]: Initiating mod scan
+[05Sep2025 20:51:22.693] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModListHandler/CORE]: Found mod coordinates from lists: []
+[05Sep2025 20:51:22.698] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/CORE]: Found Mod Locators : (mods folder:null),(maven libs:null),(exploded directory:null),(minecraft:null),(userdev classpath:null)
+[05Sep2025 20:51:22.699] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModDiscoverer/CORE]: Found Dependency Locators : (JarInJar:null)
+[05Sep2025 20:51:22.714] [main/DEBUG] [net.minecraftforge.fml.loading.targets.CommonLaunchHandler/CORE]: Got mod coordinates pathtoimmortals%%G:\IntelliJ IDEA Community Edition 2025.1.1.1\the_ascent\forge-1.20.1-47.4.1-mdk\build\resources\main;pathtoimmortals%%G:\IntelliJ IDEA Community Edition 2025.1.1.1\the_ascent\forge-1.20.1-47.4.1-mdk\build\classes\java\main from env
+[05Sep2025 20:51:22.717] [main/DEBUG] [net.minecraftforge.fml.loading.targets.CommonLaunchHandler/CORE]: Found supplied mod coordinates [{pathtoimmortals=[G:\IntelliJ IDEA Community Edition 2025.1.1.1\the_ascent\forge-1.20.1-47.4.1-mdk\build\resources\main, G:\IntelliJ IDEA Community Edition 2025.1.1.1\the_ascent\forge-1.20.1-47.4.1-mdk\build\classes\java\main]}]
+[05Sep2025 20:51:23.094] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file forge-1.20.1-47.4.1_mapped_parchment_2023.09.03-1.20.1-recomp.jar with {minecraft} mods - versions {1.20.1}
+[05Sep2025 20:51:23.101] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\admin\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.4.1\97b774cead20444ed9d0c2de762881a15d872397\javafmllanguage-1.20.1-47.4.1.jar
+[05Sep2025 20:51:23.102] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\admin\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.4.1\97b774cead20444ed9d0c2de762881a15d872397\javafmllanguage-1.20.1-47.4.1.jar is missing mods.toml file
+[05Sep2025 20:51:23.107] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\admin\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.4.1\da4a2af4a4ebbbb33e35b292a16fe3f7122b236\lowcodelanguage-1.20.1-47.4.1.jar
+[05Sep2025 20:51:23.108] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\admin\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.4.1\da4a2af4a4ebbbb33e35b292a16fe3f7122b236\lowcodelanguage-1.20.1-47.4.1.jar is missing mods.toml file
+[05Sep2025 20:51:23.112] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\admin\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.4.1\75a8f0757adad78cbd8108dff9e0d39cbdb3d787\mclanguage-1.20.1-47.4.1.jar
+[05Sep2025 20:51:23.112] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\admin\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.4.1\75a8f0757adad78cbd8108dff9e0d39cbdb3d787\mclanguage-1.20.1-47.4.1.jar is missing mods.toml file
+[05Sep2025 20:51:23.117] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\admin\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.4.1\3061e70b85c05f936d9fa24477be4d4205d8f6b8\fmlcore-1.20.1-47.4.1.jar
+[05Sep2025 20:51:23.117] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\admin\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.4.1\3061e70b85c05f936d9fa24477be4d4205d8f6b8\fmlcore-1.20.1-47.4.1.jar is missing mods.toml file
+[05Sep2025 20:51:23.123] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate G:\IntelliJ IDEA Community Edition 2025.1.1.1\the_ascent\forge-1.20.1-47.4.1-mdk\build\resources\main
+[05Sep2025 20:51:23.146] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file main with {pathtoimmortals} mods - versions {0.1-1.20.1}
+[05Sep2025 20:51:23.150] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate /
+[05Sep2025 20:51:23.155] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file  with {forge} mods - versions {47.4.1}
+[05Sep2025 20:51:23.181] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\admin\.gradle\caches\forge_gradle\deobf_dependencies\software\bernie\geckolib\geckolib-forge-1.20.1\4.7.4_mapped_parchment_2023.09.03-1.20.1\geckolib-forge-1.20.1-4.7.4_mapped_parchment_2023.09.03-1.20.1.jar
+[05Sep2025 20:51:23.182] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file geckolib-forge-1.20.1-4.7.4_mapped_parchment_2023.09.03-1.20.1.jar with {geckolib} mods - versions {4.7.4}
+[05Sep2025 20:51:23.187] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\admin\.gradle\caches\forge_gradle\deobf_dependencies\mezz\jei\jei-1.20.1-forge\15.8.2.26_mapped_parchment_2023.09.03-1.20.1\jei-1.20.1-forge-15.8.2.26_mapped_parchment_2023.09.03-1.20.1.jar
+[05Sep2025 20:51:23.188] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file jei-1.20.1-forge-15.8.2.26_mapped_parchment_2023.09.03-1.20.1.jar with {jei} mods - versions {15.8.2.26}
+[05Sep2025 20:51:23.193] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\admin\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\appleskin-248787\4605078_mapped_parchment_2023.09.03-1.20.1\appleskin-248787-4605078_mapped_parchment_2023.09.03-1.20.1.jar
+[05Sep2025 20:51:23.196] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file appleskin-248787-4605078_mapped_parchment_2023.09.03-1.20.1.jar with {appleskin} mods - versions {2.5.0+mc1.20.1}
+[05Sep2025 20:51:23.200] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\admin\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\overloaded-armor-bar-314002\4631133_mapped_parchment_2023.09.03-1.20.1\overloaded-armor-bar-314002-4631133_mapped_parchment_2023.09.03-1.20.1.jar
+[05Sep2025 20:51:23.202] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file overloaded-armor-bar-314002-4631133_mapped_parchment_2023.09.03-1.20.1.jar with {overloadedarmorbar} mods - versions {1.20.1-1}
+[05Sep2025 20:51:23.206] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\admin\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\attributefix-280510\4648448_mapped_parchment_2023.09.03-1.20.1\attributefix-280510-4648448_mapped_parchment_2023.09.03-1.20.1.jar
+[05Sep2025 20:51:23.207] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file attributefix-280510-4648448_mapped_parchment_2023.09.03-1.20.1.jar with {attributefix} mods - versions {21.0.1}
+[05Sep2025 20:51:23.212] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\admin\.gradle\caches\forge_gradle\deobf_dependencies\maven\modrinth\colorful-hearts\4.3.13-forge,1.20.1_mapped_parchment_2023.09.03-1.20.1\colorful-hearts-4.3.13-forge,1.20.1_mapped_parchment_2023.09.03-1.20.1.jar
+[05Sep2025 20:51:23.213] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file colorful-hearts-4.3.13-forge,1.20.1_mapped_parchment_2023.09.03-1.20.1.jar with {colorfulhearts} mods - versions {4.3.13}
+[05Sep2025 20:51:23.218] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\admin\.gradle\caches\forge_gradle\deobf_dependencies\software\bernie\geckolib\geckolib-forge-1.20.1\4.7.4_mapped_parchment_2023.09.03-1.20.1\geckolib-forge-1.20.1-4.7.4_mapped_parchment_2023.09.03-1.20.1.jar
+[05Sep2025 20:51:23.220] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file geckolib-forge-1.20.1-4.7.4_mapped_parchment_2023.09.03-1.20.1.jar with {geckolib} mods - versions {4.7.4}
+[05Sep2025 20:51:23.225] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\admin\.gradle\caches\forge_gradle\deobf_dependencies\mezz\jei\jei-1.20.1-forge\15.8.2.26_mapped_parchment_2023.09.03-1.20.1\jei-1.20.1-forge-15.8.2.26_mapped_parchment_2023.09.03-1.20.1.jar
+[05Sep2025 20:51:23.227] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file jei-1.20.1-forge-15.8.2.26_mapped_parchment_2023.09.03-1.20.1.jar with {jei} mods - versions {15.8.2.26}
+[05Sep2025 20:51:23.232] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\admin\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\appleskin-248787\4605078_mapped_parchment_2023.09.03-1.20.1\appleskin-248787-4605078_mapped_parchment_2023.09.03-1.20.1.jar
+[05Sep2025 20:51:23.234] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file appleskin-248787-4605078_mapped_parchment_2023.09.03-1.20.1.jar with {appleskin} mods - versions {2.5.0+mc1.20.1}
+[05Sep2025 20:51:23.270] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\admin\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\overloaded-armor-bar-314002\4631133_mapped_parchment_2023.09.03-1.20.1\overloaded-armor-bar-314002-4631133_mapped_parchment_2023.09.03-1.20.1.jar
+[05Sep2025 20:51:23.272] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file overloaded-armor-bar-314002-4631133_mapped_parchment_2023.09.03-1.20.1.jar with {overloadedarmorbar} mods - versions {1.20.1-1}
+[05Sep2025 20:51:23.276] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\admin\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\attributefix-280510\4648448_mapped_parchment_2023.09.03-1.20.1\attributefix-280510-4648448_mapped_parchment_2023.09.03-1.20.1.jar
+[05Sep2025 20:51:23.277] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file attributefix-280510-4648448_mapped_parchment_2023.09.03-1.20.1.jar with {attributefix} mods - versions {21.0.1}
+[05Sep2025 20:51:23.280] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\admin\.gradle\caches\forge_gradle\deobf_dependencies\maven\modrinth\colorful-hearts\4.3.13-forge,1.20.1_mapped_parchment_2023.09.03-1.20.1\colorful-hearts-4.3.13-forge,1.20.1_mapped_parchment_2023.09.03-1.20.1.jar
+[05Sep2025 20:51:23.281] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file colorful-hearts-4.3.13-forge,1.20.1_mapped_parchment_2023.09.03-1.20.1.jar with {colorfulhearts} mods - versions {4.3.13}
+[05Sep2025 20:51:23.299] [main/DEBUG] [net.minecraftforge.fml.loading.UniqueModListBuilder/]: Found 2 mods for first modid attributefix, selecting most recent based on version data
+[05Sep2025 20:51:23.299] [main/DEBUG] [net.minecraftforge.fml.loading.UniqueModListBuilder/]: Selected file attributefix-280510-4648448_mapped_parchment_2023.09.03-1.20.1.jar for modid attributefix with version 21.0.1
+[05Sep2025 20:51:23.300] [main/DEBUG] [net.minecraftforge.fml.loading.UniqueModListBuilder/]: Found 2 mods for first modid overloadedarmorbar, selecting most recent based on version data
+[05Sep2025 20:51:23.300] [main/DEBUG] [net.minecraftforge.fml.loading.UniqueModListBuilder/]: Selected file overloaded-armor-bar-314002-4631133_mapped_parchment_2023.09.03-1.20.1.jar for modid overloadedarmorbar with version 1.20.1-1
+[05Sep2025 20:51:23.300] [main/DEBUG] [net.minecraftforge.fml.loading.UniqueModListBuilder/]: Found 2 mods for first modid geckolib, selecting most recent based on version data
+[05Sep2025 20:51:23.300] [main/DEBUG] [net.minecraftforge.fml.loading.UniqueModListBuilder/]: Selected file geckolib-forge-1.20.1-4.7.4_mapped_parchment_2023.09.03-1.20.1.jar for modid geckolib with version 4.7.4
+[05Sep2025 20:51:23.300] [main/DEBUG] [net.minecraftforge.fml.loading.UniqueModListBuilder/]: Found 2 mods for first modid appleskin, selecting most recent based on version data
+[05Sep2025 20:51:23.300] [main/DEBUG] [net.minecraftforge.fml.loading.UniqueModListBuilder/]: Selected file appleskin-248787-4605078_mapped_parchment_2023.09.03-1.20.1.jar for modid appleskin with version 2.5.0+mc1.20.1
+[05Sep2025 20:51:23.301] [main/DEBUG] [net.minecraftforge.fml.loading.UniqueModListBuilder/]: Found 2 mods for first modid colorfulhearts, selecting most recent based on version data
+[05Sep2025 20:51:23.301] [main/DEBUG] [net.minecraftforge.fml.loading.UniqueModListBuilder/]: Selected file colorful-hearts-4.3.13-forge,1.20.1_mapped_parchment_2023.09.03-1.20.1.jar for modid colorfulhearts with version 4.3.13
+[05Sep2025 20:51:23.301] [main/DEBUG] [net.minecraftforge.fml.loading.UniqueModListBuilder/]: Found 2 mods for first modid jei, selecting most recent based on version data
+[05Sep2025 20:51:23.301] [main/DEBUG] [net.minecraftforge.fml.loading.UniqueModListBuilder/]: Selected file jei-1.20.1-forge-15.8.2.26_mapped_parchment_2023.09.03-1.20.1.jar for modid jei with version 15.8.2.26
+[05Sep2025 20:51:23.319] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.AbstractJarFileDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from forge-1.20.1-47.4.1_mapped_parchment_2023.09.03-1.20.1-recomp.jar, it does not contain dependency information.
+[05Sep2025 20:51:23.320] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.AbstractJarFileDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from attributefix-280510-4648448_mapped_parchment_2023.09.03-1.20.1.jar, it does not contain dependency information.
+[05Sep2025 20:51:23.320] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.AbstractJarFileDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from , it does not contain dependency information.
+[05Sep2025 20:51:23.321] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.AbstractJarFileDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from overloaded-armor-bar-314002-4631133_mapped_parchment_2023.09.03-1.20.1.jar, it does not contain dependency information.
+[05Sep2025 20:51:23.321] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.AbstractJarFileDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from main, it does not contain dependency information.
+[05Sep2025 20:51:23.321] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.AbstractJarFileDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from appleskin-248787-4605078_mapped_parchment_2023.09.03-1.20.1.jar, it does not contain dependency information.
+[05Sep2025 20:51:23.322] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.AbstractJarFileDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from colorful-hearts-4.3.13-forge,1.20.1_mapped_parchment_2023.09.03-1.20.1.jar, it does not contain dependency information.
+[05Sep2025 20:51:23.322] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.AbstractJarFileDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from jei-1.20.1-forge-15.8.2.26_mapped_parchment_2023.09.03-1.20.1.jar, it does not contain dependency information.
+[05Sep2025 20:51:23.322] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.AbstractJarFileDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from mclanguage-1.20.1-47.4.1.jar, it does not contain dependency information.
+[05Sep2025 20:51:23.322] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.AbstractJarFileDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from javafmllanguage-1.20.1-47.4.1.jar, it does not contain dependency information.
+[05Sep2025 20:51:23.322] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.AbstractJarFileDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from fmlcore-1.20.1-47.4.1.jar, it does not contain dependency information.
+[05Sep2025 20:51:23.323] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.AbstractJarFileDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from lowcodelanguage-1.20.1-47.4.1.jar, it does not contain dependency information.
+[05Sep2025 20:51:23.411] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.AbstractJarFileDependencyLocator/]: Failed to load resource META-INF\jarjar\metadata.json from mclib-20.jar, it does not contain dependency information.
+[05Sep2025 20:51:23.458] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: Found 1 dependencies adding them to mods collection
+[05Sep2025 20:51:23.460] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file forge-1.20.1-47.4.1_mapped_parchment_2023.09.03-1.20.1-recomp.jar with {minecraft} mods - versions {1.20.1}
+[05Sep2025 20:51:23.464] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Loading mod file C:\Users\admin\.gradle\caches\forge_gradle\minecraft_user_repo\net\minecraftforge\forge\1.20.1-47.4.1_mapped_parchment_2023.09.03-1.20.1\forge-1.20.1-47.4.1_mapped_parchment_2023.09.03-1.20.1-recomp.jar with languages [LanguageSpec[languageName=minecraft, acceptedVersions=1]]
+[05Sep2025 20:51:23.464] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\admin\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\attributefix-280510\4648448_mapped_parchment_2023.09.03-1.20.1\attributefix-280510-4648448_mapped_parchment_2023.09.03-1.20.1.jar
+[05Sep2025 20:51:23.465] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file attributefix-280510-4648448_mapped_parchment_2023.09.03-1.20.1.jar with {attributefix} mods - versions {21.0.1}
+[05Sep2025 20:51:23.465] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Loading mod file C:\Users\admin\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\attributefix-280510\4648448_mapped_parchment_2023.09.03-1.20.1\attributefix-280510-4648448_mapped_parchment_2023.09.03-1.20.1.jar with languages [LanguageSpec[languageName=javafml, acceptedVersions=[47,)]]
+[05Sep2025 20:51:23.465] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate /
+[05Sep2025 20:51:23.466] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file  with {forge} mods - versions {47.4.1}
+[05Sep2025 20:51:23.467] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Loading mod file / with languages [LanguageSpec[languageName=javafml, acceptedVersions=[24,]]]
+[05Sep2025 20:51:23.470] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Found coremod field_to_method with Javascript path coremods/field_to_method.js
+[05Sep2025 20:51:23.470] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Found coremod field_to_instanceof with Javascript path coremods/field_to_instanceof.js
+[05Sep2025 20:51:23.470] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Found coremod add_bouncer_method with Javascript path coremods/add_bouncer_method.js
+[05Sep2025 20:51:23.470] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Found coremod method_redirector with Javascript path coremods/method_redirector.js
+[05Sep2025 20:51:23.471] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Found coremod coremods/field_to_method.js
+[05Sep2025 20:51:23.471] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Found coremod coremods/field_to_instanceof.js
+[05Sep2025 20:51:23.471] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Found coremod coremods/add_bouncer_method.js
+[05Sep2025 20:51:23.471] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Found coremod coremods/method_redirector.js
+[05Sep2025 20:51:23.471] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\admin\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\overloaded-armor-bar-314002\4631133_mapped_parchment_2023.09.03-1.20.1\overloaded-armor-bar-314002-4631133_mapped_parchment_2023.09.03-1.20.1.jar
+[05Sep2025 20:51:23.472] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file overloaded-armor-bar-314002-4631133_mapped_parchment_2023.09.03-1.20.1.jar with {overloadedarmorbar} mods - versions {1.20.1-1}
+[05Sep2025 20:51:23.473] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Loading mod file C:\Users\admin\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\overloaded-armor-bar-314002\4631133_mapped_parchment_2023.09.03-1.20.1\overloaded-armor-bar-314002-4631133_mapped_parchment_2023.09.03-1.20.1.jar with languages [LanguageSpec[languageName=javafml, acceptedVersions=[25,)]]
+[05Sep2025 20:51:23.473] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate G:\IntelliJ IDEA Community Edition 2025.1.1.1\the_ascent\forge-1.20.1-47.4.1-mdk\build\resources\main
+[05Sep2025 20:51:23.475] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file main with {pathtoimmortals} mods - versions {0.1-1.20.1}
+[05Sep2025 20:51:23.475] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Loading mod file G:\IntelliJ IDEA Community Edition 2025.1.1.1\the_ascent\forge-1.20.1-47.4.1-mdk\build\resources\main with languages [LanguageSpec[languageName=javafml, acceptedVersions=[47,)]]
+[05Sep2025 20:51:23.475] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\admin\.gradle\caches\forge_gradle\deobf_dependencies\software\bernie\geckolib\geckolib-forge-1.20.1\4.7.4_mapped_parchment_2023.09.03-1.20.1\geckolib-forge-1.20.1-4.7.4_mapped_parchment_2023.09.03-1.20.1.jar
+[05Sep2025 20:51:23.476] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file geckolib-forge-1.20.1-4.7.4_mapped_parchment_2023.09.03-1.20.1.jar with {geckolib} mods - versions {4.7.4}
+[05Sep2025 20:51:23.476] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Loading mod file C:\Users\admin\.gradle\caches\forge_gradle\deobf_dependencies\software\bernie\geckolib\geckolib-forge-1.20.1\4.7.4_mapped_parchment_2023.09.03-1.20.1\geckolib-forge-1.20.1-4.7.4_mapped_parchment_2023.09.03-1.20.1.jar with languages [LanguageSpec[languageName=javafml, acceptedVersions=[47,)]]
+[05Sep2025 20:51:23.477] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\admin\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\appleskin-248787\4605078_mapped_parchment_2023.09.03-1.20.1\appleskin-248787-4605078_mapped_parchment_2023.09.03-1.20.1.jar
+[05Sep2025 20:51:23.477] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file appleskin-248787-4605078_mapped_parchment_2023.09.03-1.20.1.jar with {appleskin} mods - versions {2.5.0+mc1.20.1}
+[05Sep2025 20:51:23.477] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Loading mod file C:\Users\admin\.gradle\caches\forge_gradle\deobf_dependencies\curse\maven\appleskin-248787\4605078_mapped_parchment_2023.09.03-1.20.1\appleskin-248787-4605078_mapped_parchment_2023.09.03-1.20.1.jar with languages [LanguageSpec[languageName=javafml, acceptedVersions=[47,)]]
+[05Sep2025 20:51:23.478] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\admin\.gradle\caches\forge_gradle\deobf_dependencies\mezz\jei\jei-1.20.1-forge\15.8.2.26_mapped_parchment_2023.09.03-1.20.1\jei-1.20.1-forge-15.8.2.26_mapped_parchment_2023.09.03-1.20.1.jar
+[05Sep2025 20:51:23.478] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file jei-1.20.1-forge-15.8.2.26_mapped_parchment_2023.09.03-1.20.1.jar with {jei} mods - versions {15.8.2.26}
+[05Sep2025 20:51:23.478] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Loading mod file C:\Users\admin\.gradle\caches\forge_gradle\deobf_dependencies\mezz\jei\jei-1.20.1-forge\15.8.2.26_mapped_parchment_2023.09.03-1.20.1\jei-1.20.1-forge-15.8.2.26_mapped_parchment_2023.09.03-1.20.1.jar with languages [LanguageSpec[languageName=javafml, acceptedVersions=[47,)]]
+[05Sep2025 20:51:23.478] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Considering mod file candidate C:\Users\admin\.gradle\caches\forge_gradle\deobf_dependencies\maven\modrinth\colorful-hearts\4.3.13-forge,1.20.1_mapped_parchment_2023.09.03-1.20.1\colorful-hearts-4.3.13-forge,1.20.1_mapped_parchment_2023.09.03-1.20.1.jar
+[05Sep2025 20:51:23.479] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFileInfo/LOADING]: Found valid mod file colorful-hearts-4.3.13-forge,1.20.1_mapped_parchment_2023.09.03-1.20.1.jar with {colorfulhearts} mods - versions {4.3.13}
+[05Sep2025 20:51:23.479] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Loading mod file C:\Users\admin\.gradle\caches\forge_gradle\deobf_dependencies\maven\modrinth\colorful-hearts\4.3.13-forge,1.20.1_mapped_parchment_2023.09.03-1.20.1\colorful-hearts-4.3.13-forge,1.20.1_mapped_parchment_2023.09.03-1.20.1.jar with languages [LanguageSpec[languageName=javafml, acceptedVersions=[46,)]]
+[05Sep2025 20:51:23.479] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Loading mod file  with languages []
+[05Sep2025 20:51:23.481] [main/DEBUG] [net.minecraftforge.fml.loading.moddiscovery.ModFile/LOADING]: Loading mod file  with languages []
+[05Sep2025 20:51:23.483] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: End scan trigger - transformation service fml
+[05Sep2025 20:51:23.502] [main/DEBUG] [net.minecraftforge.fml.loading.LanguageLoadingProvider/CORE]: Found 3 language providers
+[05Sep2025 20:51:23.503] [main/DEBUG] [net.minecraftforge.fml.loading.LanguageLoadingProvider/CORE]: Found language provider minecraft, version 1.0
+[05Sep2025 20:51:23.504] [main/DEBUG] [net.minecraftforge.fml.loading.LanguageLoadingProvider/CORE]: Found language provider lowcodefml, version 47
+[05Sep2025 20:51:23.504] [main/DEBUG] [net.minecraftforge.fml.loading.LanguageLoadingProvider/CORE]: Found language provider javafml, version 47
+[05Sep2025 20:51:23.512] [main/DEBUG] [net.minecraftforge.fml.loading.UniqueModListBuilder/]: Found 2 mods for first modid mclib, selecting most recent based on version data
+[05Sep2025 20:51:23.512] [main/DEBUG] [net.minecraftforge.fml.loading.UniqueModListBuilder/]: Selected file mclib-20.jar for modid mclib with version 0.0NONE
+[05Sep2025 20:51:23.516] [main/DEBUG] [net.minecraftforge.fml.loading.ModSorter/]: Configured system mods: [minecraft, forge]
+[05Sep2025 20:51:23.516] [main/DEBUG] [net.minecraftforge.fml.loading.ModSorter/]: Found system mod: minecraft
+[05Sep2025 20:51:23.516] [main/DEBUG] [net.minecraftforge.fml.loading.ModSorter/]: Found system mod: forge
+[05Sep2025 20:51:23.524] [main/DEBUG] [net.minecraftforge.fml.loading.ModSorter/LOADING]: Found 14 mod requirements (8 mandatory, 6 optional)
+[05Sep2025 20:51:23.525] [main/DEBUG] [net.minecraftforge.fml.loading.ModSorter/LOADING]: Found 0 mod requirements missing (0 mandatory, 0 optional)
+[05Sep2025 20:51:24.295] [main/DEBUG] [net.minecraftforge.fml.loading.MCPNamingService/CORE]: Loaded 34318 method mappings from methods.csv
+[05Sep2025 20:51:24.335] [main/DEBUG] [net.minecraftforge.fml.loading.MCPNamingService/CORE]: Loaded 31014 field mappings from fields.csv
+[05Sep2025 20:51:24.450] [main/DEBUG] [cpw.mods.modlauncher.TransformationServicesHandler/MODLAUNCHER]: Transformation services loading transformers
+[05Sep2025 20:51:24.452] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Initializing transformers for transformation service mixin
+[05Sep2025 20:51:24.455] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Initialized transformers for transformation service mixin
+[05Sep2025 20:51:24.456] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Initializing transformers for transformation service fml
+[05Sep2025 20:51:24.456] [main/DEBUG] [net.minecraftforge.fml.loading.FMLServiceProvider/CORE]: Loading coremod transformers
+[05Sep2025 20:51:24.457] [main/DEBUG] [net.minecraftforge.coremod.CoreModEngine/COREMOD]: Loading CoreMod from coremods/field_to_method.js
+[05Sep2025 20:51:24.948] [main/DEBUG] [net.minecraftforge.coremod.CoreModEngine/COREMOD]: CoreMod loaded successfully
+[05Sep2025 20:51:24.948] [main/DEBUG] [net.minecraftforge.coremod.CoreModEngine/COREMOD]: Loading CoreMod from coremods/field_to_instanceof.js
+[05Sep2025 20:51:25.128] [main/DEBUG] [net.minecraftforge.coremod.CoreModEngine/COREMOD]: CoreMod loaded successfully
+[05Sep2025 20:51:25.128] [main/DEBUG] [net.minecraftforge.coremod.CoreModEngine/COREMOD]: Loading CoreMod from coremods/add_bouncer_method.js
+[05Sep2025 20:51:25.188] [main/DEBUG] [net.minecraftforge.coremod.CoreModEngine/COREMOD]: CoreMod loaded successfully
+[05Sep2025 20:51:25.188] [main/DEBUG] [net.minecraftforge.coremod.CoreModEngine/COREMOD]: Loading CoreMod from coremods/method_redirector.js
+[05Sep2025 20:51:25.298] [main/DEBUG] [net.minecraftforge.coremod.CoreModEngine/COREMOD]: CoreMod loaded successfully
+[05Sep2025 20:51:25.334] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@59a79443 to Target : CLASS {Lnet/minecraft/world/level/biome/Biome;} {} {V}
+[05Sep2025 20:51:25.339] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@ceddaf8 to Target : CLASS {Lnet/minecraft/world/level/levelgen/structure/Structure;} {} {V}
+[05Sep2025 20:51:25.339] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@3d90eeb3 to Target : CLASS {Lnet/minecraft/world/effect/MobEffectInstance;} {} {V}
+[05Sep2025 20:51:25.340] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@1db87583 to Target : CLASS {Lnet/minecraft/world/level/block/LiquidBlock;} {} {V}
+[05Sep2025 20:51:25.340] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@7fb53256 to Target : CLASS {Lnet/minecraft/world/item/BucketItem;} {} {V}
+[05Sep2025 20:51:25.340] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@1d6d1d42 to Target : CLASS {Lnet/minecraft/world/level/block/StairBlock;} {} {V}
+[05Sep2025 20:51:25.340] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@27329d2a to Target : CLASS {Lnet/minecraft/world/level/block/FlowerPotBlock;} {} {V}
+[05Sep2025 20:51:25.340] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@7978e022 to Target : CLASS {Lnet/minecraft/world/item/ItemStack;} {} {V}
+[05Sep2025 20:51:25.341] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@2f894ad9 to Target : CLASS {Lnet/minecraft/network/play/client/CClientSettingsPacket;} {} {V}
+[05Sep2025 20:51:25.341] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@5afbd567 to Target : CLASS {Lnet/minecraft/world/entity/animal/frog/Tadpole;} {} {V}
+[05Sep2025 20:51:25.341] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@5afbd567 to Target : CLASS {Lnet/minecraft/world/entity/monster/Strider;} {} {V}
+[05Sep2025 20:51:25.341] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@5afbd567 to Target : CLASS {Lnet/minecraft/world/entity/npc/CatSpawner;} {} {V}
+[05Sep2025 20:51:25.341] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@5afbd567 to Target : CLASS {Lnet/minecraft/server/commands/RaidCommand;} {} {V}
+[05Sep2025 20:51:25.341] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@5afbd567 to Target : CLASS {Lnet/minecraft/world/level/NaturalSpawner;} {} {V}
+[05Sep2025 20:51:25.341] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@5afbd567 to Target : CLASS {Lnet/minecraft/world/level/levelgen/structure/templatesystem/StructureTemplate;} {} {V}
+[05Sep2025 20:51:25.341] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@5afbd567 to Target : CLASS {Lnet/minecraft/world/entity/animal/horse/SkeletonTrapGoal;} {} {V}
+[05Sep2025 20:51:25.341] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@5afbd567 to Target : CLASS {Lnet/minecraft/world/entity/monster/ZombieVillager;} {} {V}
+[05Sep2025 20:51:25.341] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@5afbd567 to Target : CLASS {Lnet/minecraft/world/level/levelgen/structure/structures/SwampHutPiece;} {} {V}
+[05Sep2025 20:51:25.341] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@5afbd567 to Target : CLASS {Lnet/minecraft/world/level/levelgen/PhantomSpawner;} {} {V}
+[05Sep2025 20:51:25.341] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@5afbd567 to Target : CLASS {Lnet/minecraft/world/level/levelgen/structure/structures/OceanRuinPieces$OceanRuinPiece;} {} {V}
+[05Sep2025 20:51:25.341] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@5afbd567 to Target : CLASS {Lnet/minecraft/server/commands/SummonCommand;} {} {V}
+[05Sep2025 20:51:25.342] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@5afbd567 to Target : CLASS {Lnet/minecraft/world/entity/monster/Spider;} {} {V}
+[05Sep2025 20:51:25.342] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@5afbd567 to Target : CLASS {Lnet/minecraft/world/level/levelgen/structure/structures/OceanMonumentPieces$OceanMonumentPiece;} {} {V}
+[05Sep2025 20:51:25.342] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@5afbd567 to Target : CLASS {Lnet/minecraft/world/entity/monster/Zombie;} {} {V}
+[05Sep2025 20:51:25.342] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@5afbd567 to Target : CLASS {Lnet/minecraft/world/level/levelgen/PatrolSpawner;} {} {V}
+[05Sep2025 20:51:25.342] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@5afbd567 to Target : CLASS {Lnet/minecraft/world/entity/monster/Evoker$EvokerSummonSpellGoal;} {} {V}
+[05Sep2025 20:51:25.342] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@5afbd567 to Target : CLASS {Lnet/minecraft/world/entity/EntityType;} {} {V}
+[05Sep2025 20:51:25.342] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@5afbd567 to Target : CLASS {Lnet/minecraft/world/level/levelgen/structure/structures/WoodlandMansionPieces$WoodlandMansionPiece;} {} {V}
+[05Sep2025 20:51:25.342] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@5afbd567 to Target : CLASS {Lnet/minecraft/world/entity/raid/Raid;} {} {V}
+[05Sep2025 20:51:25.342] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@5afbd567 to Target : CLASS {Lnet/minecraft/world/entity/npc/Villager;} {} {V}
+[05Sep2025 20:51:25.342] [main/DEBUG] [cpw.mods.modlauncher.TransformStore/MODLAUNCHER]: Adding transformer net.minecraftforge.coremod.transformer.CoreModClassTransformer@5afbd567 to Target : CLASS {Lnet/minecraft/world/entity/ai/village/VillageSiege;} {} {V}
+[05Sep2025 20:51:25.342] [main/DEBUG] [cpw.mods.modlauncher.TransformationServiceDecorator/MODLAUNCHER]: Initialized transformers for transformation service fml
+[05Sep2025 20:51:25.928] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:ModLauncher Root Container(ModLauncher:4f56a0a2)]
+[05Sep2025 20:51:25.929] [main/DEBUG] [mixin/]: Processing launch tasks for PlatformAgent[MixinPlatformAgentDefault:ModLauncher Root Container(ModLauncher:4f56a0a2)]
+[05Sep2025 20:51:25.929] [main/DEBUG] [mixin/]: Adding mixin platform agents for container SecureJarResource(minecraft)
+[05Sep2025 20:51:25.929] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for SecureJarResource(minecraft)
+[05Sep2025 20:51:25.929] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container SecureJarResource(minecraft)
+[05Sep2025 20:51:25.929] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for SecureJarResource(minecraft)
+[05Sep2025 20:51:25.929] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container SecureJarResource(minecraft)
+[05Sep2025 20:51:25.929] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(minecraft)]
+[05Sep2025 20:51:25.931] [main/DEBUG] [mixin/]: Adding mixin platform agents for container SecureJarResource(attributefix)
+[05Sep2025 20:51:25.931] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for SecureJarResource(attributefix)
+[05Sep2025 20:51:25.931] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container SecureJarResource(attributefix)
+[05Sep2025 20:51:25.931] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for SecureJarResource(attributefix)
+[05Sep2025 20:51:25.931] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container SecureJarResource(attributefix)
+[05Sep2025 20:51:25.931] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(attributefix)]
+[05Sep2025 20:51:25.931] [main/DEBUG] [mixin/]: Registering mixin config: attributefix.mixins.json
+[05Sep2025 20:51:25.975] [main/DEBUG] [mixin/]: Compatibility level JAVA_17 specified by attributefix.mixins.json is higher than the maximum level supported by this version of mixin (JAVA_13).
+[05Sep2025 20:51:25.982] [main/INFO] [mixin/]: Compatibility level set to JAVA_17
+[05Sep2025 20:51:25.982] [main/DEBUG] [mixin/]: Adding mixin platform agents for container SecureJarResource(forge)
+[05Sep2025 20:51:25.982] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for SecureJarResource(forge)
+[05Sep2025 20:51:25.982] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container SecureJarResource(forge)
+[05Sep2025 20:51:25.983] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for SecureJarResource(forge)
+[05Sep2025 20:51:25.983] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container SecureJarResource(forge)
+[05Sep2025 20:51:25.983] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(forge)]
+[05Sep2025 20:51:25.983] [main/DEBUG] [mixin/]: Adding mixin platform agents for container SecureJarResource(overloadedarmorbar)
+[05Sep2025 20:51:25.983] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for SecureJarResource(overloadedarmorbar)
+[05Sep2025 20:51:25.983] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container SecureJarResource(overloadedarmorbar)
+[05Sep2025 20:51:25.983] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for SecureJarResource(overloadedarmorbar)
+[05Sep2025 20:51:25.983] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container SecureJarResource(overloadedarmorbar)
+[05Sep2025 20:51:25.984] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(overloadedarmorbar)]
+[05Sep2025 20:51:25.984] [main/DEBUG] [mixin/]: Adding mixin platform agents for container SecureJarResource(geckolib)
+[05Sep2025 20:51:25.984] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for SecureJarResource(geckolib)
+[05Sep2025 20:51:25.984] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container SecureJarResource(geckolib)
+[05Sep2025 20:51:25.984] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for SecureJarResource(geckolib)
+[05Sep2025 20:51:25.984] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container SecureJarResource(geckolib)
+[05Sep2025 20:51:25.984] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(geckolib)]
+[05Sep2025 20:51:25.984] [main/DEBUG] [mixin/]: Registering mixin config: geckolib.mixins.json
+[05Sep2025 20:51:25.986] [main/DEBUG] [mixin/]: Adding mixin platform agents for container SecureJarResource(pathtoimmortals)
+[05Sep2025 20:51:25.986] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for SecureJarResource(pathtoimmortals)
+[05Sep2025 20:51:25.986] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container SecureJarResource(pathtoimmortals)
+[05Sep2025 20:51:25.986] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for SecureJarResource(pathtoimmortals)
+[05Sep2025 20:51:25.986] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container SecureJarResource(pathtoimmortals)
+[05Sep2025 20:51:25.986] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(pathtoimmortals)]
+[05Sep2025 20:51:25.987] [main/DEBUG] [mixin/]: Adding mixin platform agents for container SecureJarResource(appleskin)
+[05Sep2025 20:51:25.987] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for SecureJarResource(appleskin)
+[05Sep2025 20:51:25.987] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container SecureJarResource(appleskin)
+[05Sep2025 20:51:25.987] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for SecureJarResource(appleskin)
+[05Sep2025 20:51:25.987] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container SecureJarResource(appleskin)
+[05Sep2025 20:51:25.987] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(appleskin)]
+[05Sep2025 20:51:25.987] [main/DEBUG] [mixin/]: Adding mixin platform agents for container SecureJarResource(colorfulhearts)
+[05Sep2025 20:51:25.987] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for SecureJarResource(colorfulhearts)
+[05Sep2025 20:51:25.987] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container SecureJarResource(colorfulhearts)
+[05Sep2025 20:51:25.988] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for SecureJarResource(colorfulhearts)
+[05Sep2025 20:51:25.988] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container SecureJarResource(colorfulhearts)
+[05Sep2025 20:51:25.988] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(colorfulhearts)]
+[05Sep2025 20:51:25.988] [main/DEBUG] [mixin/]: Registering mixin config: colorfulhearts-common.mixins.json
+[05Sep2025 20:51:25.989] [main/DEBUG] [mixin/]: Registering mixin config: colorfulhearts-forge.mixins.json
+[05Sep2025 20:51:25.991] [main/DEBUG] [mixin/]: Adding mixin platform agents for container SecureJarResource(jei)
+[05Sep2025 20:51:25.991] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for SecureJarResource(jei)
+[05Sep2025 20:51:25.991] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container SecureJarResource(jei)
+[05Sep2025 20:51:25.991] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for SecureJarResource(jei)
+[05Sep2025 20:51:25.992] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container SecureJarResource(jei)
+[05Sep2025 20:51:25.992] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(jei)]
+[05Sep2025 20:51:25.992] [main/DEBUG] [mixin/]: Adding mixin platform agents for container SecureJarResource(mclib)
+[05Sep2025 20:51:25.992] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentMinecraftForge for SecureJarResource(mclib)
+[05Sep2025 20:51:25.992] [main/DEBUG] [mixin/]: MixinPlatformAgentMinecraftForge rejected container SecureJarResource(mclib)
+[05Sep2025 20:51:25.992] [main/DEBUG] [mixin/]: Instancing new MixinPlatformAgentDefault for SecureJarResource(mclib)
+[05Sep2025 20:51:25.992] [main/DEBUG] [mixin/]: MixinPlatformAgentDefault accepted container SecureJarResource(mclib)
+[05Sep2025 20:51:25.992] [main/DEBUG] [mixin/]: Processing prepare() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(mclib)]
+[05Sep2025 20:51:25.992] [main/DEBUG] [mixin/]: inject() running with 11 agents
+[05Sep2025 20:51:25.992] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:ModLauncher Root Container(ModLauncher:4f56a0a2)]
+[05Sep2025 20:51:25.993] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(minecraft)]
+[05Sep2025 20:51:25.993] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(attributefix)]
+[05Sep2025 20:51:25.993] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(forge)]
+[05Sep2025 20:51:25.993] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(overloadedarmorbar)]
+[05Sep2025 20:51:25.993] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(geckolib)]
+[05Sep2025 20:51:25.993] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(pathtoimmortals)]
+[05Sep2025 20:51:25.993] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(appleskin)]
+[05Sep2025 20:51:25.993] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(colorfulhearts)]
+[05Sep2025 20:51:25.993] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(jei)]
+[05Sep2025 20:51:25.994] [main/DEBUG] [mixin/]: Processing inject() for PlatformAgent[MixinPlatformAgentDefault:SecureJarResource(mclib)]
+[05Sep2025 20:51:25.994] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgedatauserdev' with arguments [--gameDir, ., --assetsDir, C:\Users\admin\.gradle\caches\forge_gradle\assets, --assetIndex, 5, --mod, pathtoimmortals, --all, --output, G:\IntelliJ IDEA Community Edition 2025.1.1.1\the_ascent\forge-1.20.1-47.4.1-mdk\src\generated\resources, --existing, G:\IntelliJ IDEA Community Edition 2025.1.1.1\the_ascent\forge-1.20.1-47.4.1-mdk\src\main\resources]
+[05Sep2025 20:51:26.138] [main/DEBUG] [mixin/]: Error cleaning class output directory: .mixin.out
+[05Sep2025 20:51:26.144] [main/DEBUG] [mixin/]: Preparing mixins for MixinEnvironment[DEFAULT]
+[05Sep2025 20:51:26.145] [main/DEBUG] [mixin/]: Selecting config attributefix.mixins.json
+[05Sep2025 20:51:26.586] [main/INFO] [mixin/]: Remapping refMap attributefix.refmap.json using G:\IntelliJ IDEA Community Edition 2025.1.1.1\the_ascent\forge-1.20.1-47.4.1-mdk/build/createSrgToMcp/output.srg
+[05Sep2025 20:51:26.587] [main/DEBUG] [mixin/]: Selecting config geckolib.mixins.json
+[05Sep2025 20:51:26.588] [main/INFO] [mixin/]: Remapping refMap geckolib.refmap.json using G:\IntelliJ IDEA Community Edition 2025.1.1.1\the_ascent\forge-1.20.1-47.4.1-mdk/build/createSrgToMcp/output.srg
+[05Sep2025 20:51:26.588] [main/DEBUG] [mixin/]: Selecting config colorfulhearts-common.mixins.json
+[05Sep2025 20:51:26.589] [main/INFO] [mixin/]: Remapping refMap colorfulhearts-common-1.20.1-common-refmap.json using G:\IntelliJ IDEA Community Edition 2025.1.1.1\the_ascent\forge-1.20.1-47.4.1-mdk/build/createSrgToMcp/output.srg
+[05Sep2025 20:51:26.589] [main/DEBUG] [mixin/]: Selecting config colorfulhearts-forge.mixins.json
+[05Sep2025 20:51:26.627] [main/INFO] [mixin/]: Remapping refMap colorfulhearts-forge-1.20.1-forge-refmap.json using G:\IntelliJ IDEA Community Edition 2025.1.1.1\the_ascent\forge-1.20.1-47.4.1-mdk/build/createSrgToMcp/output.srg
+[05Sep2025 20:51:26.627] [main/DEBUG] [mixin/]: Preparing attributefix.mixins.json (1)
+[05Sep2025 20:51:26.714] [main/DEBUG] [mixin/]: Preparing geckolib.mixins.json (1)
+[05Sep2025 20:51:26.723] [main/DEBUG] [mixin/]: Preparing colorfulhearts-common.mixins.json (1)
+[05Sep2025 20:51:26.736] [main/DEBUG] [mixin/]: Preparing colorfulhearts-forge.mixins.json (2)
+[05Sep2025 20:51:26.737] [main/INFO] [Colorful Hearts/]: Applying mixin HUDOverlayHandlerAccessor as mod appleskin is present.
+[05Sep2025 20:51:26.737] [main/INFO] [Colorful Hearts/]: Skipped applying mixin ComfortHealthOverlayMixin as mod farmersdelight is not present.
+[05Sep2025 20:51:26.770] [main/DEBUG] [mixin/]: Registering new injector for @Inject with org.spongepowered.asm.mixin.injection.struct.CallbackInjectionInfo
+[05Sep2025 20:51:26.773] [main/DEBUG] [mixin/]: Registering new injector for @ModifyArg with org.spongepowered.asm.mixin.injection.struct.ModifyArgInjectionInfo
+[05Sep2025 20:51:26.774] [main/DEBUG] [mixin/]: Registering new injector for @ModifyArgs with org.spongepowered.asm.mixin.injection.struct.ModifyArgsInjectionInfo
+[05Sep2025 20:51:26.775] [main/DEBUG] [mixin/]: Registering new injector for @Redirect with org.spongepowered.asm.mixin.injection.struct.RedirectInjectionInfo
+[05Sep2025 20:51:26.777] [main/DEBUG] [mixin/]: Registering new injector for @ModifyVariable with org.spongepowered.asm.mixin.injection.struct.ModifyVariableInjectionInfo
+[05Sep2025 20:51:26.778] [main/DEBUG] [mixin/]: Registering new injector for @ModifyConstant with org.spongepowered.asm.mixin.injection.struct.ModifyConstantInjectionInfo
+[05Sep2025 20:51:26.788] [main/DEBUG] [mixin/]: Prepared 4 mixins in 0.642 sec (160.5ms avg) (0ms load, 0ms transform, 0ms plugin)
+[05Sep2025 20:51:26.953] [main/DEBUG] [io.netty.util.internal.logging.InternalLoggerFactory/]: Using SLF4J as the default logging framework
+[05Sep2025 20:51:26.957] [main/DEBUG] [io.netty.util.ResourceLeakDetector/]: -Dio.netty.leakDetection.level: simple
+[05Sep2025 20:51:26.957] [main/DEBUG] [io.netty.util.ResourceLeakDetector/]: -Dio.netty.leakDetection.targetRecords: 4
+[05Sep2025 20:51:27.205] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [pathtoimmortals]
+[05Sep2025 20:51:27.508] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/entity/EntityType
+[05Sep2025 20:51:28.235] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/level/block/LiquidBlock
+[05Sep2025 20:51:28.281] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/level/block/StairBlock
+[05Sep2025 20:51:28.397] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/level/block/FlowerPotBlock
+[05Sep2025 20:51:29.068] [main/DEBUG] [mixin/]: Mixing AccessorRangedAttribute from attributefix.mixins.json into net.minecraft.world.entity.ai.attributes.RangedAttribute
+[05Sep2025 20:51:29.690] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/item/ItemStack
+[05Sep2025 20:51:30.473] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/entity/animal/frog/Tadpole
+[05Sep2025 20:51:30.551] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/item/BucketItem
+[05Sep2025 20:51:31.881] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/entity/monster/Spider
+[05Sep2025 20:51:31.949] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/entity/monster/Zombie
+[05Sep2025 20:51:32.003] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/entity/monster/ZombieVillager
+[05Sep2025 20:51:32.095] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/entity/monster/Evoker$EvokerSummonSpellGoal
+[05Sep2025 20:51:32.455] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/entity/animal/horse/SkeletonTrapGoal
+[05Sep2025 20:51:32.489] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/entity/monster/Strider
+[05Sep2025 20:51:32.852] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/entity/npc/Villager
+[05Sep2025 20:51:33.090] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/effect/MobEffectInstance
+[05Sep2025 20:51:34.046] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/level/levelgen/structure/Structure
+[05Sep2025 20:51:34.086] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/level/levelgen/structure/structures/OceanRuinPieces$OceanRuinPiece
+[05Sep2025 20:51:34.095] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/level/levelgen/structure/structures/SwampHutPiece
+[05Sep2025 20:51:34.107] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/level/levelgen/structure/structures/OceanMonumentPieces$OceanMonumentPiece
+[05Sep2025 20:51:34.123] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/level/levelgen/structure/structures/WoodlandMansionPieces$WoodlandMansionPiece
+[05Sep2025 20:51:34.233] [main/DEBUG] [net.minecraftforge.coremod.transformer.CoreModBaseTransformer/COREMOD]: Transforming net/minecraft/world/level/biome/Biome
+[05Sep2025 20:51:34.452] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Creating vanilla freeze snapshot
+[05Sep2025 20:51:34.456] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:block Sync: VANILLA -> ACTIVE
+[05Sep2025 20:51:34.467] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:fluid Sync: VANILLA -> ACTIVE
+[05Sep2025 20:51:34.468] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:item Sync: VANILLA -> ACTIVE
+[05Sep2025 20:51:34.476] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:mob_effect Sync: VANILLA -> ACTIVE
+[05Sep2025 20:51:34.476] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sound_event Sync: VANILLA -> ACTIVE
+[05Sep2025 20:51:34.485] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:potion Sync: VANILLA -> ACTIVE
+[05Sep2025 20:51:34.485] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:enchantment Sync: VANILLA -> ACTIVE
+[05Sep2025 20:51:34.485] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:entity_type Sync: VANILLA -> ACTIVE
+[05Sep2025 20:51:34.486] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:block_entity_type Sync: VANILLA -> ACTIVE
+[05Sep2025 20:51:34.487] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:particle_type Sync: VANILLA -> ACTIVE
+[05Sep2025 20:51:34.487] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:menu Sync: VANILLA -> ACTIVE
+[05Sep2025 20:51:34.487] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:painting_variant Sync: VANILLA -> ACTIVE
+[05Sep2025 20:51:34.488] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:recipe_type Sync: VANILLA -> ACTIVE
+[05Sep2025 20:51:34.488] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:recipe_serializer Sync: VANILLA -> ACTIVE
+[05Sep2025 20:51:34.488] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:attribute Sync: VANILLA -> ACTIVE
+[05Sep2025 20:51:34.488] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:stat_type Sync: VANILLA -> ACTIVE
+[05Sep2025 20:51:34.488] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:command_argument_type Sync: VANILLA -> ACTIVE
+[05Sep2025 20:51:34.489] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:villager_profession Sync: VANILLA -> ACTIVE
+[05Sep2025 20:51:34.489] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:point_of_interest_type Sync: VANILLA -> ACTIVE
+[05Sep2025 20:51:34.491] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:memory_module_type Sync: VANILLA -> ACTIVE
+[05Sep2025 20:51:34.492] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:sensor_type Sync: VANILLA -> ACTIVE
+[05Sep2025 20:51:34.492] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:schedule Sync: VANILLA -> ACTIVE
+[05Sep2025 20:51:34.492] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:activity Sync: VANILLA -> ACTIVE
+[05Sep2025 20:51:34.492] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:worldgen/carver Sync: VANILLA -> ACTIVE
+[05Sep2025 20:51:34.492] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:worldgen/feature Sync: VANILLA -> ACTIVE
+[05Sep2025 20:51:34.493] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:chunk_status Sync: VANILLA -> ACTIVE
+[05Sep2025 20:51:34.493] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:worldgen/block_state_provider_type Sync: VANILLA -> ACTIVE
+[05Sep2025 20:51:34.493] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:worldgen/foliage_placer_type Sync: VANILLA -> ACTIVE
+[05Sep2025 20:51:34.494] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:worldgen/tree_decorator_type Sync: VANILLA -> ACTIVE
+[05Sep2025 20:51:34.494] [main/DEBUG] [net.minecraftforge.registries.ForgeRegistry/REGISTRIES]: Registry minecraft:worldgen/biome Sync: VANILLA -> ACTIVE
+[05Sep2025 20:51:34.503] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Vanilla freeze snapshot created
+[05Sep2025 20:51:34.557] [main/DEBUG] [io.netty.util.internal.PlatformDependent0/]: -Dio.netty.noUnsafe: false
+[05Sep2025 20:51:34.557] [main/DEBUG] [io.netty.util.internal.PlatformDependent0/]: Java version: 17
+[05Sep2025 20:51:34.559] [main/DEBUG] [io.netty.util.internal.PlatformDependent0/]: sun.misc.Unsafe.theUnsafe: available
+[05Sep2025 20:51:34.559] [main/DEBUG] [io.netty.util.internal.PlatformDependent0/]: sun.misc.Unsafe.copyMemory: available
+[05Sep2025 20:51:34.560] [main/DEBUG] [io.netty.util.internal.PlatformDependent0/]: sun.misc.Unsafe.storeFence: available
+[05Sep2025 20:51:34.561] [main/DEBUG] [io.netty.util.internal.PlatformDependent0/]: java.nio.Buffer.address: available
+[05Sep2025 20:51:34.562] [main/DEBUG] [io.netty.util.internal.PlatformDependent0/]: direct buffer constructor: unavailable
 java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
 	at io.netty.util.internal.ReflectionUtil.trySetAccessible(ReflectionUtil.java:31) ~[netty-common-4.1.82.Final.jar:4.1.82.Final]
 	at io.netty.util.internal.PlatformDependent0$5.run(PlatformDependent0.java:288) ~[netty-common-4.1.82.Final.jar:4.1.82.Final]
@@ -280,8 +421,8 @@ java.lang.UnsupportedOperationException: Reflective setAccessible(true) disabled
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[20Aug2025 22:43:11.574] [main/DEBUG] [io.netty.util.internal.PlatformDependent0/]: java.nio.Bits.unaligned: available, true
-[20Aug2025 22:43:11.576] [main/DEBUG] [io.netty.util.internal.PlatformDependent0/]: jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable
+[05Sep2025 20:51:34.642] [main/DEBUG] [io.netty.util.internal.PlatformDependent0/]: java.nio.Bits.unaligned: available, true
+[05Sep2025 20:51:34.644] [main/DEBUG] [io.netty.util.internal.PlatformDependent0/]: jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable
 java.lang.IllegalAccessException: class io.netty.util.internal.PlatformDependent0$7 (in module io.netty.common) cannot access class jdk.internal.misc.Unsafe (in module java.base) because module java.base does not export jdk.internal.misc to module io.netty.common
 	at jdk.internal.reflect.Reflection.newIllegalAccessException(Reflection.java:392) ~[?:?]
 	at java.lang.reflect.AccessibleObject.checkAccess(AccessibleObject.java:674) ~[?:?]
@@ -315,212 +456,285 @@ java.lang.IllegalAccessException: class io.netty.util.internal.PlatformDependent
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:26) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.modlauncher.BootstrapLaunchConsumer.accept(BootstrapLaunchConsumer.java:23) ~[modlauncher-10.0.9.jar:?]
 	at cpw.mods.bootstraplauncher.BootstrapLauncher.main(BootstrapLauncher.java:141) ~[bootstraplauncher-1.1.2.jar:?]
-[20Aug2025 22:43:11.581] [main/DEBUG] [io.netty.util.internal.PlatformDependent0/]: java.nio.DirectByteBuffer.<init>(long, int): unavailable
-[20Aug2025 22:43:11.582] [main/DEBUG] [io.netty.util.internal.PlatformDependent/]: sun.misc.Unsafe: available
-[20Aug2025 22:43:11.587] [main/DEBUG] [io.netty.util.internal.PlatformDependent/]: maxDirectMemory: 32178700288 bytes (maybe)
-[20Aug2025 22:43:11.588] [main/DEBUG] [io.netty.util.internal.PlatformDependent/]: -Dio.netty.tmpdir: C:\Users\admin\AppData\Local\Temp (java.io.tmpdir)
-[20Aug2025 22:43:11.588] [main/DEBUG] [io.netty.util.internal.PlatformDependent/]: -Dio.netty.bitMode: 64 (sun.arch.data.model)
-[20Aug2025 22:43:11.588] [main/DEBUG] [io.netty.util.internal.PlatformDependent/]: Platform: Windows
-[20Aug2025 22:43:11.591] [main/DEBUG] [io.netty.util.internal.PlatformDependent/]: -Dio.netty.maxDirectMemory: -1 bytes
-[20Aug2025 22:43:11.592] [main/DEBUG] [io.netty.util.internal.PlatformDependent/]: -Dio.netty.uninitializedArrayAllocationThreshold: -1
-[20Aug2025 22:43:11.595] [main/DEBUG] [io.netty.util.internal.CleanerJava9/]: java.nio.ByteBuffer.cleaner(): available
-[20Aug2025 22:43:11.595] [main/DEBUG] [io.netty.util.internal.PlatformDependent/]: -Dio.netty.noPreferDirect: false
-[20Aug2025 22:43:11.740] [main/DEBUG] [net.minecraftforge.network.NetworkHooks/]: Loading Network data for FML net version: FML3
-[20Aug2025 22:43:11.761] [main/DEBUG] [net.minecraftforge.fml.ModWorkManager/LOADING]: Using 16 threads for parallel mod-loading
-[20Aug2025 22:43:11.769] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLJavaModLanguageProvider/LOADING]: Loading FMLModContainer from classloader cpw.mods.modlauncher.TransformingClassLoader@11f9535b - got cpw.mods.cl.ModuleClassLoader@34b9fc7d
-[20Aug2025 22:43:11.770] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Creating FMLModContainer instance for net.minecraftforge.common.ForgeMod
-[20Aug2025 22:43:11.774] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLJavaModLanguageProvider/LOADING]: Loading FMLModContainer from classloader cpw.mods.modlauncher.TransformingClassLoader@11f9535b - got cpw.mods.cl.ModuleClassLoader@34b9fc7d
-[20Aug2025 22:43:11.774] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Creating FMLModContainer instance for net.ejibarra.pathtoimmortals.PathToImmortals
-[20Aug2025 22:43:11.833] [modloading-worker-0/DEBUG] [net.minecraftforge.versions.forge.ForgeVersion/CORE]: Forge Version package package net.minecraftforge.versions.forge, Forge, version 47.4 from cpw.mods.modlauncher.TransformingClassLoader@11f9535b
-[20Aug2025 22:43:11.836] [modloading-worker-0/DEBUG] [net.minecraftforge.versions.forge.ForgeVersion/CORE]: Found Forge version 47.4.1
-[20Aug2025 22:43:11.836] [modloading-worker-0/DEBUG] [net.minecraftforge.versions.forge.ForgeVersion/CORE]: Found Forge spec 47.4
-[20Aug2025 22:43:11.836] [modloading-worker-0/DEBUG] [net.minecraftforge.versions.forge.ForgeVersion/CORE]: Found Forge group net.minecraftforge
-[20Aug2025 22:43:11.838] [modloading-worker-0/DEBUG] [net.minecraftforge.versions.mcp.MCPVersion/CORE]: MCP Version package package net.minecraftforge.versions.mcp, Minecraft, version 1.20.1 from cpw.mods.modlauncher.TransformingClassLoader@11f9535b
-[20Aug2025 22:43:11.838] [modloading-worker-0/DEBUG] [net.minecraftforge.versions.mcp.MCPVersion/CORE]: Found MC version information 1.20.1
-[20Aug2025 22:43:11.838] [modloading-worker-0/DEBUG] [net.minecraftforge.versions.mcp.MCPVersion/CORE]: Found MCP version information 20230612.114412
-[20Aug2025 22:43:11.838] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.4.1, for MC 1.20.1 with MCP 20230612.114412
-[20Aug2025 22:43:11.846] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.4.1 Initialized
-[20Aug2025 22:43:11.890] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Attempting to inject @EventBusSubscriber classes into the eventbus for pathtoimmortals
-[20Aug2025 22:43:11.904] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ejibarra.pathtoimmortals.datagen.DataGenerators to MOD
-[20Aug2025 22:43:11.915] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ejibarra.pathtoimmortals.event.ModEventBusEvents to MOD
-[20Aug2025 22:43:11.921] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ejibarra.pathtoimmortals.event.ModEventClientBusEvents to MOD
-[20Aug2025 22:43:11.923] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ejibarra.pathtoimmortals.event.ModEvents to FORGE
-[20Aug2025 22:43:11.924] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ejibarra.pathtoimmortals.PathToImmortals$ClientModEvents to MOD
-[20Aug2025 22:43:11.998] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.config.ConfigTracker/CONFIG]: Config file forge-client.toml for forge tracking
-[20Aug2025 22:43:11.999] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.config.ConfigTracker/CONFIG]: Config file forge-server.toml for forge tracking
-[20Aug2025 22:43:11.999] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.ModLoadingContext/]: Attempted to register an empty config for type COMMON on mod forge
-[20Aug2025 22:43:12.059] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Attempting to inject @EventBusSubscriber classes into the eventbus for forge
-[20Aug2025 22:43:12.060] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.minecraftforge.common.ForgeSpawnEggItem$CommonHandler to MOD
-[20Aug2025 22:43:12.063] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.minecraftforge.common.ForgeSpawnEggItem$ColorRegisterHandler to MOD
-[20Aug2025 22:43:12.069] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.minecraftforge.client.model.data.ModelDataManager to FORGE
-[20Aug2025 22:43:12.071] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.minecraftforge.client.ForgeHooksClient$ClientEvents to MOD
-[20Aug2025 22:43:12.086] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.minecraftforge.client.ClientForgeMod to MOD
-[20Aug2025 22:43:12.131] [main/DEBUG] [net.minecraftforge.registries.ObjectHolderRegistry/REGISTRIES]: Processing ObjectHolder annotations
-[20Aug2025 22:43:12.163] [main/DEBUG] [net.minecraftforge.registries.ObjectHolderRegistry/REGISTRIES]: Found 3853 ObjectHolder annotations
-[20Aug2025 22:43:12.171] [main/DEBUG] [net.minecraftforge.common.capabilities.CapabilityManager/CAPABILITIES]: Attempting to automatically register: Lnet/minecraftforge/energy/IEnergyStorage;
-[20Aug2025 22:43:12.174] [main/DEBUG] [net.minecraftforge.common.capabilities.CapabilityManager/CAPABILITIES]: Attempting to automatically register: Lnet/minecraftforge/fluids/capability/IFluidHandler;
-[20Aug2025 22:43:12.174] [main/DEBUG] [net.minecraftforge.common.capabilities.CapabilityManager/CAPABILITIES]: Attempting to automatically register: Lnet/minecraftforge/fluids/capability/IFluidHandlerItem;
-[20Aug2025 22:43:12.174] [main/DEBUG] [net.minecraftforge.common.capabilities.CapabilityManager/CAPABILITIES]: Attempting to automatically register: Lnet/minecraftforge/items/IItemHandler;
-[20Aug2025 22:43:12.175] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Unfreezing vanilla registries
-[20Aug2025 22:43:12.181] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:sound_event
-[20Aug2025 22:43:12.186] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:sound_event
-[20Aug2025 22:43:12.186] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:fluid
-[20Aug2025 22:43:12.187] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:fluid
-[20Aug2025 22:43:12.190] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:block
-[20Aug2025 22:43:12.192] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:block
-[20Aug2025 22:43:12.192] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:attribute
-[20Aug2025 22:43:12.192] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:attribute
-[20Aug2025 22:43:12.192] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:mob_effect
-[20Aug2025 22:43:12.193] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:mob_effect
-[20Aug2025 22:43:12.193] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:particle_type
-[20Aug2025 22:43:12.193] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:particle_type
-[20Aug2025 22:43:12.197] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:item
-[20Aug2025 22:43:12.199] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:item
-[20Aug2025 22:43:12.201] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:entity_type
-[20Aug2025 22:43:12.201] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:entity_type
-[20Aug2025 22:43:12.202] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:sensor_type
-[20Aug2025 22:43:12.202] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:sensor_type
-[20Aug2025 22:43:12.202] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:memory_module_type
-[20Aug2025 22:43:12.202] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:memory_module_type
-[20Aug2025 22:43:12.202] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:potion
-[20Aug2025 22:43:12.203] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:potion
-[20Aug2025 22:43:12.203] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:game_event
-[20Aug2025 22:43:12.203] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:game_event
-[20Aug2025 22:43:12.203] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:enchantment
-[20Aug2025 22:43:12.204] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:enchantment
-[20Aug2025 22:43:12.204] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:block_entity_type
-[20Aug2025 22:43:12.204] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:block_entity_type
-[20Aug2025 22:43:12.204] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:painting_variant
-[20Aug2025 22:43:12.205] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:painting_variant
-[20Aug2025 22:43:12.205] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:stat_type
-[20Aug2025 22:43:12.205] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:stat_type
-[20Aug2025 22:43:12.205] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:custom_stat
-[20Aug2025 22:43:12.206] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:custom_stat
-[20Aug2025 22:43:12.206] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:chunk_status
-[20Aug2025 22:43:12.206] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:chunk_status
-[20Aug2025 22:43:12.206] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:rule_test
-[20Aug2025 22:43:12.207] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:rule_test
-[20Aug2025 22:43:12.207] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:rule_block_entity_modifier
-[20Aug2025 22:43:12.207] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:rule_block_entity_modifier
-[20Aug2025 22:43:12.207] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:pos_rule_test
-[20Aug2025 22:43:12.208] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:pos_rule_test
-[20Aug2025 22:43:12.208] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:menu
-[20Aug2025 22:43:12.208] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:menu
-[20Aug2025 22:43:12.208] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:recipe_type
-[20Aug2025 22:43:12.209] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:recipe_type
-[20Aug2025 22:43:12.247] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:recipe_serializer
-[20Aug2025 22:43:12.249] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:recipe_serializer
-[20Aug2025 22:43:12.250] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:position_source_type
-[20Aug2025 22:43:12.250] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:position_source_type
-[20Aug2025 22:43:12.254] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:command_argument_type
-[20Aug2025 22:43:12.255] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:command_argument_type
-[20Aug2025 22:43:12.255] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:villager_type
-[20Aug2025 22:43:12.255] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:villager_type
-[20Aug2025 22:43:12.255] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:villager_profession
-[20Aug2025 22:43:12.256] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:villager_profession
-[20Aug2025 22:43:12.256] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:point_of_interest_type
-[20Aug2025 22:43:12.256] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:point_of_interest_type
-[20Aug2025 22:43:12.256] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:schedule
-[20Aug2025 22:43:12.256] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:schedule
-[20Aug2025 22:43:12.256] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:activity
-[20Aug2025 22:43:12.257] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:activity
-[20Aug2025 22:43:12.257] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:loot_pool_entry_type
-[20Aug2025 22:43:12.257] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:loot_pool_entry_type
-[20Aug2025 22:43:12.257] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:loot_function_type
-[20Aug2025 22:43:12.257] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:loot_function_type
-[20Aug2025 22:43:12.264] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:loot_condition_type
-[20Aug2025 22:43:12.264] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:loot_condition_type
-[20Aug2025 22:43:12.264] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:loot_number_provider_type
-[20Aug2025 22:43:12.265] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:loot_number_provider_type
-[20Aug2025 22:43:12.265] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:loot_nbt_provider_type
-[20Aug2025 22:43:12.265] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:loot_nbt_provider_type
-[20Aug2025 22:43:12.265] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:loot_score_provider_type
-[20Aug2025 22:43:12.265] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:loot_score_provider_type
-[20Aug2025 22:43:12.266] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:float_provider_type
-[20Aug2025 22:43:12.266] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:float_provider_type
-[20Aug2025 22:43:12.266] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:int_provider_type
-[20Aug2025 22:43:12.266] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:int_provider_type
-[20Aug2025 22:43:12.267] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:height_provider_type
-[20Aug2025 22:43:12.267] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:height_provider_type
-[20Aug2025 22:43:12.267] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:block_predicate_type
-[20Aug2025 22:43:12.267] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:block_predicate_type
-[20Aug2025 22:43:12.268] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:worldgen/carver
-[20Aug2025 22:43:12.268] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:worldgen/carver
-[20Aug2025 22:43:12.268] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:worldgen/feature
-[20Aug2025 22:43:12.268] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:worldgen/feature
-[20Aug2025 22:43:12.269] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:worldgen/structure_processor
-[20Aug2025 22:43:12.269] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:worldgen/structure_processor
-[20Aug2025 22:43:12.269] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:worldgen/structure_placement
-[20Aug2025 22:43:12.269] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:worldgen/structure_placement
-[20Aug2025 22:43:12.269] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:worldgen/structure_piece
-[20Aug2025 22:43:12.270] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:worldgen/structure_piece
-[20Aug2025 22:43:12.270] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:worldgen/structure_type
-[20Aug2025 22:43:12.270] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:worldgen/structure_type
-[20Aug2025 22:43:12.270] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:worldgen/placement_modifier_type
-[20Aug2025 22:43:12.270] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:worldgen/placement_modifier_type
-[20Aug2025 22:43:12.271] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:worldgen/block_state_provider_type
-[20Aug2025 22:43:12.271] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:worldgen/block_state_provider_type
-[20Aug2025 22:43:12.271] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:worldgen/foliage_placer_type
-[20Aug2025 22:43:12.271] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:worldgen/foliage_placer_type
-[20Aug2025 22:43:12.271] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:worldgen/trunk_placer_type
-[20Aug2025 22:43:12.272] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:worldgen/trunk_placer_type
-[20Aug2025 22:43:12.272] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:worldgen/root_placer_type
-[20Aug2025 22:43:12.272] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:worldgen/root_placer_type
-[20Aug2025 22:43:12.272] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:worldgen/tree_decorator_type
-[20Aug2025 22:43:12.272] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:worldgen/tree_decorator_type
-[20Aug2025 22:43:12.272] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:worldgen/feature_size_type
-[20Aug2025 22:43:12.274] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:worldgen/feature_size_type
-[20Aug2025 22:43:12.274] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:worldgen/biome_source
-[20Aug2025 22:43:12.274] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:worldgen/biome_source
-[20Aug2025 22:43:12.274] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:worldgen/chunk_generator
-[20Aug2025 22:43:12.274] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:worldgen/chunk_generator
-[20Aug2025 22:43:12.274] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:worldgen/material_condition
-[20Aug2025 22:43:12.275] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:worldgen/material_condition
-[20Aug2025 22:43:12.275] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:worldgen/material_rule
-[20Aug2025 22:43:12.275] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:worldgen/material_rule
-[20Aug2025 22:43:12.275] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:worldgen/density_function_type
-[20Aug2025 22:43:12.275] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:worldgen/density_function_type
-[20Aug2025 22:43:12.276] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:worldgen/structure_pool_element
-[20Aug2025 22:43:12.276] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:worldgen/structure_pool_element
-[20Aug2025 22:43:12.276] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:cat_variant
-[20Aug2025 22:43:12.276] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:cat_variant
-[20Aug2025 22:43:12.276] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:frog_variant
-[20Aug2025 22:43:12.277] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:frog_variant
-[20Aug2025 22:43:12.277] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:banner_pattern
-[20Aug2025 22:43:12.277] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:banner_pattern
-[20Aug2025 22:43:12.277] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:instrument
-[20Aug2025 22:43:12.278] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:instrument
-[20Aug2025 22:43:12.278] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:decorated_pot_patterns
-[20Aug2025 22:43:12.278] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:decorated_pot_patterns
-[20Aug2025 22:43:12.280] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:creative_mode_tab
-[20Aug2025 22:43:12.280] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:creative_mode_tab
-[20Aug2025 22:43:12.298] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: forge:biome_modifier_serializers
-[20Aug2025 22:43:12.298] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: forge:biome_modifier_serializers
-[20Aug2025 22:43:12.299] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: forge:display_contexts
-[20Aug2025 22:43:12.300] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: forge:display_contexts
-[20Aug2025 22:43:12.300] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: forge:entity_data_serializers
-[20Aug2025 22:43:12.300] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: forge:entity_data_serializers
-[20Aug2025 22:43:12.307] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: forge:fluid_type
-[20Aug2025 22:43:12.307] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: forge:fluid_type
-[20Aug2025 22:43:12.308] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: forge:global_loot_modifier_serializers
-[20Aug2025 22:43:12.308] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: forge:global_loot_modifier_serializers
-[20Aug2025 22:43:12.321] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: forge:holder_set_type
-[20Aug2025 22:43:12.321] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: forge:holder_set_type
-[20Aug2025 22:43:12.323] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: forge:structure_modifier_serializers
-[20Aug2025 22:43:12.323] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: forge:structure_modifier_serializers
-[20Aug2025 22:43:12.323] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:worldgen/biome
-[20Aug2025 22:43:12.324] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:worldgen/biome
-[20Aug2025 22:43:12.669] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/admin/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.4.1_mapped_parchment_2023.09.03-1.20.1/forge-1.20.1-47.4.1_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/assets/.mcassetsroot' uses unexpected schema
-[20Aug2025 22:43:12.670] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/admin/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.4.1_mapped_parchment_2023.09.03-1.20.1/forge-1.20.1-47.4.1_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/data/.mcassetsroot' uses unexpected schema
-[20Aug2025 22:43:13.228] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
-[20Aug2025 22:43:13.346] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 116 ms
-[20Aug2025 22:43:13.346] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
-[20Aug2025 22:43:13.419] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 73 ms
-[20Aug2025 22:43:13.419] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block Tags
-[20Aug2025 22:43:13.425] [main/INFO] [net.minecraft.data.DataGenerator/]: Block Tags finished after 4 ms
-[20Aug2025 22:43:13.425] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: pathtoimmortals
-[20Aug2025 22:43:13.437] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: pathtoimmortals finished after 12 ms
-[20Aug2025 22:43:13.437] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: pathtoimmortals
-[20Aug2025 22:43:13.680] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: pathtoimmortals finished after 241 ms
-[20Aug2025 22:43:13.680] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 453 ms
-[20Aug2025 22:43:13.684] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 13, old count: 13, new count: 14, removed stale: 0, written: 0
+[05Sep2025 20:51:34.650] [main/DEBUG] [io.netty.util.internal.PlatformDependent0/]: java.nio.DirectByteBuffer.<init>(long, int): unavailable
+[05Sep2025 20:51:34.651] [main/DEBUG] [io.netty.util.internal.PlatformDependent/]: sun.misc.Unsafe: available
+[05Sep2025 20:51:34.652] [main/DEBUG] [io.netty.util.internal.PlatformDependent/]: maxDirectMemory: 32178700288 bytes (maybe)
+[05Sep2025 20:51:34.653] [main/DEBUG] [io.netty.util.internal.PlatformDependent/]: -Dio.netty.tmpdir: C:\Users\admin\AppData\Local\Temp (java.io.tmpdir)
+[05Sep2025 20:51:34.653] [main/DEBUG] [io.netty.util.internal.PlatformDependent/]: -Dio.netty.bitMode: 64 (sun.arch.data.model)
+[05Sep2025 20:51:34.653] [main/DEBUG] [io.netty.util.internal.PlatformDependent/]: Platform: Windows
+[05Sep2025 20:51:34.656] [main/DEBUG] [io.netty.util.internal.PlatformDependent/]: -Dio.netty.maxDirectMemory: -1 bytes
+[05Sep2025 20:51:34.656] [main/DEBUG] [io.netty.util.internal.PlatformDependent/]: -Dio.netty.uninitializedArrayAllocationThreshold: -1
+[05Sep2025 20:51:34.660] [main/DEBUG] [io.netty.util.internal.CleanerJava9/]: java.nio.ByteBuffer.cleaner(): available
+[05Sep2025 20:51:34.660] [main/DEBUG] [io.netty.util.internal.PlatformDependent/]: -Dio.netty.noPreferDirect: false
+[05Sep2025 20:51:34.872] [main/DEBUG] [net.minecraftforge.network.NetworkHooks/]: Loading Network data for FML net version: FML3
+[05Sep2025 20:51:34.923] [main/DEBUG] [net.minecraftforge.fml.ModWorkManager/LOADING]: Using 16 threads for parallel mod-loading
+[05Sep2025 20:51:34.935] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLJavaModLanguageProvider/LOADING]: Loading FMLModContainer from classloader cpw.mods.modlauncher.TransformingClassLoader@3b7eac14 - got cpw.mods.cl.ModuleClassLoader@7cedfa63
+[05Sep2025 20:51:34.938] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Creating FMLModContainer instance for net.darkhax.attributefix.AttributeFixForge
+[05Sep2025 20:51:34.941] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLJavaModLanguageProvider/LOADING]: Loading FMLModContainer from classloader cpw.mods.modlauncher.TransformingClassLoader@3b7eac14 - got cpw.mods.cl.ModuleClassLoader@7cedfa63
+[05Sep2025 20:51:34.941] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Creating FMLModContainer instance for net.minecraftforge.common.ForgeMod
+[05Sep2025 20:51:34.945] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLJavaModLanguageProvider/LOADING]: Loading FMLModContainer from classloader cpw.mods.modlauncher.TransformingClassLoader@3b7eac14 - got cpw.mods.cl.ModuleClassLoader@7cedfa63
+[05Sep2025 20:51:34.945] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Creating FMLModContainer instance for tfar.overpoweredarmorbar.OverloadedArmorBar
+[05Sep2025 20:51:34.946] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLJavaModLanguageProvider/LOADING]: Loading FMLModContainer from classloader cpw.mods.modlauncher.TransformingClassLoader@3b7eac14 - got cpw.mods.cl.ModuleClassLoader@7cedfa63
+[05Sep2025 20:51:34.946] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Creating FMLModContainer instance for software.bernie.example.GeckoLibMod
+[05Sep2025 20:51:34.947] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLJavaModLanguageProvider/LOADING]: Loading FMLModContainer from classloader cpw.mods.modlauncher.TransformingClassLoader@3b7eac14 - got cpw.mods.cl.ModuleClassLoader@7cedfa63
+[05Sep2025 20:51:34.947] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Creating FMLModContainer instance for net.ejibarra.pathtoimmortals.PathToImmortals
+[05Sep2025 20:51:34.948] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLJavaModLanguageProvider/LOADING]: Loading FMLModContainer from classloader cpw.mods.modlauncher.TransformingClassLoader@3b7eac14 - got cpw.mods.cl.ModuleClassLoader@7cedfa63
+[05Sep2025 20:51:34.948] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Creating FMLModContainer instance for squeek.appleskin.AppleSkin
+[05Sep2025 20:51:34.949] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLJavaModLanguageProvider/LOADING]: Loading FMLModContainer from classloader cpw.mods.modlauncher.TransformingClassLoader@3b7eac14 - got cpw.mods.cl.ModuleClassLoader@7cedfa63
+[05Sep2025 20:51:34.949] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Creating FMLModContainer instance for terrails.colorfulhearts.forge.ColorfulHeartsCommon
+[05Sep2025 20:51:34.950] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLJavaModLanguageProvider/LOADING]: Loading FMLModContainer from classloader cpw.mods.modlauncher.TransformingClassLoader@3b7eac14 - got cpw.mods.cl.ModuleClassLoader@7cedfa63
+[05Sep2025 20:51:34.950] [main/DEBUG] [net.minecraftforge.fml.javafmlmod.FMLModContainer/LOADING]: Creating FMLModContainer instance for mezz.jei.forge.JustEnoughItems
+[05Sep2025 20:51:34.978] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Attempting to inject @EventBusSubscriber classes into the eventbus for attributefix
+[05Sep2025 20:51:35.006] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.darkhax.attributefix.AttributeFixForge to MOD
+[05Sep2025 20:51:35.051] [modloading-worker-0/DEBUG] [net.minecraftforge.versions.forge.ForgeVersion/CORE]: Forge Version package package net.minecraftforge.versions.forge, Forge, version 47.4 from cpw.mods.modlauncher.TransformingClassLoader@3b7eac14
+[05Sep2025 20:51:35.052] [modloading-worker-0/DEBUG] [net.minecraftforge.versions.forge.ForgeVersion/CORE]: Found Forge version 47.4.1
+[05Sep2025 20:51:35.052] [modloading-worker-0/DEBUG] [net.minecraftforge.versions.forge.ForgeVersion/CORE]: Found Forge spec 47.4
+[05Sep2025 20:51:35.052] [modloading-worker-0/DEBUG] [net.minecraftforge.versions.forge.ForgeVersion/CORE]: Found Forge group net.minecraftforge
+[05Sep2025 20:51:35.054] [modloading-worker-0/DEBUG] [net.minecraftforge.versions.mcp.MCPVersion/CORE]: MCP Version package package net.minecraftforge.versions.mcp, Minecraft, version 1.20.1 from cpw.mods.modlauncher.TransformingClassLoader@3b7eac14
+[05Sep2025 20:51:35.054] [modloading-worker-0/DEBUG] [net.minecraftforge.versions.mcp.MCPVersion/CORE]: Found MC version information 1.20.1
+[05Sep2025 20:51:35.054] [modloading-worker-0/DEBUG] [net.minecraftforge.versions.mcp.MCPVersion/CORE]: Found MCP version information 20230612.114412
+[05Sep2025 20:51:35.054] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.4.1, for MC 1.20.1 with MCP 20230612.114412
+[05Sep2025 20:51:35.055] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.4.1 Initialized
+[05Sep2025 20:51:35.061] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.config.ConfigTracker/CONFIG]: Config file appleskin-client.toml for appleskin tracking
+[05Sep2025 20:51:35.061] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.config.ConfigTracker/CONFIG]: Config file colorfulhearts.toml for colorfulhearts tracking
+[05Sep2025 20:51:35.062] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.config.ConfigTracker/CONFIG]: Config file jei-server.toml for jei tracking
+[05Sep2025 20:51:35.062] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.config.ConfigTracker/CONFIG]: Config file overloadedarmorbar-client.toml for overloadedarmorbar tracking
+[05Sep2025 20:51:35.062] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Attempting to inject @EventBusSubscriber classes into the eventbus for overloadedarmorbar
+[05Sep2025 20:51:35.081] [modloading-worker-0/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Configuration file G:\IntelliJ IDEA Community Edition 2025.1.1.1\the_ascent\forge-1.20.1-47.4.1-mdk\run-data\config\appleskin-client.toml is not correct. Correcting
+[05Sep2025 20:51:35.088] [modloading-worker-0/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key client was corrected from null to its default, SimpleCommentedConfig:{}. 
+[05Sep2025 20:51:35.089] [modloading-worker-0/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key client.showFoodValuesInTooltip was corrected from null to its default, true. 
+[05Sep2025 20:51:35.091] [modloading-worker-0/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: The comment on key client.showFoodValuesInTooltip does not match the spec. This may create a backup.
+[05Sep2025 20:51:35.092] [modloading-worker-0/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key client.showFoodValuesInTooltipAlways was corrected from null to its default, true. 
+[05Sep2025 20:51:35.092] [modloading-worker-0/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: The comment on key client.showFoodValuesInTooltipAlways does not match the spec. This may create a backup.
+[05Sep2025 20:51:35.092] [modloading-worker-0/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key client.showSaturationHudOverlay was corrected from null to its default, true. 
+[05Sep2025 20:51:35.092] [modloading-worker-0/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: The comment on key client.showSaturationHudOverlay does not match the spec. This may create a backup.
+[05Sep2025 20:51:35.092] [modloading-worker-0/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key client.showFoodValuesHudOverlay was corrected from null to its default, true. 
+[05Sep2025 20:51:35.092] [modloading-worker-0/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: The comment on key client.showFoodValuesHudOverlay does not match the spec. This may create a backup.
+[05Sep2025 20:51:35.092] [modloading-worker-0/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key client.showFoodValuesHudOverlayWhenOffhand was corrected from null to its default, true. 
+[05Sep2025 20:51:35.092] [modloading-worker-0/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: The comment on key client.showFoodValuesHudOverlayWhenOffhand does not match the spec. This may create a backup.
+[05Sep2025 20:51:35.092] [modloading-worker-0/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key client.showFoodExhaustionHudUnderlay was corrected from null to its default, true. 
+[05Sep2025 20:51:35.092] [modloading-worker-0/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: The comment on key client.showFoodExhaustionHudUnderlay does not match the spec. This may create a backup.
+[05Sep2025 20:51:35.092] [modloading-worker-0/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key client.showFoodStatsInDebugOverlay was corrected from null to its default, true. 
+[05Sep2025 20:51:35.093] [modloading-worker-0/DEBUG] [Colorful Hearts/]: Skipped loading compat for missing mod undergarden
+[05Sep2025 20:51:35.093] [modloading-worker-0/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: The comment on key client.showFoodStatsInDebugOverlay does not match the spec. This may create a backup.
+[05Sep2025 20:51:35.093] [modloading-worker-0/DEBUG] [Colorful Hearts/]: Skipped loading compat for missing mod overflowingbars
+[05Sep2025 20:51:35.094] [modloading-worker-0/DEBUG] [Colorful Hearts/]: Skipped loading compat for missing mod eidolon
+[05Sep2025 20:51:35.094] [modloading-worker-0/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key client.showFoodHealthHudOverlay was corrected from null to its default, true. 
+[05Sep2025 20:51:35.094] [modloading-worker-0/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: The comment on key client.showFoodHealthHudOverlay does not match the spec. This may create a backup.
+[05Sep2025 20:51:35.094] [modloading-worker-0/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key client.showVanillaAnimationsOverlay was corrected from null to its default, true. 
+[05Sep2025 20:51:35.094] [modloading-worker-0/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: The comment on key client.showVanillaAnimationsOverlay does not match the spec. This may create a backup.
+[05Sep2025 20:51:35.094] [modloading-worker-0/WARN] [net.minecraftforge.common.ForgeConfigSpec/CORE]: Incorrect key client.maxHudOverlayFlashAlpha was corrected from null to its default, 0.65. 
+[05Sep2025 20:51:35.094] [modloading-worker-0/DEBUG] [net.minecraftforge.common.ForgeConfigSpec/CORE]: The comment on key client.maxHudOverlayFlashAlpha does not match the spec. This may create a backup.
+[05Sep2025 20:51:35.095] [modloading-worker-0/INFO] [Colorful Hearts/]: Loading compat for mod appleskin
+[05Sep2025 20:51:35.108] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Attempting to inject @EventBusSubscriber classes into the eventbus for appleskin
+[05Sep2025 20:51:35.186] [modloading-worker-0/WARN] [software.bernie.geckolib.GeckoLib/]: Minecraft.getInstance() was null, could not register reload listeners
+[05Sep2025 20:51:35.208] [modloading-worker-0/DEBUG] [mezz.jei.common.platform.Services/]: Loaded mezz.jei.forge.platform.PlatformHelper@73fceab8 for service interface mezz.jei.common.platform.IPlatformHelper
+[05Sep2025 20:51:35.220] [modloading-worker-0/DEBUG] [Colorful Hearts/]: Skipped loading compat for missing mod farmersdelight
+[05Sep2025 20:51:35.220] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Attempting to inject @EventBusSubscriber classes into the eventbus for colorfulhearts
+[05Sep2025 20:51:35.220] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.config.ConfigTracker/CONFIG]: Config file forge-client.toml for forge tracking
+[05Sep2025 20:51:35.220] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.config.ConfigTracker/CONFIG]: Config file forge-server.toml for forge tracking
+[05Sep2025 20:51:35.221] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.ModLoadingContext/]: Attempted to register an empty config for type COMMON on mod forge
+[05Sep2025 20:51:35.293] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Attempting to inject @EventBusSubscriber classes into the eventbus for forge
+[05Sep2025 20:51:35.294] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.minecraftforge.common.ForgeSpawnEggItem$CommonHandler to MOD
+[05Sep2025 20:51:35.298] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.minecraftforge.common.ForgeSpawnEggItem$ColorRegisterHandler to MOD
+[05Sep2025 20:51:35.313] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.minecraftforge.client.model.data.ModelDataManager to FORGE
+[05Sep2025 20:51:35.320] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.minecraftforge.client.ForgeHooksClient$ClientEvents to MOD
+[05Sep2025 20:51:35.330] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Attempting to inject @EventBusSubscriber classes into the eventbus for pathtoimmortals
+[05Sep2025 20:51:35.330] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ejibarra.pathtoimmortals.datagen.DataGenerators to MOD
+[05Sep2025 20:51:35.333] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ejibarra.pathtoimmortals.event.ModEventBusEvents to MOD
+[05Sep2025 20:51:35.340] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ejibarra.pathtoimmortals.event.ModEventClientBusEvents$Registrar to MOD
+[05Sep2025 20:51:35.345] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ejibarra.pathtoimmortals.event.ModEventClientBusEvents to MOD
+[05Sep2025 20:51:35.346] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Attempting to inject @EventBusSubscriber classes into the eventbus for geckolib
+[05Sep2025 20:51:35.346] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing software.bernie.example.GeckoLibMod to FORGE
+[05Sep2025 20:51:35.346] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing software.bernie.example.CommonListener to MOD
+[05Sep2025 20:51:35.349] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing software.bernie.example.ClientListener to MOD
+[05Sep2025 20:51:35.350] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ejibarra.pathtoimmortals.event.ModEvents to FORGE
+[05Sep2025 20:51:35.351] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.ejibarra.pathtoimmortals.PathToImmortals$ClientModEvents to MOD
+[05Sep2025 20:51:35.355] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Auto-subscribing net.minecraftforge.client.ClientForgeMod to MOD
+[05Sep2025 20:51:35.393] [modloading-worker-0/DEBUG] [mezz.jei.common.config.file.ConfigSerializer/]: Loading config file: G:\IntelliJ IDEA Community Edition 2025.1.1.1\the_ascent\forge-1.20.1-47.4.1-mdk\run-data\config\jei\jei-debug.ini
+[05Sep2025 20:51:35.397] [modloading-worker-0/DEBUG] [mezz.jei.common.config.file.ConfigSerializer/]: Saving config file: G:\IntelliJ IDEA Community Edition 2025.1.1.1\the_ascent\forge-1.20.1-47.4.1-mdk\run-data\config\jei\jei-debug.ini
+[05Sep2025 20:51:35.411] [modloading-worker-0/DEBUG] [mezz.jei.common.config.file.ConfigSerializer/]: Loading config file: G:\IntelliJ IDEA Community Edition 2025.1.1.1\the_ascent\forge-1.20.1-47.4.1-mdk\run-data\config\jei\jei-mod-id-format.ini
+[05Sep2025 20:51:35.413] [modloading-worker-0/DEBUG] [mezz.jei.common.config.file.ConfigSerializer/]: Saving config file: G:\IntelliJ IDEA Community Edition 2025.1.1.1\the_ascent\forge-1.20.1-47.4.1-mdk\run-data\config\jei\jei-mod-id-format.ini
+[05Sep2025 20:51:35.423] [modloading-worker-0/DEBUG] [mezz.jei.common.config.file.ConfigSerializer/]: Loading config file: G:\IntelliJ IDEA Community Edition 2025.1.1.1\the_ascent\forge-1.20.1-47.4.1-mdk\run-data\config\jei\jei-colors.ini
+[05Sep2025 20:51:35.428] [modloading-worker-0/DEBUG] [mezz.jei.common.config.file.ConfigSerializer/]: Saving config file: G:\IntelliJ IDEA Community Edition 2025.1.1.1\the_ascent\forge-1.20.1-47.4.1-mdk\run-data\config\jei\jei-colors.ini
+[05Sep2025 20:51:35.454] [modloading-worker-0/DEBUG] [mezz.jei.common.config.file.ConfigSerializer/]: Loading config file: G:\IntelliJ IDEA Community Edition 2025.1.1.1\the_ascent\forge-1.20.1-47.4.1-mdk\run-data\config\jei\jei-client.ini
+[05Sep2025 20:51:35.459] [modloading-worker-0/DEBUG] [mezz.jei.common.config.file.ConfigSerializer/]: Saving config file: G:\IntelliJ IDEA Community Edition 2025.1.1.1\the_ascent\forge-1.20.1-47.4.1-mdk\run-data\config\jei\jei-client.ini
+[05Sep2025 20:51:35.476] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager...
+[05Sep2025 20:51:35.484] [modloading-worker-0/DEBUG] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Sending ConfigManager: jei:minecraft...
+[05Sep2025 20:51:35.484] [modloading-worker-0/DEBUG] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Sending ConfigManager: pathtoimmortals:jei_plugin...
+[05Sep2025 20:51:35.484] [modloading-worker-0/DEBUG] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Sending ConfigManager: jei:debug...
+[05Sep2025 20:51:35.484] [modloading-worker-0/DEBUG] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Sending ConfigManager: jei:gui...
+[05Sep2025 20:51:35.484] [modloading-worker-0/DEBUG] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Sending ConfigManager: jei:forge_gui...
+[05Sep2025 20:51:35.484] [modloading-worker-0/DEBUG] [mezz.jei.library.load.PluginCallerTimerRunnable/]: Sending ConfigManager: jei:internal...
+[05Sep2025 20:51:35.487] [modloading-worker-0/INFO] [mezz.jei.library.load.PluginCaller/]: Sending ConfigManager took 5.665 ms
+[05Sep2025 20:51:35.498] [modloading-worker-0/DEBUG] [net.minecraftforge.fml.javafmlmod.AutomaticEventSubscriber/LOADING]: Attempting to inject @EventBusSubscriber classes into the eventbus for jei
+[05Sep2025 20:51:35.549] [main/DEBUG] [net.minecraftforge.registries.ObjectHolderRegistry/REGISTRIES]: Processing ObjectHolder annotations
+[05Sep2025 20:51:35.587] [main/DEBUG] [net.minecraftforge.registries.ObjectHolderRegistry/REGISTRIES]: Found 4016 ObjectHolder annotations
+[05Sep2025 20:51:35.612] [main/DEBUG] [net.minecraftforge.common.capabilities.CapabilityManager/CAPABILITIES]: Attempting to automatically register: Lnet/minecraftforge/energy/IEnergyStorage;
+[05Sep2025 20:51:35.614] [main/DEBUG] [net.minecraftforge.common.capabilities.CapabilityManager/CAPABILITIES]: Attempting to automatically register: Lnet/minecraftforge/fluids/capability/IFluidHandler;
+[05Sep2025 20:51:35.614] [main/DEBUG] [net.minecraftforge.common.capabilities.CapabilityManager/CAPABILITIES]: Attempting to automatically register: Lnet/minecraftforge/fluids/capability/IFluidHandlerItem;
+[05Sep2025 20:51:35.614] [main/DEBUG] [net.minecraftforge.common.capabilities.CapabilityManager/CAPABILITIES]: Attempting to automatically register: Lnet/minecraftforge/items/IItemHandler;
+[05Sep2025 20:51:35.617] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Unfreezing vanilla registries
+[05Sep2025 20:51:35.622] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:sound_event
+[05Sep2025 20:51:35.627] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:sound_event
+[05Sep2025 20:51:35.628] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:fluid
+[05Sep2025 20:51:35.629] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:fluid
+[05Sep2025 20:51:35.749] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:block
+[05Sep2025 20:51:35.751] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:block
+[05Sep2025 20:51:35.752] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:attribute
+[05Sep2025 20:51:35.752] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:attribute
+[05Sep2025 20:51:35.753] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:mob_effect
+[05Sep2025 20:51:35.753] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:mob_effect
+[05Sep2025 20:51:35.753] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:particle_type
+[05Sep2025 20:51:35.754] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:particle_type
+[05Sep2025 20:51:35.785] [main/DEBUG] [software.bernie.geckolib.GeckoLib/]: Registered SyncedAnimatable for class software.bernie.example.item.JackInTheBoxItem
+[05Sep2025 20:51:35.800] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:item
+[05Sep2025 20:51:35.803] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:item
+[05Sep2025 20:51:35.841] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:entity_type
+[05Sep2025 20:51:35.842] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:entity_type
+[05Sep2025 20:51:35.842] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:sensor_type
+[05Sep2025 20:51:35.842] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:sensor_type
+[05Sep2025 20:51:35.843] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:memory_module_type
+[05Sep2025 20:51:35.843] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:memory_module_type
+[05Sep2025 20:51:35.843] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:potion
+[05Sep2025 20:51:35.844] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:potion
+[05Sep2025 20:51:35.844] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:game_event
+[05Sep2025 20:51:35.845] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:game_event
+[05Sep2025 20:51:35.845] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:enchantment
+[05Sep2025 20:51:35.845] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:enchantment
+[05Sep2025 20:51:35.855] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:block_entity_type
+[05Sep2025 20:51:35.856] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:block_entity_type
+[05Sep2025 20:51:35.856] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:painting_variant
+[05Sep2025 20:51:35.857] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:painting_variant
+[05Sep2025 20:51:35.857] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:stat_type
+[05Sep2025 20:51:35.857] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:stat_type
+[05Sep2025 20:51:35.859] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:custom_stat
+[05Sep2025 20:51:35.859] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:custom_stat
+[05Sep2025 20:51:35.859] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:chunk_status
+[05Sep2025 20:51:35.860] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:chunk_status
+[05Sep2025 20:51:35.860] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:rule_test
+[05Sep2025 20:51:35.860] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:rule_test
+[05Sep2025 20:51:35.860] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:rule_block_entity_modifier
+[05Sep2025 20:51:35.860] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:rule_block_entity_modifier
+[05Sep2025 20:51:35.861] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:pos_rule_test
+[05Sep2025 20:51:35.861] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:pos_rule_test
+[05Sep2025 20:51:35.861] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:menu
+[05Sep2025 20:51:35.861] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:menu
+[05Sep2025 20:51:35.861] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:recipe_type
+[05Sep2025 20:51:35.862] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:recipe_type
+[05Sep2025 20:51:35.889] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:recipe_serializer
+[05Sep2025 20:51:35.890] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:recipe_serializer
+[05Sep2025 20:51:35.890] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:position_source_type
+[05Sep2025 20:51:35.891] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:position_source_type
+[05Sep2025 20:51:35.894] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:command_argument_type
+[05Sep2025 20:51:35.894] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:command_argument_type
+[05Sep2025 20:51:35.895] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:villager_type
+[05Sep2025 20:51:35.895] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:villager_type
+[05Sep2025 20:51:35.896] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:villager_profession
+[05Sep2025 20:51:35.896] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:villager_profession
+[05Sep2025 20:51:35.896] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:point_of_interest_type
+[05Sep2025 20:51:35.897] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:point_of_interest_type
+[05Sep2025 20:51:35.897] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:schedule
+[05Sep2025 20:51:35.897] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:schedule
+[05Sep2025 20:51:35.897] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:activity
+[05Sep2025 20:51:35.899] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:activity
+[05Sep2025 20:51:35.899] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:loot_pool_entry_type
+[05Sep2025 20:51:35.899] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:loot_pool_entry_type
+[05Sep2025 20:51:35.900] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:loot_function_type
+[05Sep2025 20:51:35.900] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:loot_function_type
+[05Sep2025 20:51:35.905] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:loot_condition_type
+[05Sep2025 20:51:35.906] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:loot_condition_type
+[05Sep2025 20:51:35.906] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:loot_number_provider_type
+[05Sep2025 20:51:35.907] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:loot_number_provider_type
+[05Sep2025 20:51:35.907] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:loot_nbt_provider_type
+[05Sep2025 20:51:35.907] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:loot_nbt_provider_type
+[05Sep2025 20:51:35.907] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:loot_score_provider_type
+[05Sep2025 20:51:35.908] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:loot_score_provider_type
+[05Sep2025 20:51:35.909] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:float_provider_type
+[05Sep2025 20:51:35.909] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:float_provider_type
+[05Sep2025 20:51:35.910] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:int_provider_type
+[05Sep2025 20:51:35.910] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:int_provider_type
+[05Sep2025 20:51:35.910] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:height_provider_type
+[05Sep2025 20:51:35.911] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:height_provider_type
+[05Sep2025 20:51:35.911] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:block_predicate_type
+[05Sep2025 20:51:35.913] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:block_predicate_type
+[05Sep2025 20:51:35.913] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:worldgen/carver
+[05Sep2025 20:51:35.913] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:worldgen/carver
+[05Sep2025 20:51:35.913] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:worldgen/feature
+[05Sep2025 20:51:35.914] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:worldgen/feature
+[05Sep2025 20:51:35.914] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:worldgen/structure_processor
+[05Sep2025 20:51:35.914] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:worldgen/structure_processor
+[05Sep2025 20:51:35.914] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:worldgen/structure_placement
+[05Sep2025 20:51:35.915] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:worldgen/structure_placement
+[05Sep2025 20:51:35.915] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:worldgen/structure_piece
+[05Sep2025 20:51:35.915] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:worldgen/structure_piece
+[05Sep2025 20:51:35.915] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:worldgen/structure_type
+[05Sep2025 20:51:35.915] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:worldgen/structure_type
+[05Sep2025 20:51:35.916] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:worldgen/placement_modifier_type
+[05Sep2025 20:51:35.916] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:worldgen/placement_modifier_type
+[05Sep2025 20:51:35.916] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:worldgen/block_state_provider_type
+[05Sep2025 20:51:35.916] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:worldgen/block_state_provider_type
+[05Sep2025 20:51:35.917] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:worldgen/foliage_placer_type
+[05Sep2025 20:51:35.917] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:worldgen/foliage_placer_type
+[05Sep2025 20:51:35.917] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:worldgen/trunk_placer_type
+[05Sep2025 20:51:35.917] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:worldgen/trunk_placer_type
+[05Sep2025 20:51:35.917] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:worldgen/root_placer_type
+[05Sep2025 20:51:35.918] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:worldgen/root_placer_type
+[05Sep2025 20:51:35.918] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:worldgen/tree_decorator_type
+[05Sep2025 20:51:35.918] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:worldgen/tree_decorator_type
+[05Sep2025 20:51:35.920] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:worldgen/feature_size_type
+[05Sep2025 20:51:35.920] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:worldgen/feature_size_type
+[05Sep2025 20:51:35.920] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:worldgen/biome_source
+[05Sep2025 20:51:35.920] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:worldgen/biome_source
+[05Sep2025 20:51:35.920] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:worldgen/chunk_generator
+[05Sep2025 20:51:35.920] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:worldgen/chunk_generator
+[05Sep2025 20:51:35.920] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:worldgen/material_condition
+[05Sep2025 20:51:35.921] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:worldgen/material_condition
+[05Sep2025 20:51:35.921] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:worldgen/material_rule
+[05Sep2025 20:51:35.921] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:worldgen/material_rule
+[05Sep2025 20:51:35.921] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:worldgen/density_function_type
+[05Sep2025 20:51:35.922] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:worldgen/density_function_type
+[05Sep2025 20:51:35.922] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:worldgen/structure_pool_element
+[05Sep2025 20:51:35.922] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:worldgen/structure_pool_element
+[05Sep2025 20:51:35.922] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:cat_variant
+[05Sep2025 20:51:35.922] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:cat_variant
+[05Sep2025 20:51:35.922] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:frog_variant
+[05Sep2025 20:51:35.922] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:frog_variant
+[05Sep2025 20:51:35.923] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:banner_pattern
+[05Sep2025 20:51:35.923] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:banner_pattern
+[05Sep2025 20:51:35.923] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:instrument
+[05Sep2025 20:51:35.923] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:instrument
+[05Sep2025 20:51:35.923] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:decorated_pot_patterns
+[05Sep2025 20:51:35.924] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:decorated_pot_patterns
+[05Sep2025 20:51:35.927] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:creative_mode_tab
+[05Sep2025 20:51:35.928] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:creative_mode_tab
+[05Sep2025 20:51:35.947] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: forge:biome_modifier_serializers
+[05Sep2025 20:51:35.948] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: forge:biome_modifier_serializers
+[05Sep2025 20:51:35.949] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: forge:display_contexts
+[05Sep2025 20:51:35.950] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: forge:display_contexts
+[05Sep2025 20:51:35.950] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: forge:entity_data_serializers
+[05Sep2025 20:51:35.950] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: forge:entity_data_serializers
+[05Sep2025 20:51:35.958] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: forge:fluid_type
+[05Sep2025 20:51:35.958] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: forge:fluid_type
+[05Sep2025 20:51:35.958] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: forge:global_loot_modifier_serializers
+[05Sep2025 20:51:35.960] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: forge:global_loot_modifier_serializers
+[05Sep2025 20:51:35.968] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: forge:holder_set_type
+[05Sep2025 20:51:35.969] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: forge:holder_set_type
+[05Sep2025 20:51:35.971] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: forge:structure_modifier_serializers
+[05Sep2025 20:51:35.971] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: forge:structure_modifier_serializers
+[05Sep2025 20:51:35.971] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Applying holder lookups: minecraft:worldgen/biome
+[05Sep2025 20:51:35.972] [main/DEBUG] [net.minecraftforge.registries.GameData/REGISTRIES]: Holder lookups applied: minecraft:worldgen/biome
+[05Sep2025 20:51:36.261] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/admin/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.4.1_mapped_parchment_2023.09.03-1.20.1/forge-1.20.1-47.4.1_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/assets/.mcassetsroot' uses unexpected schema
+[05Sep2025 20:51:36.263] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/admin/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.4.1_mapped_parchment_2023.09.03-1.20.1/forge-1.20.1-47.4.1_mapped_parchment_2023.09.03-1.20.1-recomp.jar%23191!/data/.mcassetsroot' uses unexpected schema
+[05Sep2025 20:51:36.852] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
+[05Sep2025 20:51:37.004] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 150 ms
+[05Sep2025 20:51:37.006] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
+[05Sep2025 20:51:37.134] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 128 ms
+[05Sep2025 20:51:37.135] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block Tags
+[05Sep2025 20:51:37.194] [main/INFO] [net.minecraft.data.DataGenerator/]: Block Tags finished after 58 ms
+[05Sep2025 20:51:37.194] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: pathtoimmortals
+[05Sep2025 20:51:37.222] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: pathtoimmortals finished after 28 ms
+[05Sep2025 20:51:37.223] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: pathtoimmortals
+[05Sep2025 20:51:37.528] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: pathtoimmortals finished after 305 ms
+[05Sep2025 20:51:37.528] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 676 ms
+[05Sep2025 20:51:37.551] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 362, old count: 361, new count: 363, removed stale: 0, written: 1

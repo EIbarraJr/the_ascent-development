@@ -1,14 +1,102 @@
 {
-  "item.pathtoimmortals.divine_saber_tier3": "Divine Saber T3",
+  //ITEMS
+  "item.pathtoimmortals.jade": "Jade",
+  "item.pathtoimmortals.spirit_crystal": "Spirit Crystal",
+  "item.pathtoimmortals.purple_crystal": "Purple Crystal",
+  "item.pathtoimmortals.saint_crystal": "Saint Crystal",
   "item.pathtoimmortals.divine_crystal": "Divine Crystal",
+  "item.pathtoimmortals.jade_coin": "Jade Coin",
+  "item.pathtoimmortals.spirit_coin": "Spirit Coin",
+  "item.pathtoimmortals.purple_coin": "Purple Coin",
+  "item.pathtoimmortals.saint_coin": "Saint Coin",
   "item.pathtoimmortals.divine_coin": "Divine Coin",
+  "item.pathtoimmortals.spirit_iron_tier1": "Jaded Iron",
+  "item.pathtoimmortals.spirit_iron_tier2": "Spirit Iron",
+  "item.pathtoimmortals.spirit_iron_tier3": "Ascended Iron",
+  "item.pathtoimmortals.spirit_iron_tier4": "Transcended Iron",
+  "item.pathtoimmortals.spirit_iron_tier5": "Immortal Iron",
+  "item.pathtoimmortals.beast_blood": "Beast Blood",
+  "item.pathtoimmortals.beast_oil": "Beast Oil",
+  "item.pathtoimmortals.souls": "Souls",
 
+  //CUSTOM ITEMS
   "item.pathtoimmortals.dao_cannon": "Beast Core Cannon",
 
+  //HUMAN GRADE GEAR
+  "item.pathtoimmortals.human_grade_helmet": "Lower Human Grade Helmet",
+  "item.pathtoimmortals.human_grade_chestplate": "Lower Human Grade Chestplate",
+  "item.pathtoimmortals.human_grade_leggings": "Lower Human Grade Leggings",
+  "item.pathtoimmortals.human_grade_boots": "Lower Human Grade Boots",
+  "item.pathtoimmortals.lower_human_saber": "Lower Human Grade Saber",
+  "item.pathtoimmortals.human_grade_paxel": "Human Grade Paxel",
+    //Tier 2
+  "item.pathtoimmortals.medium_human_grade_helmet": "Medium Human Grade Helmet",
+  "item.pathtoimmortals.medium_human_grade_chestplate": "Medium Human Grade Chestplate",
+  "item.pathtoimmortals.medium_human_grade_leggings": "Medium Human Grade Leggings",
+  "item.pathtoimmortals.medium_human_grade_boots": "Medium Human Grade Boots",
+  "item.pathtoimmortals.medium_human_saber": "Medium Human Grade Saber",
 
-
+  //BLOCKS
+  "block.pathtoimmortals.jade_block": "Jade Block",
+  "block.pathtoimmortals.spirit_block": "Spirit Block",
+  "block.pathtoimmortals.purple_block": "Purple Block",
+  "block.pathtoimmortals.saint_block": "Saint Block",
   "block.pathtoimmortals.divine_block_blank": "Divine Block",
-  "block.pathtoimmortals:gathering_formation1": "Gathering Formation T1",
+  "block.pathtoimmortals.light_divine_brick": "Light Divine Bricks",
+  "block.pathtoimmortals.light_divine_brick_runic": "Light Divine Bricks Runic",
+  "block.pathtoimmortals.chiseled_divine_block_normal": "Chiseled Divine Brick Norm",
+  "block.pathtoimmortals.chiseled_divine_block_sideways": "Chiseled Divine Brick Side",
+  "block.pathtoimmortals.light_divine_brick_cracked": "Light Divine Brick Cracked",
+  "block.pathtoimmortals.light_divine_brick_cracked_runic": "Light Divine Brick Cracked Runic",
+  "block.pathtoimmortals.dark_divine_brick": "Dark Divine Bricks",
+  "block.pathtoimmortals.dark_divine_brick_cracked": "Dark Divine Brick Cracked",
+  "block.pathtoimmortals.dark_divine_brick_cracked_runic": "Dark Divine Brick Cracked Runic",
+  "block.pathtoimmortals.dark_divine_brick_runic": "Dark Divine Brick Runic",
+  "block.pathtoimmortals.spirit_brick": "Spirit Brick",
+  "block.pathtoimmortals.purple_brick": "Purple Brick",
+  "block.pathtoimmortals.saint_bricks": "Saint Brick",
 
+  //STAIRS
+  "block.pathtoimmortals.light_divine_brick_stairs": "Light Divine Bricks Stairs",
+  "block.pathtoimmortals.light_divine_brick_runic_stairs": "Light Divine Bricks Runic Stairs",
+  "block.pathtoimmortals.dark_divine_brick_stairs": "Dark Divine Bricks Stairs",
+  "block.pathtoimmortals.dark_divine_brick_runic_stairs": "Dark Divine Bricks Runic Stairs",
+  "block.pathtoimmortals.spirit_brick_stairs": "Spirit Bricks Stairs",
+  "block.pathtoimmortals.purple_brick_stairs": "Purple Bricks Stairs",
+  "block.pathtoimmortals.saint_brick_stairs": "Saint Bricks Stairs",
+
+  //SLABS
+  "block.pathtoimmortals.light_divine_brick_slab": "Light Divine Bricks Slabs",
+  "block.pathtoimmortals.light_divine_brick_runic_slab": "Light Divine Brick Runic Slabs",
+  "block.pathtoimmortals.dark_divine_brick_slab": "Dark Divine Brick Slabs",
+  "block.pathtoimmortals.dark_divine_brick_runic_slab": "Dark Divine Brick Runic Slabs",
+  "block.pathtoimmortals.spirit_brick_slab": "Spirit Brick Slabs",
+  "block.pathtoimmortals.purple_brick_slab": "Purple Brick Slabs",
+  "block.pathtoimmortals.saint_brick_slab": "Saint Brick Slabs",
+
+  //WALLS
+  "block.pathtoimmortals.light_divine_brick_wall": "Light Divine Bricks Walls",
+  "block.pathtoimmortals.light_divine_brick_runic_wall": "Light Divine Brick Runic Walls",
+  "block.pathtoimmortals.dark_divine_brick_wall": "Dark Divine Brick Walls",
+  "block.pathtoimmortals.dark_divine_brick_runic_wall": "Dark Divine Brick Runic Walls",
+  "block.pathtoimmortals.spirit_brick_wall": "Spirit Brick Walls",
+  "block.pathtoimmortals.purple_brick_wall": "Purple Brick Walls",
+  "block.pathtoimmortals.saint_brick_wall": "Saint Brick Walls",
+
+  //BLOCK ENTITIES & CUSTOM
+  "block.pathtoimmortals:gathering_formation1": "Gathering Formation T1",
+  "block.pathtoimmortals:infusion_table1": "Infusion Table T1",
+
+  //ORES
+  "block.pathtoimmortals.jade_ore": "Jade Ore",
+  "block.pathtoimmortals.deepslate_jade_ore": "Deepslate Jade Ore",
+  "block.pathtoimmortals.spirit_ore": "Spirit Ore",
+  "block.pathtoimmortals.deepslate_spirit_ore": "Deepslate Spirit Ore",
+  "block.pathtoimmortals.purple_ore": "Purple Ore",
+  "block.pathtoimmortals.deepslate_purple_ore": "Deepslate Purple Ore",
+  "block.pathtoimmortals.saint_ore": "Saint Ore",
+  "block.pathtoimmortals.deepslate_saint_ore": "Deepslate Saint Ore",
+  "block.pathtoimmortals.divine_ore": "Divine Ore",
+  "block.pathtoimmortals.deepslate_divine_ore": "Deepslate Divine Ore",
   "creativetab.course_tab": "Course Tab"
 }

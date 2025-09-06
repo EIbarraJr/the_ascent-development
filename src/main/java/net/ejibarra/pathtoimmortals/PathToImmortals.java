@@ -2,11 +2,16 @@ package net.ejibarra.pathtoimmortals;
 
 import com.mojang.logging.LogUtils;
 import net.ejibarra.pathtoimmortals.block.ModBlocks;
+import net.ejibarra.pathtoimmortals.block.custom.entity.ModBlockEntities;
 import net.ejibarra.pathtoimmortals.entity.ModEntities;
-import net.ejibarra.pathtoimmortals.entity.client.DaoCoreRenderer;
-import net.ejibarra.pathtoimmortals.entity.custom.DaoCoreProjectile;
+import net.ejibarra.pathtoimmortals.entity.client.*;
 import net.ejibarra.pathtoimmortals.item.ModCreativeModeTabs;
 import net.ejibarra.pathtoimmortals.item.ModItems;
+import net.ejibarra.pathtoimmortals.item.client.HumanGradeArmorRenderer;
+import net.ejibarra.pathtoimmortals.recipe.ModRecipes;
+import net.ejibarra.pathtoimmortals.screen.InfusionTable1Screen;
+import net.ejibarra.pathtoimmortals.screen.ModMenuTypes;
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -19,6 +24,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
+import software.bernie.geckolib.GeckoLib;
 
 // The value here should match an entry in the META-INF/mods.toml file
 @Mod(PathToImmortals.MOD_ID)
@@ -33,10 +39,16 @@ public class PathToImmortals {
         IEventBus modEventBus = context.getModEventBus();
         ModCreativeModeTabs.register(modEventBus);
 
+        GeckoLib.initialize();
+
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
         ModEntities.register(modEventBus);
+
+        ModBlockEntities.register(modEventBus);
+        ModRecipes.register(modEventBus);
+        ModMenuTypes.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -75,6 +87,14 @@ public class PathToImmortals {
         public static void onClientSetup(FMLClientSetupEvent event) {
             event.enqueueWork(()-> {
                 EntityRenderers.register(ModEntities.DAO_CORE_PROJECTILE.get(), DaoCoreRenderer::new);
+                EntityRenderers.register(ModEntities.SPIKE_PROJECTILE.get(), SpikeProjectileRenderer::new);
+                EntityRenderers.register(ModEntities.HERETIC.get(), HereticRenderer::new);
+                EntityRenderers.register(ModEntities.SPIKEDRAT.get(), SpikedRatRenderer::new);
+                EntityRenderers.register(ModEntities.HOODEDRAT.get(), HoodedSpikedRatRenderer::new);
+                EntityRenderers.register(ModEntities.DARKLIN.get(), DarklinRenderer::new);
+
+                MenuScreens.register(ModMenuTypes.INFUSIONTABLE_MENU_1.get(), InfusionTable1Screen::new);
+
             });
             
         }

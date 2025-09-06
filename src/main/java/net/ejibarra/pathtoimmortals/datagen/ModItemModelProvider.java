@@ -21,9 +21,54 @@ public class ModItemModelProvider extends ItemModelProvider {
     @Override
     protected void registerModels() {
         simpleItem(ModItems.DIVINE_CRYSTAL);
+        simpleItem(ModItems.JADE);
+        simpleItem(ModItems.SPIRIT_CRYSTAL);
+        simpleItem(ModItems.SAINT_CRYSTAL);
+        simpleItem(ModItems.PURPLE_CRYSTAL);
+        simpleItem(ModItems.JADE_COIN);
+        simpleItem(ModItems.SPIRIT_COIN);
+        simpleItem(ModItems.PURPLE_COIN);
+        simpleItem(ModItems.SAINT_COIN);
         simpleItem(ModItems.DIVINE_COIN);
+        simpleItem(ModItems.SPIRIT_IRON_TIER1);
+        simpleItem(ModItems.SPIRIT_IRON_TIER2);
+        simpleItem(ModItems.SPIRIT_IRON_TIER3);
+        simpleItem(ModItems.SPIRIT_IRON_TIER4);
+        simpleItem(ModItems.SPIRIT_IRON_TIER5);
+        simpleItem(ModItems.BEAST_BLOOD);
+        simpleItem(ModItems.BEAST_OIL);
+        simpleItem(ModItems.SOUL);
 
-        complexBlock(ModBlocks.GATHERING_FORMATION_T1.get());
+        //Armor
+        //HUMAN GRADE GEAR
+        //Tier 1 LOWER
+        simpleItem(ModItems.HUMAN_GRADE_HELMET);
+        simpleItem(ModItems.HUMAN_GRADE_CHESTPLATE);
+        simpleItem(ModItems.HUMAN_GRADE_LEGGINGS);
+        simpleItem(ModItems.HUMAN_GRADE_BOOTS);
+        handheldItem(ModItems.LOWER_HUMAN_GRADE_SABER);
+        handheldItem(ModItems.HUMAN_GRADE_PAXEL);
+        //Tier 2 MEDIUM
+        simpleItem(ModItems.MEDIUM_HUMAN_GRADE_HELMET);
+        simpleItem(ModItems.MEDIUM_HUMAN_GRADE_CHESTPLATE);
+        simpleItem(ModItems.MEDIUM_HUMAN_GRADE_LEGGINGS);
+        simpleItem(ModItems.MEDIUM_HUMAN_GRADE_BOOTS);
+        handheldItem(ModItems.MEDIUM_HUMAN_GRADE_SABER);
+
+        wallItem(ModBlocks.LIGHT_DIVINE_BRICK_WALL, ModBlocks.LIGHT_DIVINE_BRICK);
+        wallItem(ModBlocks.LIGHT_DIVINE_BRICK_RUNIC_WALL, ModBlocks.LIGHT_DIVINE_BRICK_RUNIC);
+        wallItem(ModBlocks.DARK_DIVINE_BRICK_WALL, ModBlocks.DARK_DIVINE_BRICK);
+        wallItem(ModBlocks.DARK_DIVINE_BRICK_RUNIC_WALL, ModBlocks.DARK_DIVINE_BRICK_RUNIC);
+        wallItem(ModBlocks.SPIRIT_BRICK_WALL, ModBlocks.SPIRIT_BRICK);
+        wallItem(ModBlocks.PURPLE_BRICK_WALL, ModBlocks.PURPLE_BRICK);
+        wallItem(ModBlocks.SAINT_BRICK_WALL, ModBlocks.SAINT_BRICK);
+
+        withExistingParent(ModItems.HERETIC_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
+        withExistingParent(ModItems.SPIKEDRAT_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
+        withExistingParent(ModItems.DARKLIN_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
+        withExistingParent(ModItems.HOODED_RAT_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
+
+        //complexBlock(ModBlocks.GATHERING_FORMATION_T1.get());
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {

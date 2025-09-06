@@ -31,7 +31,7 @@ public class DaoCannon extends Item {
 
         pPlayer.awardStat(Stats.ITEM_USED.get(this));
         if (!pPlayer.getAbilities().instabuild) {
-            itemstack.hurtAndBreak(100, pPlayer, p -> p.broadcastBreakEvent(pUsedHand));
+            itemstack.hurtAndBreak(1, pPlayer, p -> p.broadcastBreakEvent(pUsedHand));
         }
 
         return InteractionResultHolder.sidedSuccess(itemstack, pLevel.isClientSide());

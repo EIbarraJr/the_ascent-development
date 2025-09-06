@@ -1,6 +1,9 @@
 {
   "variants": {
-    "": {
+    "clicked=false": {
+      "model": "pathtoimmortals:block/divine_block_blank"
+    },
+    "clicked=true": {
       "model": "pathtoimmortals:block/divine_block_blank"
     }
   }
