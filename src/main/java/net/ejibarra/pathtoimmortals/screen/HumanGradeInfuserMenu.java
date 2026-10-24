@@ -2,7 +2,6 @@ package net.ejibarra.pathtoimmortals.screen;
 
 import net.ejibarra.pathtoimmortals.block.ModBlocks;
 import net.ejibarra.pathtoimmortals.block.custom.entity.HumanGradeInfuserBlockEntity;
-import net.ejibarra.pathtoimmortals.block.custom.entity.InfusionTable1Entity;
 import net.minecraft.network.FriendlyByteBuf;
 import net.minecraft.world.entity.player.Inventory;
 import net.minecraft.world.entity.player.Player;

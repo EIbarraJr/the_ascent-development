@@ -58,6 +58,15 @@ description='''${mod_description}'''
     # Side this dependency is applied on - BOTH, CLIENT, or SERVER
     side="BOTH"
 # Here's another dependency
+
+[[dependencies.pathtoimmortals]]
+modId="terrablender"
+mandatory=true
+# This version range declares a minimum of the current minecraft version up to but not including the next major version
+versionRange="${terrablender_version_range}"
+ordering="NONE"
+side="BOTH"
+
 [[dependencies.pathtoimmortals]]
     modId="jade"
     mandatory=false

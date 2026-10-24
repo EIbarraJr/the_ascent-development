@@ -8,12 +8,12 @@ import software.bernie.geckolib.model.GeoModel;
 public class HumanGradeArmorModel extends GeoModel<StatArmorItems> {
     @Override
     public ResourceLocation getModelResource(StatArmorItems humanGradeArmorItem) {
-        return new ResourceLocation(PathToImmortals.MOD_ID, "geo/hum_armor.geo.json");
+        return new ResourceLocation(PathToImmortals.MOD_ID, "geo/low_hum_arm.geo.json");
     }
 
     @Override
     public ResourceLocation getTextureResource(StatArmorItems humanGradeArmorItem) {
-        return new ResourceLocation(PathToImmortals.MOD_ID, "textures/armor/human_grade_armor.png");
+        return new ResourceLocation(PathToImmortals.MOD_ID, "textures/armor/lower_human_grade_armor.png");
     }
 
     @Override

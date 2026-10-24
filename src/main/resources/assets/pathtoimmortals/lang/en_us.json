@@ -10,21 +10,72 @@
   "item.pathtoimmortals.purple_coin": "Purple Coin",
   "item.pathtoimmortals.saint_coin": "Saint Coin",
   "item.pathtoimmortals.divine_coin": "Divine Coin",
-  "item.pathtoimmortals.spirit_iron_tier1": "Jaded Iron",
-  "item.pathtoimmortals.spirit_iron_tier2": "Spirit Iron",
-  "item.pathtoimmortals.spirit_iron_tier3": "Ascended Iron",
+  "item.pathtoimmortals.crude_jaded_iron": "Crude Jaded Iron",
+  "item.pathtoimmortals.refined_jade_iron": "Refined Jade Iron",
+  "item.pathtoimmortals.reinforced_jade_iron": "Reinforced Jade Iron",
   "item.pathtoimmortals.spirit_iron_tier4": "Transcended Iron",
   "item.pathtoimmortals.spirit_iron_tier5": "Immortal Iron",
-  "item.pathtoimmortals.divine_metal_tier1": "Divine Earth Metal",
+  "item.pathtoimmortals.divine_iron": "Divine Iron",
   "item.pathtoimmortals.beast_blood": "Beast Blood",
   "item.pathtoimmortals.beast_oil": "Beast Oil",
   "item.pathtoimmortals.human_grade_soul_lower": "Human Grade Soul Lower",
   "item.pathtoimmortals.human_grade_soul_medium": "Human Grade Soul Medium",
   "item.pathtoimmortals.human_grade_soul_upper": "Human Grade Soul Upper",
   "item.pathtoimmortals.infused_jade": "Infused Jade",
+  "item.pathtoimmortals.shard_of_divinity": "Shard of Divinity",
+
+  //Scrolls
+  "item.pathtoimmortals.levitation_scroll": "Levitation Scroll",
+  "item.pathtoimmortals.reinforced_scroll_t1": "Reinforced Scroll Tier 1",
+  "item.pathtoimmortals.reinforced_scroll_t2": "Reinforced Scroll Tier 2",
+  "item.pathtoimmortals.reinforced_scroll_t3": "Reinforced Scroll Tier 3",
+  "item.pathtoimmortals.reinforced_scroll_t4": "Reinforced Scroll Tier 4",
+  "item.pathtoimmortals.cloud_step_scroll_t1": "Cloud Step Scroll Tier 1",
+  "item.pathtoimmortals.cloud_step_scroll_t2": "Cloud Step Scroll Tier 2",
+  "item.pathtoimmortals.cloud_step_scroll_t3": "Cloud Step Scroll Tier 3",
+  "item.pathtoimmortals.cloud_step_scroll_t4": "Cloud Step Scroll Tier 4",
+  "item.pathtoimmortals.heal_scroll_t1": "Heal Scroll Tier 1",
+  "item.pathtoimmortals.heal_scroll_t2": "Heal Scroll Tier 2",
+  "item.pathtoimmortals.heal_scroll_t3": "Heal Scroll Tier 3",
+  "item.pathtoimmortals.heal_scroll_t4": "Heal Scroll Tier 4",
+  "item.pathtoimmortals.origin_sword_scroll_t1": "Origin Sword Scroll Tier 1",
+  "item.pathtoimmortals.origin_sword_scroll_t2": "Origin Sword Scroll Tier 2",
+  "item.pathtoimmortals.origin_sword_scroll_t3": "Origin Sword Scroll Tier 3",
+  "item.pathtoimmortals.origin_sword_scroll_t4": "Origin Sword Scroll Tier 4",
+  "item.pathtoimmortals.overcharged_scroll_t1": "Overcharged Scroll Tier 1",
+  "item.pathtoimmortals.overcharged_scroll_t2": "Overcharged Scroll Tier 2",
+  "item.pathtoimmortals.overcharged_scroll_t3": "Overcharged Scroll Tier 3",
+  "item.pathtoimmortals.overcharged_scroll_t4": "Overcharged Scroll Tier 4",
+  "item.pathtoimmortals.pressure_wave_scroll_t1": "Pressure Wave Scroll Tier 1",
+  "item.pathtoimmortals.pressure_wave_scroll_t2": "Pressure Wave Scroll Tier 2",
+  "item.pathtoimmortals.pressure_wave_scroll_t3": "Pressure Wave Scroll Tier 3",
+  "item.pathtoimmortals.pressure_wave_scroll_t4": "Pressure Wave Scroll Tier 4",
 
   //CUSTOM ITEMS
   "item.pathtoimmortals.dao_cannon": "Beast Core Cannon",
+
+  //SPAWN EGGS
+  "item.pathtoimmortals.heretic_spawn_egg": "Heretic Spawn Egg",
+  "item.pathtoimmortals.spikedrat_spawn_egg": "Spiked Rat Spawn Egg",
+  "item.pathtoimmortals.hooded_rat_spawn_egg": "Hooded Rat Spawn Egg",
+  "item.pathtoimmortals.rat_lord_spawn_egg": "Rat Lord Spawn Egg",
+  "item.pathtoimmortals.ogre_spawn_egg": "Ogre Spawn Egg",
+  "item.pathtoimmortals.orc_warrior_spawn_egg": "Orc Warrior Spawn Egg",
+  "item.pathtoimmortals.scorpion_spawn_egg": "Scorpion Spawn Egg",
+  "item.pathtoimmortals.fungi_swordsman_spawn_egg": "Fungi Swordsman Spawn Egg",
+  "item.pathtoimmortals.spore_spreader_spawn_egg": "Spore Spreader Spawn Egg",
+  "item.pathtoimmortals.beefsteak_mushroom_spawn_egg": "Beefsteak Mushroom Spawn Egg",
+
+  //Entities
+  "entity.pathtoimmortals.heretic": "Heretic",
+  "entity.pathtoimmortals.spiked_rat": "Spiked Rat",
+  "entity.pathtoimmortals.hooded_spiked_rat": "Hooded Rat",
+  "entity.pathtoimmortals.rat_lord": "Rat Lord",
+  "entity.pathtoimmortals.ogre": "Ogre",
+  "entity.pathtoimmortals.scorpion": "Scorpion",
+  "entity.pathtoimmortals.fungi_swordsman": "Fungi Swordsman",
+  "entity.pathtoimmortals.spore_spreader": "Spore Spreader",
+  "entity.pathtoimmortals.beefsteak_mushroom": "Beefsteak Mushroom",
 
   //HUMAN GRADE GEAR
   //Tier 1
@@ -62,6 +113,7 @@
 
 
   "block.pathtoimmortals.human_portal": "Human Realm Portal Block",
+  "block.pathtoimmortals.portal_block_human": "Human Realm Portal Block",
   "block.pathtoimmortals.jade_block": "Jade Block",
   "block.pathtoimmortals.spirit_block": "Spirit Block",
   "block.pathtoimmortals.purple_block": "Purple Block",
@@ -92,6 +144,18 @@
   "block.pathtoimmortals.feys_sorrow_carpet": "Feys Sorrow Carpet",
   "block.pathtoimmortals.eves_blues": "Eves Blues",
   "block.pathtoimmortals.eves_blues_carpet": "Eves Blues Carpet",
+  "block.pathtoimmortals.jaded_sapling": "Jaded Sapling",
+  "block.pathtoimmortals.jasmine_sapling": "Jasmine Sapling",
+  "block.pathtoimmortals.kinder_sapling": "Kinder Sapling",
+  "block.pathtoimmortals.mango_sapling": "Mango Sapling",
+  "block.pathtoimmortals.spirit_sapling": "Spirit Sapling",
+  "block.pathtoimmortals.fiero_sapling": "Fiero Sapling",
+  "block.pathtoimmortals.spirit_blossom_leaves": "Spirit Leaves",
+  "block.pathtoimmortals.kinder_leaves": "Kinder Leaves",
+  "block.pathtoimmortals.mango_leaves": "Mango Leaves",
+  "block.pathtoimmortals.jaded_leaves": "Jaded Leaves",
+  "block.pathtoimmortals.jasmine_leaves": "Jasmine Leaves",
+  "block.pathtoimmortals.fiero_leaves": "Fiero Leaves",
   "block.pathtoimmortals.turquoise_block": "Turquoise Block",
   "block.pathtoimmortals.turquoise_cluster": "Turquoise Cluster",
   "block.pathtoimmortals.large_turquoise_bud": "Large Turquoise Bud",
@@ -105,6 +169,23 @@
   "block.pathtoimmortals.desolate_sand": "Desolate Sand",
   "block.pathtoimmortals.desolate_sandstone": "Desolate Sandstone",
   "block.pathtoimmortals.trapped_soul_sand": "Trapped Souls Sand",
+  "block.pathtoimmortals.eves_cobblestone": "Eves Cobblestone",
+  "block.pathtoimmortals.poison_mushroom_block": "Poison Mushroom Block",
+  "block.pathtoimmortals.blue_rose_bush": "Blue Rose Bush",
+  "block.pathtoimmortals.white_rose_bush": "White Rose Bush",
+  "block.pathtoimmortals.pink_rose_bush": "Pink Rose Bush",
+  "block.pathtoimmortals.purple_rose_bush": "Purple Rose Bush",
+  "block.pathtoimmortals.lavender_rose_bush": "Lavender Rose Bush",
+  "block.pathtoimmortals.yellow_rose_bush": "Yellow Rose Bush",
+  "block.pathtoimmortals.orange_rose_bush": "Orange Rose Bush",
+  "block.pathtoimmortals.spirit_rose_bush": "Spirit Rose Bush",
+  "block.pathtoimmortals.fae_rose_bush": "Fae Rose Bush",
+  "block.pathtoimmortals.spirit_fae_rose_bush": "Spirit Few Rose Bush",
+  "block.pathtoimmortals.mahogany_rose_bush": "Mahogany Rose Bush",
+  "block.pathtoimmortals.cottons_rose_bush": "Cotton's Rose Bush",
+  "block.pathtoimmortals.midnights_reach": "Midnight's Reach",
+  "block.pathtoimmortals.cerulean_rose_bush": "Cerulean Rose Bush",
+  "block.pathtoimmortals.carmine_rose_bush": "Carmine Rose Bush",
 
   //STAIRS
   "block.pathtoimmortals.light_divine_brick_stairs": "Light Divine Bricks Stairs",
@@ -134,10 +215,11 @@
   "block.pathtoimmortals.saint_brick_wall": "Saint Brick Walls",
 
   //BLOCK ENTITIES & CUSTOM
-  "block.pathtoimmortals:gathering_formation1": "Gathering Formation T1",
-  "pathtoimmortals:block/infusion_table1": "Infusion Table T1",
-  "block.pathtoimmortals:human_grade_infuser": "Human Grade Infuser",
-  "block.pathtoimmortals:human_grade_divine_altar": "Human Grade Divine Altar",
+  "block.pathtoimmortals.gathering_formation1": "Gathering Formation T1",
+  "block.pathtoimmortals.block/infusion_table1": "Infusion Table T1",
+  "block.pathtoimmortals.human_grade_infuser": "Human Grade Infuser",
+  "block.pathtoimmortals.human_grade_divine_altar": "Human Grade Divine Altar",
+  "block.pathtoimmortals.purple_bio_shroom": "Purple BioShroom",
 
   //CROPS
   "item.pathtoimmortals.human_realm_seeds": "Origin Berry Seeds",
@@ -157,13 +239,31 @@
 
   //Effects
   "effect.pathtoimmortals.cheesed": "Cheese Touch - You smell(x_x)",
+  "effect.pathtoimmortals.reinforced_icon": "Reinforced - You seem stronger?",
+  "effect.pathtoimmortals.levitation_icon": "Levitation - You can fly?",
 
   //Enchantments
   "enchantment.pathtoimmortals.grievous_wounds": "Grievous Wounds",
   "enchantment.pathtoimmortals.bleed": "Bleed",
 
+  //Attribute
+  "attribute.name.pathtoimmortals.crit_chance": "Crit Chance",
+  "attribute.name.pathtoimmortals.crit_damage": "Crit Damage",
+
+  //Keys
+  "key.categories.pathtoimmortals": "Path to Immortals",
+  "key.pathtoimmortals.ability_wheel": "Open Origin Ability Wheel",
+  "key.pathtoimmortals.consume_infused": "Consume Infused Items",
+  "key.pathtoimmortals.origin_sword_ability": "Activate Origin Sword",
+  "key.pathtoimmortals.pressure_wave_ability": "Activate Pressure Wave",
+  "key.pathtoimmortals.overcharged_ability": "Activate Overcharged",
+  "key.pathtoimmortals.heal_ability": "Activate Heal",
+  "key.pathtoimmortals.reinforced_ability": "Activate Reinforced",
+  "key.pathtoimmortals.levitation_ability": "Activate Levitation",
+  "key.pathtoimmortals.cloud_step_ability": "Activate Cloud Step",
+
   //Creative Tabs
-  "creativetab.course_tab": "Course Tab",
+  "creativetab.course_tab": "The Ascent",
 
   //ToolTips ArmorStats
   "tooltip.pathtoimmortals.stats": "Set Bonuses",
@@ -174,12 +274,20 @@
   "tooltip.pathtoimmortals.speed": "Speed",
   "tooltip.pathtoimmortals.armor_attack_damage": "Attack Damage",
   "tooltip.pathtoimmortals.armor_attack_damage_percent": "Attack Damage",
+  "tooltip.pathtoimmortals.crit_chance": "Crit Chance",
+  "tooltip.pathtoimmortals.crit_damage": "Crit Damage",
 
   "tooltip.pathtoimmortals.health_detail": "+%s Health (§7~%s hearts§r)",
   "tooltip.pathtoimmortals.armor_detail": "+%s Armor (§7~%s icons§r)",
   "tooltip.pathtoimmortals.speed_detail": "+%s Movement Speed",
   "tooltip.pathtoimmortals.armor_attack_damage_detail": "+%s Attack Damage",
   "tooltip.pathtoimmortals.armor_attack_damage_percent_detail": "+%s Attack Damage",
+  "tooltip.pathtoimmortals.crit_chance_detail": "Crit Chance: %s",
+  "tooltip.pathtoimmortals.crit_damage_detail": "Crit Damage: %s",
+  "tooltip.pathtoimmortals.attack_speed": "Attack Speed",
+  "tooltip.pathtoimmortals.attack_speed_percent": "Attack Speed",
+  "tooltip.pathtoimmortals.attack_speed_detail": "Attack Speed: %s",
+  "tooltip.pathtoimmortals.attack_speed_percent_detail": "Attack Speed Bonus: %s",
   //ToolTips SwordStats
   "tooltip.pathtoimmortals.weapon_stats": "Weapon Bonuses",
   "tooltip.pathtoimmortals.hold_alt": "Hold §eAlt§r for details",
@@ -189,6 +297,8 @@
   "tooltip.pathtoimmortals.attack_speed": "Attack Speed",
   "tooltip.pathtoimmortals.attack_speed_percent": "Attack Speed",*/
   "tooltip.pathtoimmortals.move_speed_while_held": "Move Speed (while held)",
+  "tooltip.pathtoimmortals.crit_chance_detail": "Crit Chance: %s",
+  "tooltip.pathtoimmortals.crit_damage_detail": "Crit Damage: %s",
 
   "tooltip.pathtoimmortals.attack_damage_detail": "+%s Attack Damage",
   "tooltip.pathtoimmortals.attack_damage_percent_detail": "+%s Attack Damage",

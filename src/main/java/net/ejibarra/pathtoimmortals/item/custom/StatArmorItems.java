@@ -2,6 +2,7 @@ package net.ejibarra.pathtoimmortals.item.custom;
 
 import com.google.common.collect.ImmutableMultimap;
 import com.google.common.collect.Multimap;
+import net.ejibarra.pathtoimmortals.attributes.ModAttributes;
 import net.ejibarra.pathtoimmortals.item.client.HumanGradeArmorRenderer;
 import net.ejibarra.pathtoimmortals.item.client.MediumHumanGradeArmorRenderer;
 import net.minecraft.client.model.HumanoidModel;
@@ -38,6 +39,10 @@ public class StatArmorItems extends ArmorItem implements GeoItem {
     private final double speedPercent;     // +N% speed as 0.XX (0.05 = +5%)
     private final double extraDamage;     // flat +damage added to total (ADDITION)
     private final double damagePercent;   // +N% total damage as 0.XX (MULTIPLY_TOTAL)
+    private final double critChance; // 0.10 = 10%
+    private final double critDamage; // 0.50 = 50% bonus damage on crit
+    private final double extraAtkSpeed; // flat (ADDITION) e.g. +0.2
+    private final double atkSpeedPercent; // percent (MULTIPLY_TOTAL) e.g. 0.05 = +5%
 
     // NEW: per-item renderer factory
     private final Supplier<GeoArmorRenderer<StatArmorItems>> rendererFactory;
@@ -49,7 +54,11 @@ public class StatArmorItems extends ArmorItem implements GeoItem {
                           double extraArmor,
                           double speedPercent,
                           double extraDamage,
-                          double damagePercent, Supplier<GeoArmorRenderer<StatArmorItems>> rendererFactory) {
+                          double damagePercent,
+                          double critChance,
+                          double critDamage,
+                          double extraAtkSpeed,
+                          double atkSpeedPercent,Supplier<GeoArmorRenderer<StatArmorItems>> rendererFactory) {
         super(material, type, props);
         this.slotType = type;
         this.extraHealth = extraHealth;
@@ -57,6 +66,10 @@ public class StatArmorItems extends ArmorItem implements GeoItem {
         this.speedPercent = speedPercent;
         this.extraDamage = extraDamage;
         this.damagePercent = damagePercent;
+        this.critChance = critChance;
+        this.critDamage = critDamage;
+        this.extraAtkSpeed = extraAtkSpeed;
+        this.atkSpeedPercent = atkSpeedPercent;
         this.rendererFactory = rendererFactory;
     }
 
@@ -123,6 +136,48 @@ public class StatArmorItems extends ArmorItem implements GeoItem {
                     AttributeModifier.Operation.MULTIPLY_TOTAL));
         }
 
+        // --- NEW: Crit chance ---
+        if (critChance != 0.0) {
+            builder.put(ModAttributes.CRIT_CHANCE.get(), new AttributeModifier(
+                    seededUUID(getDescriptionId() + ":crit_chance:" + slot.getName()),
+                    "Armor crit chance",
+                    critChance,
+                    AttributeModifier.Operation.ADDITION
+            ));
+        }
+
+
+// --- NEW: Crit damage ---
+        if (critDamage != 0.0) {
+            builder.put(ModAttributes.CRIT_DAMAGE.get(), new AttributeModifier(
+                    seededUUID(getDescriptionId() + ":crit_damage:" + slot.getName()),
+                    "Armor crit damage",
+                    critDamage,
+                    AttributeModifier.Operation.ADDITION
+            ));
+        }
+
+        // --- NEW: Attack Speed (flat) ---
+        if (extraAtkSpeed != 0.0) {
+            builder.put(Attributes.ATTACK_SPEED, new AttributeModifier(
+                    seededUUID(getDescriptionId() + ":as:add:" + slot.getName()),
+                    "Armor bonus attack speed",
+                    extraAtkSpeed,
+                    AttributeModifier.Operation.ADDITION
+            ));
+        }
+
+
+// --- NEW: Attack Speed (%) ---
+        if (atkSpeedPercent != 0.0) {
+            builder.put(Attributes.ATTACK_SPEED, new AttributeModifier(
+                    seededUUID(getDescriptionId() + ":as:mul:" + slot.getName()),
+                    "Armor bonus attack speed %",
+                    atkSpeedPercent,
+                    AttributeModifier.Operation.MULTIPLY_TOTAL
+            ));
+        }
+
         return builder.build();
     }
 
@@ -167,7 +222,7 @@ public class StatArmorItems extends ArmorItem implements GeoItem {
                 .withStyle(net.minecraft.ChatFormatting.GOLD));
 
         // If you prefer Shift for details:
-        boolean showDetails = true;
+        boolean showDetails = false;
         try {
             // Client-only; this method is only called on client during tooltip render
             showDetails = net.minecraft.client.gui.screens.Screen.hasShiftDown();
@@ -199,6 +254,28 @@ public class StatArmorItems extends ArmorItem implements GeoItem {
                 tooltip.add(line("+ ", pct(damagePercent) + " " +
                                 net.minecraft.network.chat.Component.translatable("tooltip.pathtoimmortals.armor_attack_damage_percent").getString(),
                         net.minecraft.ChatFormatting.RED));
+
+            if (critChance != 0.0)
+                tooltip.add(line("+ ", pct(critChance) + " " +
+                                net.minecraft.network.chat.Component.translatable("tooltip.pathtoimmortals.crit_chance").getString(),
+                        net.minecraft.ChatFormatting.LIGHT_PURPLE));
+
+
+            if (critDamage != 0.0)
+                tooltip.add(line("+ ", pct(critDamage) + " " +
+                                net.minecraft.network.chat.Component.translatable("tooltip.pathtoimmortals.crit_damage").getString(),
+                        net.minecraft.ChatFormatting.LIGHT_PURPLE));
+
+            if (extraAtkSpeed != 0.0)
+                tooltip.add(line("+ ", fmt(extraAtkSpeed) + " " +
+                                net.minecraft.network.chat.Component.translatable("tooltip.pathtoimmortals.attack_speed").getString(),
+                        net.minecraft.ChatFormatting.BLUE));
+
+
+            if (atkSpeedPercent != 0.0)
+                tooltip.add(line("+ ", pct(atkSpeedPercent) + " " +
+                                net.minecraft.network.chat.Component.translatable("tooltip.pathtoimmortals.attack_speed_percent").getString(),
+                        net.minecraft.ChatFormatting.BLUE));
 
             // Hint
             tooltip.add(net.minecraft.network.chat.Component.translatable("tooltip.pathtoimmortals.hold_shift")
@@ -233,6 +310,31 @@ public class StatArmorItems extends ArmorItem implements GeoItem {
             tooltip.add(net.minecraft.network.chat.Component.translatable(
                             "tooltip.pathtoimmortals.armor_attack_damage_percent_detail", pct(damagePercent))
                     .withStyle(net.minecraft.ChatFormatting.RED));
+        }
+        if (critChance != 0.0) {
+            tooltip.add(net.minecraft.network.chat.Component.translatable(
+                            "tooltip.pathtoimmortals.crit_chance_detail", pct(critChance))
+                    .withStyle(net.minecraft.ChatFormatting.LIGHT_PURPLE));
+        }
+
+
+        if (critDamage != 0.0) {
+            tooltip.add(net.minecraft.network.chat.Component.translatable(
+                            "tooltip.pathtoimmortals.crit_damage_detail", pct(critDamage))
+                    .withStyle(net.minecraft.ChatFormatting.LIGHT_PURPLE));
+        }
+
+        if (extraAtkSpeed != 0.0) {
+            tooltip.add(net.minecraft.network.chat.Component.translatable(
+                            "tooltip.pathtoimmortals.attack_speed_detail", fmt(extraAtkSpeed))
+                    .withStyle(net.minecraft.ChatFormatting.BLUE));
+        }
+
+
+        if (atkSpeedPercent != 0.0) {
+            tooltip.add(net.minecraft.network.chat.Component.translatable(
+                            "tooltip.pathtoimmortals.attack_speed_percent_detail", pct(atkSpeedPercent))
+                    .withStyle(net.minecraft.ChatFormatting.BLUE));
         }
     }
 

@@ -10,6 +10,8 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.item.enchantment.Enchantments;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.PinkPetalsBlock;
+import net.minecraft.world.level.block.TallFlowerBlock;
+import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
 import net.minecraft.world.level.storage.loot.LootPool;
 import net.minecraft.world.level.storage.loot.LootTable;
 import net.minecraft.world.level.storage.loot.entries.AlternativesEntry;
@@ -39,7 +41,6 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.PURPLE_BLOCK.get());
         this.dropSelf(ModBlocks.SAINT_BLOCK.get());
         this.dropSelf(ModBlocks.DIVINE_BLOCK_BLANK.get());
-        this.dropSelf(ModBlocks.INFUSION_TABLE_1.get());
         this.dropSelf(ModBlocks.LIGHT_DIVINE_BRICK.get());
         this.dropSelf(ModBlocks.LIGHT_DIVINE_BRICK_CRACKED_RUNIC.get());
         this.dropSelf(ModBlocks.LIGHT_DIVINE_BRICK_RUNIC.get());
@@ -78,6 +79,26 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.TRAPPED_SOUL_SAND.get());
         this.dropSelf(ModBlocks.DESOLATE_SAND.get());
         this.dropSelf(ModBlocks.DESOLATE_SANDSTONE.get());
+        this.dropSelf(ModBlocks.EVES_COBBLESTONE.get());
+        this.dropSelf(ModBlocks.POISON_MUSHROOM_BLOCK.get());
+        this.dropSelf(ModBlocks.PURPLE_BIOSHROOM.get());
+        this.dropSelf(ModBlocks.PORTAL_BLOCK_HUMAN_REALM.get());
+
+        this.add(ModBlocks.BLUE_ROSE_BUSH.get(), block -> createSinglePropConditionTable(block, TallFlowerBlock.HALF, DoubleBlockHalf.LOWER));
+        this.add(ModBlocks.PINK_ROSE_BUSH.get(), block -> createSinglePropConditionTable(block, TallFlowerBlock.HALF, DoubleBlockHalf.LOWER));
+        this.add(ModBlocks.WHITE_ROSE_BUSH.get(), block -> createSinglePropConditionTable(block, TallFlowerBlock.HALF, DoubleBlockHalf.LOWER));
+        this.add(ModBlocks.PURPLE_ROSE_BUSH.get(), block -> createSinglePropConditionTable(block, TallFlowerBlock.HALF, DoubleBlockHalf.LOWER));
+        this.add(ModBlocks.LAVENDER_ROSE_BUSH.get(), block -> createSinglePropConditionTable(block, TallFlowerBlock.HALF, DoubleBlockHalf.LOWER));
+        this.add(ModBlocks.YELLOW_ROSE_BUSH.get(), block -> createSinglePropConditionTable(block, TallFlowerBlock.HALF, DoubleBlockHalf.LOWER));
+        this.add(ModBlocks.ORANGE_ROSE_BUSH.get(), block -> createSinglePropConditionTable(block, TallFlowerBlock.HALF, DoubleBlockHalf.LOWER));
+        this.add(ModBlocks.SPIRIT_ROSE_BUSH.get(), block -> createSinglePropConditionTable(block, TallFlowerBlock.HALF, DoubleBlockHalf.LOWER));
+        this.add(ModBlocks.SPIRIT_FAE_ROSE_BUSH.get(), block -> createSinglePropConditionTable(block, TallFlowerBlock.HALF, DoubleBlockHalf.LOWER));
+        this.add(ModBlocks.FAE_ROSE_BUSH.get(), block -> createSinglePropConditionTable(block, TallFlowerBlock.HALF, DoubleBlockHalf.LOWER));
+        this.add(ModBlocks.MAHOGANY_ROSE_BUSH.get(), block -> createSinglePropConditionTable(block, TallFlowerBlock.HALF, DoubleBlockHalf.LOWER));
+        this.add(ModBlocks.MIDNIGHTS_REACH.get(), block -> createSinglePropConditionTable(block, TallFlowerBlock.HALF, DoubleBlockHalf.LOWER));
+        this.add(ModBlocks.COTTONS_ROSE_BUSH.get(), block -> createSinglePropConditionTable(block, TallFlowerBlock.HALF, DoubleBlockHalf.LOWER));
+        this.add(ModBlocks.CARMINE_ROSE_BUSH.get(), block -> createSinglePropConditionTable(block, TallFlowerBlock.HALF, DoubleBlockHalf.LOWER));
+        this.add(ModBlocks.CERULEAN_ROSE_BUSH.get(), block -> createSinglePropConditionTable(block, TallFlowerBlock.HALF, DoubleBlockHalf.LOWER));
 
 
         this.dropSelf(ModBlocks.INFUSED_JADE_BLOCK.get());
@@ -209,7 +230,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         return createSilkTouchDispatchTable(pBlock,
                 this.applyExplosionDecay(pBlock,
                         LootItem.lootTableItem(item)
-                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(6.0F, 13.0F)))
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(4.0F, 9.0F)))
                                 .apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE))));
     }
 

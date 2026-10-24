@@ -11,9 +11,9 @@ import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
     SPIRIT_IRON_TIER1("spirit_iron_tier1", 69, new int[]{5, 8, 7, 5}, 30,
-            SoundEvents.ARMOR_EQUIP_NETHERITE, 2f, 0.0f, ()-> Ingredient.of(ModItems.SPIRIT_IRON_TIER1.get())),
+            SoundEvents.ARMOR_EQUIP_NETHERITE, 2f, 0.0f, ()-> Ingredient.of(ModItems.CRUDE_JADED_IRON.get())),
     DIVINE_EARTH_METAL("divine_metal_tier1", 74, new int[]{7, 10, 9, 7}, 30,
-    SoundEvents.ARMOR_EQUIP_NETHERITE, 3f, 0.0f, ()-> Ingredient.of(ModItems.DIVINE_METAL_TIER1.get()));
+    SoundEvents.ARMOR_EQUIP_NETHERITE, 3f, 0.0f, ()-> Ingredient.of(ModItems.DIVINE_IRON.get()));
     /*example adding more materials
     * MOON_STEEL("moon_steel", 37, new int[]{3,7,9,3}, 22, SoundEvents.ARMOR_EQUIP_IRON, 2.5F, 0.05F,
             () -> Ingredient.of(ModItems.MOON_STEEL_INGOT.get())),

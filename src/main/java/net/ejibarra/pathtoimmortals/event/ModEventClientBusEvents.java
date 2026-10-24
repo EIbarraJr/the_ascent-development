@@ -2,19 +2,21 @@ package net.ejibarra.pathtoimmortals.event;
 
 import com.mojang.blaze3d.systems.RenderSystem;
 import net.ejibarra.pathtoimmortals.PathToImmortals;
-import net.ejibarra.pathtoimmortals.block.ModBlocks;
 import net.ejibarra.pathtoimmortals.block.custom.entity.ModBlockEntities;
-import net.ejibarra.pathtoimmortals.block.custom.entity.renderer.InfusionBlock1EntityRenderer;
+import net.ejibarra.pathtoimmortals.block.custom.entity.renderer.DarkDivineBrickRunicRenderer;
+import net.ejibarra.pathtoimmortals.block.custom.entity.renderer.LightDivineBrickRunicRenderer;
+import net.ejibarra.pathtoimmortals.client.ModKeyBindings;
 import net.ejibarra.pathtoimmortals.effects.ModEffects;
+import net.ejibarra.pathtoimmortals.entity.ModEntities;
 import net.ejibarra.pathtoimmortals.entity.client.*;
 import net.ejibarra.pathtoimmortals.entity.layers.ModModelLayers;
+import net.ejibarra.pathtoimmortals.network.ModMessages;
+import net.ejibarra.pathtoimmortals.network.packet.C2S_ConvertInfusedPacket;
 import net.ejibarra.pathtoimmortals.particle.CustomLeafParticles;
 import net.ejibarra.pathtoimmortals.particle.ModParticles;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.Font;
 import net.minecraft.client.gui.GuiGraphics;
-import net.minecraft.client.renderer.ItemBlockRenderTypes;
-import net.minecraft.client.renderer.RenderType;
 import net.minecraft.util.Mth;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.ai.attributes.Attributes;
@@ -22,21 +24,20 @@ import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.phys.EntityHitResult;
 import net.minecraft.world.phys.HitResult;
 import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.client.event.EntityRenderersEvent;
-import net.minecraftforge.client.event.RegisterGuiOverlaysEvent;
-import net.minecraftforge.client.event.RegisterParticleProvidersEvent;
-import net.minecraftforge.client.event.RenderGuiOverlayEvent;
+import net.minecraftforge.client.event.*;
 import net.minecraftforge.client.gui.overlay.VanillaGuiOverlay;
+import net.minecraftforge.event.TickEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
-import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 
 @Mod.EventBusSubscriber(modid = PathToImmortals.MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD, value = Dist.CLIENT)
 public class ModEventClientBusEvents {
 
     @SubscribeEvent
     public static void registerBER(EntityRenderersEvent.RegisterRenderers event){
-        event.registerBlockEntityRenderer(ModBlockEntities.INFUSION_TABLE_BLOCK1.get(), InfusionBlock1EntityRenderer::new);
+        event.registerBlockEntityRenderer(ModBlockEntities.LIGHT_DIVINE_BRICK_RUNIC_BE.get(), LightDivineBrickRunicRenderer::new);
+        event.registerBlockEntityRenderer(ModBlockEntities.DARK_DIVINE_BRICK_RUNIC_BE.get(), DarkDivineBrickRunicRenderer::new);
+        event.registerEntityRenderer(ModEntities.PRESSURE_WAVE.get(), PressureWaveRenderer::new);
     }
 
     @SubscribeEvent
@@ -52,12 +53,21 @@ public class ModEventClientBusEvents {
     @SubscribeEvent
     public static void registerLayer(EntityRenderersEvent.RegisterLayerDefinitions event){
         event.registerLayerDefinition(ModModelLayers.HERETIC_LAYER, HereticModel::createBodyLayer);
+        event.registerLayerDefinition(ModModelLayers.ASSASSAIN_LAYER, AssassianModel::createBodyLayer);
         event.registerLayerDefinition(ModModelLayers.SPIKEDRAT_LAYER, SpikedRatModel::createBodyLayer);
-        event.registerLayerDefinition(ModModelLayers.DARKLIN_LAYER, DarklinModel::createBodyLayer);
         event.registerLayerDefinition(ModModelLayers.HOODEDRAT_LAYER, HoodedSpikedRatModel::createBodyLayer);
         event.registerLayerDefinition(ModModelLayers.RAT_LORD_LAYER, RatLordModel::createBodyLayer);
         event.registerLayerDefinition(ModModelLayers.OGRE_LAYER, Ogre::createBodyLayer);
         event.registerLayerDefinition(ModModelLayers.SCORPION_LAYER, Scorpion::createBodyLayer);
+        event.registerLayerDefinition(ModModelLayers.FUNGI_SWORDSMAN_LAYER, FungiSwordsmanModel::createBodyLayer);
+        event.registerLayerDefinition(ModModelLayers.SPORE_SPREADER_LAYER, SporeSpreader::createBodyLayer);
+        event.registerLayerDefinition(ModModelLayers.BEEFSTEAK_MUSHROOM_LAYER, BeefsteakMushroomModel::createBodyLayer);
+        event.registerLayerDefinition(ModModelLayers.ORC_WARRIOR_LAYER, OrcModel::createBodyLayer);
+    }
+
+    @SubscribeEvent
+    public static void onRegisterKeyMappings(RegisterKeyMappingsEvent event) {
+        ModKeyBindings.register(event);
     }
 
     @Mod.EventBusSubscriber(

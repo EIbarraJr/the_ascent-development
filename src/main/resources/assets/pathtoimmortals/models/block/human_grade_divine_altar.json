@@ -334,21 +334,33 @@
 	],
 	"display": {
 		"thirdperson_righthand": {
-			"scale": [0.64, 0.64, 0.64]
+			"scale": [0.5, 0.5, 0.5]
 		},
 		"thirdperson_lefthand": {
-			"scale": [0.64, 0.64, 0.64]
+			"scale": [0.5, 0.5, 0.5]
 		},
 		"firstperson_righthand": {
-			"scale": [0.64, 0.64, 0.64]
+			"scale": [0.5, 0.5, 0.5]
 		},
 		"firstperson_lefthand": {
-			"scale": [0.64, 0.64, 0.64]
+			"scale": [0.5, 0.5, 0.5]
+		},
+		"ground": {
+			"translation": [0, 3, 0],
+			"scale": [0.8, 0.8, 0.8]
+		},
+		"gui": {
+			"rotation": [30, 140, 0],
+			"translation": [0, 0.5, 0],
+			"scale": [0.7, 0.7, 0.7]
+		},
+		"fixed": {
+			"translation": [0, 0, -1.5]
 		}
 	},
 	"groups": [
 		{
-			"name": "human_grade_divine_altar",
+			"name": "human_grade_divine_altar_main",
 			"origin": [0, 0, 0],
 			"color": 0,
 			"children": [

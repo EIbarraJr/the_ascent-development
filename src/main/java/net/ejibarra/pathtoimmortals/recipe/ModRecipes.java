@@ -11,9 +11,6 @@ public class ModRecipes {
     public static final DeferredRegister<RecipeSerializer<?>> SERIALIZERS =
             DeferredRegister.create(ForgeRegistries.RECIPE_SERIALIZERS, PathToImmortals.MOD_ID);
 
-    public static final RegistryObject<RecipeSerializer<InfusionTableRecipe>> INFUSION_SERIALIZER =
-            SERIALIZERS.register("infusion", ()-> InfusionTableRecipe.Serializer.INSTANCE);
-
     public static final RegistryObject<RecipeSerializer<HumanGradeInfuserRecipe>> HUMAN_INFUSER_SERIALIZER =
             SERIALIZERS.register("human_grade_infusion", ()-> HumanGradeInfuserRecipe.Serializer.INSTANCE);
 

@@ -2,6 +2,7 @@ package net.ejibarra.pathtoimmortals.item.custom;
 
 import com.google.common.collect.ImmutableMultimap;
 import com.google.common.collect.Multimap;
+import net.ejibarra.pathtoimmortals.attributes.ModAttributes;
 import net.minecraft.network.chat.Component;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.ai.attributes.Attribute;
@@ -22,19 +23,24 @@ public class StatSwordItems extends SwordItem {
     private final double extraAtkSpeed;     // flat change to attack speed (ADDITION)  e.g. +0.4 faster, or -0.4 slower
     private final double atkSpeedPercent;   // +% to attack speed (rare; keep small)
     private final double moveSpeedWhileHeld;// +% move speed in hand (0.03 = +3%)
+    private final double critChance; // 0.10 = 10%
+    private final double critDamage; // 0.50 = +50% damage on crit (so 1.5x total)
 
     public StatSwordItems(Tier tier,
                          int baseDamageBonus, float baseAttackSpeed,
                          Item.Properties props,
                          double extraDamage, double damagePercent,
                          double extraAtkSpeed, double atkSpeedPercent,
-                         double moveSpeedWhileHeld) {
+                         double moveSpeedWhileHeld,
+                          double critChance, double critDamage) {
         super(tier, baseDamageBonus, baseAttackSpeed, props);
         this.extraDamage = extraDamage;
         this.damagePercent = damagePercent;
         this.extraAtkSpeed = extraAtkSpeed;
         this.atkSpeedPercent = atkSpeedPercent;
         this.moveSpeedWhileHeld = moveSpeedWhileHeld;
+        this.critChance = critChance;
+        this.critDamage = critDamage;
     }
 
     private static UUID seededUUID(String key) {
@@ -93,6 +99,25 @@ public class StatSwordItems extends SwordItem {
                     "Move speed while holding sword",
                     moveSpeedWhileHeld,
                     AttributeModifier.Operation.MULTIPLY_TOTAL));
+        }
+
+        // Crit chance
+        if (critChance != 0.0) {
+            b.put(ModAttributes.CRIT_CHANCE.get(), new AttributeModifier(
+                    seededUUID(getDescriptionId() + ":crit_chance"),
+                    "Crit chance",
+                    critChance,
+                    AttributeModifier.Operation.ADDITION));
+        }
+
+
+// Crit damage (extra multiplier on crit)
+        if (critDamage != 0.0) {
+            b.put(ModAttributes.CRIT_DAMAGE.get(), new AttributeModifier(
+                    seededUUID(getDescriptionId() + ":crit_damage"),
+                    "Crit damage",
+                    critDamage,
+                    AttributeModifier.Operation.ADDITION));
         }
 
         return b.build();
@@ -169,6 +194,16 @@ public class StatSwordItems extends SwordItem {
                             "tooltip.pathtoimmortals.move_speed_while_held_detail", fmtSignedPercent(moveSpeedWhileHeld))
                     .withStyle(net.minecraft.ChatFormatting.DARK_AQUA));
         }
+        if (critChance != 0.0) {
+            tooltip.add(net.minecraft.network.chat.Component.translatable(
+                            "tooltip.pathtoimmortals.crit_chance_detail", pct(critChance))
+                    .withStyle(net.minecraft.ChatFormatting.LIGHT_PURPLE));
+        }
+        if (critDamage != 0.0) {
+            tooltip.add(net.minecraft.network.chat.Component.translatable(
+                            "tooltip.pathtoimmortals.crit_damage_detail", pct(critDamage))
+                    .withStyle(net.minecraft.ChatFormatting.LIGHT_PURPLE));
+        }
 
 
         // --- Totals (independent of Shift; or show only in detailed view if you prefer) ---
@@ -240,7 +275,6 @@ public class StatSwordItems extends SwordItem {
     private static String fmt1(double x) {
         return String.format(java.util.Locale.ROOT, "%.1f", x);
     }
-
 
 
 }

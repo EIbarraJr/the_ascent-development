@@ -14,9 +14,6 @@ public class ModMenuTypes {
     public static final DeferredRegister<MenuType<?>> MENUS =
             DeferredRegister.create(ForgeRegistries.MENU_TYPES, PathToImmortals.MOD_ID);
 
-    public static final RegistryObject<MenuType<InfusionTable1Menu>> INFUSIONTABLE_MENU_1 =
-            registerMenuType(InfusionTable1Menu::new, "infusion_table_menu1");
-
     public static final RegistryObject<MenuType<HumanGradeInfuserMenu>> HUMAN_GRADE_INFUSER_MENU =
             registerMenuType(HumanGradeInfuserMenu::new, "human_grade_infuser_menu");
 

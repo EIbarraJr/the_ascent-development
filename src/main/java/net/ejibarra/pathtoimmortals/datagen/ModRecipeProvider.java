@@ -3,7 +3,6 @@ package net.ejibarra.pathtoimmortals.datagen;
 import net.ejibarra.pathtoimmortals.PathToImmortals;
 import net.ejibarra.pathtoimmortals.block.ModBlocks;
 import net.ejibarra.pathtoimmortals.datagen.custom.HumanGradeInfuserRecipeBuilder;
-import net.ejibarra.pathtoimmortals.datagen.custom.InfusionTableRecipeBuilder;
 import net.ejibarra.pathtoimmortals.item.ModItems;
 import net.minecraft.advancements.critereon.ItemPredicate;
 import net.minecraft.data.PackOutput;
@@ -59,6 +58,31 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         //Normal Recipes
 
+        // Infused Jade Block + Crude Jaded Iron -> Refined Jade Iron
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.REFINED_JADE_IRON.get(), 1)
+                .requires(ModBlocks.INFUSED_JADE_BLOCK.get())
+                .requires(ModItems.CRUDE_JADED_IRON.get())
+                .unlockedBy("has_crude_jaded_iron", has(ModItems.CRUDE_JADED_IRON.get()))
+                .save(pWriter, new ResourceLocation(PathToImmortals.MOD_ID, "refined_jade_iron"));
+
+        // Refined Jade Iron + 2 Infused Jade Blocks -> Reinforced Jade Iron
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.REINFORCED_JADE_IRON.get())
+                .requires(ModItems.REFINED_JADE_IRON.get())
+                .requires(ModBlocks.INFUSED_JADE_BLOCK.get())
+                .requires(ModBlocks.INFUSED_JADE_BLOCK.get())
+                .unlockedBy("has_refined_jade_iron", has(ModItems.REFINED_JADE_IRON.get()))
+                .save(pWriter, new ResourceLocation(PathToImmortals.MOD_ID, "reinforced_jade_iron"));
+
+        //Human Tier Paxel
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.HUMAN_GRADE_PAXEL.get())
+                .define('S', ModItems.CRUDE_JADED_IRON.get())
+                .define('I', Items.STICK)
+                .pattern("SSS")
+                .pattern(" I ")
+                .pattern(" I ")
+                .unlockedBy("has_crude_jaded_iron", has(ModItems.CRUDE_JADED_IRON.get()))
+                .unlockedBy("has_stick", has(Items.STICK))
+                .save(pWriter);
 
         // Coins <-> Shards
         nineToOne(pWriter,
@@ -96,6 +120,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         oneToNine(pWriter, RecipeCategory.MISC, ModItems.JADE.get(), ModBlocks.JADE_BLOCK.get().asItem(), "jade/block_to_shards");
 
+        nineToOne(pWriter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.INFUSED_JADE_BLOCK.get().asItem(), ModItems.INFUSED_JADE.get(),"jade_infused/shards_to_block");
+
+        oneToNine(pWriter, RecipeCategory.MISC, ModItems.INFUSED_JADE.get(), ModBlocks.INFUSED_JADE_BLOCK.get().asItem(), "jade_infused/block_to_shards");
 
         nineToOne(pWriter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.SPIRIT_BLOCK.get().asItem(), ModItems.SPIRIT_CRYSTAL.get(),"spirit/shards_to_block");
 
@@ -113,18 +140,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         oneToNine(pWriter, RecipeCategory.MISC, ModItems.DIVINE_CRYSTAL.get(), ModBlocks.DIVINE_BLOCK_BLANK.get().asItem(), "divine/block_to_shards");
 
-        new InfusionTableRecipeBuilder(Items.IRON_INGOT, ModItems.SPIRIT_IRON_TIER1.get(), 1)
-                .unlockedBy("has_iron", has(Items.IRON_INGOT)).save(pWriter);
 
-        new InfusionTableRecipeBuilder(Items.COAL_BLOCK, Items.DIAMOND, 4)
-                .unlockedBy("has_coal", has(Items.DIAMOND)).save(pWriter);
-
-        new InfusionTableRecipeBuilder(ModItems.BEAST_BLOOD.get(), ModItems.BEAST_OIL.get(), 1)
-                .unlockedBy("has_beast_blood", has(ModItems.BEAST_BLOOD.get())).save(pWriter);
-
-
-
-        new HumanGradeInfuserRecipeBuilder(Items.IRON_INGOT, ModItems.SPIRIT_IRON_TIER1.get(), 1)
+        //Infuser Recipes
+        new HumanGradeInfuserRecipeBuilder(Items.IRON_INGOT, ModItems.CRUDE_JADED_IRON.get(), 1)
                 .unlockedBy("has_iron", has(Items.IRON_INGOT)).save(pWriter);
         new HumanGradeInfuserRecipeBuilder(ModItems.JADE.get(), ModItems.INFUSED_JADE.get(), 1)
                 .unlockedBy("has_jade", has(ModItems.JADE.get())).save(pWriter);
@@ -133,50 +151,230 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         new HumanGradeInfuserRecipeBuilder(ModItems.BEAST_BLOOD.get(), ModItems.BEAST_OIL.get(), 1)
                 .unlockedBy("has_beast_blood", has(ModItems.BEAST_BLOOD.get())).save(pWriter);
 
-        // ===== Sun Steel Armor (uses your ingot item) =====
+        // ===== Crude Jade Armor (uses material item) =====
         // Helmet
-        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.HUMAN_GRADE_HELMET.get()).define('S', ModItems.SPIRIT_IRON_TIER1.get()).pattern("SSS").pattern("S S").unlockedBy("has_spirit_iron_tier1", has(ModItems.SPIRIT_IRON_TIER1.get())).save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.HUMAN_GRADE_HELMET.get()).define('S', ModItems.CRUDE_JADED_IRON.get())
+                .pattern("SSS")
+                .pattern("S S")
+                .unlockedBy("has_crude_jaded_iron", has(ModItems.CRUDE_JADED_IRON.get()))
+                .save(pWriter);
 
         // Chestplate
         ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.HUMAN_GRADE_CHESTPLATE.get())
-                .define('S', ModItems.SPIRIT_IRON_TIER1.get())
+                .define('S', ModItems.CRUDE_JADED_IRON.get())
                 .pattern("S S")
                 .pattern("SSS")
                 .pattern("SSS")
-                .unlockedBy("has_spirit_iron_tier1", has(ModItems.SPIRIT_IRON_TIER1.get()))
+                .unlockedBy("has_crude_jaded_iron", has(ModItems.CRUDE_JADED_IRON.get()))
                 .save(pWriter);
 
         // Leggings
         ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.HUMAN_GRADE_LEGGINGS.get())
-                .define('S', ModItems.SPIRIT_IRON_TIER1.get())
+                .define('S', ModItems.CRUDE_JADED_IRON.get())
                 .pattern("SSS")
                 .pattern("S S")
                 .pattern("S S")
-                .unlockedBy("has_spirit_iron_tier1", has(ModItems.SPIRIT_IRON_TIER1.get()))
+                .unlockedBy("has_crude_jaded_iron", has(ModItems.CRUDE_JADED_IRON.get()))
                 .save(pWriter);
 
         // Boots
         ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.HUMAN_GRADE_BOOTS.get())
-                .define('S', ModItems.SPIRIT_IRON_TIER1.get())
+                .define('S', ModItems.CRUDE_JADED_IRON.get())
                 .pattern("S S")
                 .pattern("S S")
-                .unlockedBy("has_spirit_iron_tier1", has(ModItems.SPIRIT_IRON_TIER1.get()))
+                .unlockedBy("has_crude_jaded_iron", has(ModItems.CRUDE_JADED_IRON.get()))
                 .save(pWriter);
 
-        // ===== Sun Steel Sword (Stick + Sun Steel + Snowball) =====
+        // ===== Crude Jade Sword =====
         // Vertical 1x3 pattern:
-        // S (sun_steel)
-        // N (snowball)
-        // I (stick)
         ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.LOWER_HUMAN_GRADE_SABER.get())
-                .define('S', ModItems.SPIRIT_IRON_TIER1.get())
+                .define('S', ModItems.CRUDE_JADED_IRON.get())
                 .define('I', Items.STICK)
                 .pattern("S")
                 .pattern("S")
                 .pattern("I")
-                .unlockedBy("has_sun_steel", has(ModItems.SPIRIT_IRON_TIER1.get()))
+                .unlockedBy("has_crude_jaded_iron", has(ModItems.CRUDE_JADED_IRON.get()))
                 .unlockedBy("has_stick", has(Items.STICK))
                 .save(pWriter);
+
+        // ===== Crude Jade Shield =====
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.LOWER_HUMAN_GRADE_SHIELD.get())
+                .define('S', ModItems.CRUDE_JADED_IRON.get())
+                .pattern("SS")
+                .pattern("SS")
+                .pattern("SS")
+                .unlockedBy("has_crude_jaded_iron", has(ModItems.CRUDE_JADED_IRON.get()))
+                .save(pWriter);
+
+        // ===== Refined Jade Armor (uses material item) =====
+        // Helmet
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.MEDIUM_HUMAN_GRADE_HELMET.get())
+                .define('S', ModItems.REFINED_JADE_IRON.get())
+                .pattern("SSS")
+                .pattern("S S")
+                .unlockedBy("has_refined_jade_iron", has(ModItems.REFINED_JADE_IRON.get()))
+                .save(pWriter);
+
+        // Chestplate
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.MEDIUM_HUMAN_GRADE_CHESTPLATE.get())
+                .define('S', ModItems.REFINED_JADE_IRON.get())
+                .pattern("S S")
+                .pattern("SSS")
+                .pattern("SSS")
+                .unlockedBy("has_refined_jade_iron", has(ModItems.REFINED_JADE_IRON.get()))
+                .save(pWriter);
+
+        // Leggings
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.MEDIUM_HUMAN_GRADE_LEGGINGS.get())
+                .define('S', ModItems.REFINED_JADE_IRON.get())
+                .pattern("SSS")
+                .pattern("S S")
+                .pattern("S S")
+                .unlockedBy("has_refined_jade_iron", has(ModItems.REFINED_JADE_IRON.get()))
+                .save(pWriter);
+
+        // Boots
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.MEDIUM_HUMAN_GRADE_BOOTS.get())
+                .define('S', ModItems.REFINED_JADE_IRON.get())
+                .pattern("S S")
+                .pattern("S S")
+                .unlockedBy("has_refined_jade_iron", has(ModItems.REFINED_JADE_IRON.get()))
+                .save(pWriter);
+
+        // ===== Refined Jade Sword =====
+        // Vertical 1x3 pattern:
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.MEDIUM_HUMAN_GRADE_SABER.get())
+                .define('S', ModItems.REFINED_JADE_IRON.get())
+                .define('I', Items.STICK)
+                .pattern("S")
+                .pattern("S")
+                .pattern("I")
+                .unlockedBy("has_refined_jade_iron", has(ModItems.REFINED_JADE_IRON.get()))
+                .unlockedBy("has_stick", has(Items.STICK))
+                .save(pWriter);
+
+        // ===== Refined Jade Shield =====
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.MEDIUM_HUMAN_GRADE_SHIELD.get())
+                .define('S', ModItems.REFINED_JADE_IRON.get())
+                .pattern("SS")
+                .pattern("SS")
+                .pattern("SS")
+                .unlockedBy("has_refined_jade_iron", has(ModItems.REFINED_JADE_IRON.get()))
+                .save(pWriter);
+
+        // ===== Reinforced Jade Armor (uses material item) =====
+        // Helmet
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.UPPER_HUMAN_GRADE_HELMET.get())
+                .define('S', ModItems.REINFORCED_JADE_IRON.get())
+                .pattern("SSS")
+                .pattern("S S")
+                .unlockedBy("has_reinforced_jade_iron", has(ModItems.REINFORCED_JADE_IRON.get()))
+                .save(pWriter);
+
+        // Chestplate
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.UPPER_HUMAN_GRADE_CHESTPLATE.get())
+                .define('S', ModItems.REINFORCED_JADE_IRON.get())
+                .pattern("S S")
+                .pattern("SSS")
+                .pattern("SSS")
+                .unlockedBy("has_reinforced_jade_iron", has(ModItems.REINFORCED_JADE_IRON.get()))
+                .save(pWriter);
+
+        // Leggings
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.UPPER_HUMAN_GRADE_LEGGINGS.get())
+                .define('S', ModItems.REINFORCED_JADE_IRON.get())
+                .pattern("SSS")
+                .pattern("S S")
+                .pattern("S S")
+                .unlockedBy("has_reinforced_jade_iron", has(ModItems.REINFORCED_JADE_IRON.get()))
+                .save(pWriter);
+
+        // Boots
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.UPPER_HUMAN_GRADE_BOOTS.get())
+                .define('S', ModItems.REINFORCED_JADE_IRON.get())
+                .pattern("S S")
+                .pattern("S S")
+                .unlockedBy("has_reinforced_jade_iron", has(ModItems.REINFORCED_JADE_IRON.get()))
+                .save(pWriter);
+
+        // ===== Reinforced Jade Sword =====
+        // Vertical 1x3 pattern:
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.UPPER_HUMAN_GRADE_SABER.get())
+                .define('S', ModItems.REINFORCED_JADE_IRON.get())
+                .define('I', Items.STICK)
+                .pattern("S")
+                .pattern("S")
+                .pattern("I")
+                .unlockedBy("has_reinforced_jade_iron", has(ModItems.REINFORCED_JADE_IRON.get()))
+                .unlockedBy("has_stick", has(Items.STICK))
+                .save(pWriter);
+
+        // ===== Reinforced Jade Shield =====
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.UPPER_HUMAN_GRADE_SHIELD.get())
+                .define('S', ModItems.REINFORCED_JADE_IRON.get())
+                .pattern("SS")
+                .pattern("SS")
+                .pattern("SS")
+                .unlockedBy("has_reinforced_jade_iron", has(ModItems.REINFORCED_JADE_IRON.get()))
+                .save(pWriter);
+
+        // ===== Divine Iron Armor (uses material item) =====
+        // Helmet
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.DIVINE_HUMAN_GRADE_HELMET.get())
+                .define('S', ModItems.DIVINE_IRON.get())
+                .pattern("SSS")
+                .pattern("S S")
+                .unlockedBy("has_divine_iron", has(ModItems.DIVINE_IRON.get()))
+                .save(pWriter);
+
+        // Chestplate
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.DIVINE_HUMAN_GRADE_CHESTPLATE.get())
+                .define('S', ModItems.DIVINE_IRON.get())
+                .pattern("S S")
+                .pattern("SSS")
+                .pattern("SSS")
+                .unlockedBy("has_divine_iron", has(ModItems.DIVINE_IRON.get()))
+                .save(pWriter);
+
+        // Leggings
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.DIVINE_HUMAN_GRADE_LEGGINGS.get())
+                .define('S', ModItems.DIVINE_IRON.get())
+                .pattern("SSS")
+                .pattern("S S")
+                .pattern("S S")
+                .unlockedBy("has_divine_iron", has(ModItems.DIVINE_IRON.get()))
+                .save(pWriter);
+
+        // Boots
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.DIVINE_HUMAN_GRADE_BOOTS.get())
+                .define('S', ModItems.DIVINE_IRON.get())
+                .pattern("S S")
+                .pattern("S S")
+                .unlockedBy("has_divine_iron", has(ModItems.DIVINE_IRON.get()))
+                .save(pWriter);
+
+        // ===== Reinforced Jade Sword =====
+        // Vertical 1x3 pattern:
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.DIVINE_HUMAN_GRADE_SABER.get())
+                .define('S', ModItems.DIVINE_IRON.get())
+                .define('I', Items.STICK)
+                .pattern("S")
+                .pattern("S")
+                .pattern("I")
+                .unlockedBy("has_divine_iron", has(ModItems.DIVINE_IRON.get()))
+                .unlockedBy("has_stick", has(Items.STICK))
+                .save(pWriter);
+
+        // ===== Reinforced Jade Shield =====
+        ShapedRecipeBuilder.shaped(RecipeCategory.COMBAT, ModItems.DIVINE_HUMAN_GRADE_SHIELD.get())
+                .define('S', ModItems.DIVINE_IRON.get())
+                .pattern("SS")
+                .pattern("SS")
+                .pattern("SS")
+                .unlockedBy("has_divine_iron", has(ModItems.DIVINE_IRON.get()))
+                .save(pWriter);
+
+
 
         // --- (Optional) If you use a TAG instead of the concrete ingot item ---
         // Ingredient sunSteel = Ingredient.of( /* TagKey<Item> */ );

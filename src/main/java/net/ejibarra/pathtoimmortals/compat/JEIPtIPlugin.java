@@ -7,9 +7,7 @@ import mezz.jei.api.registration.IRecipeCategoryRegistration;
 import mezz.jei.api.registration.IRecipeRegistration;
 import net.ejibarra.pathtoimmortals.PathToImmortals;
 import net.ejibarra.pathtoimmortals.recipe.HumanGradeInfuserRecipe;
-import net.ejibarra.pathtoimmortals.recipe.InfusionTableRecipe;
 import net.ejibarra.pathtoimmortals.screen.HumanGradeInfuserScreen;
-import net.ejibarra.pathtoimmortals.screen.InfusionTable1Screen;
 import net.minecraft.client.Minecraft;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.crafting.RecipeManager;
@@ -27,7 +25,6 @@ public class JEIPtIPlugin implements IModPlugin {
 
     @Override
     public void registerCategories(IRecipeCategoryRegistration registration) {
-        registration.addRecipeCategories(new InfusionTableRecipeCategory(registration.getJeiHelpers().getGuiHelper()));
         registration.addRecipeCategories(new HumanGradeInfuserRecipeCategory(registration.getJeiHelpers().getGuiHelper()));
     }
 
@@ -35,8 +32,6 @@ public class JEIPtIPlugin implements IModPlugin {
     @Override
     public void registerRecipes(IRecipeRegistration registration) {
         RecipeManager recipeManager = Minecraft.getInstance().level.getRecipeManager();
-        List<InfusionTableRecipe> infusionRecipes = recipeManager.getAllRecipesFor(InfusionTableRecipe.Type.INSTANCE);
-        registration.addRecipes(InfusionTableRecipeCategory.INFUSION_TABLE_TYPE, infusionRecipes);
 
         List<HumanGradeInfuserRecipe> humanGradeInfuserRecipes = recipeManager.getAllRecipesFor(HumanGradeInfuserRecipe.Type.INSTANCE);
         registration.addRecipes(HumanGradeInfuserRecipeCategory.HUMAN_GRADE_INFUSER_RECIPE_TYPE, humanGradeInfuserRecipes);
@@ -44,8 +39,6 @@ public class JEIPtIPlugin implements IModPlugin {
 
     @Override
     public void registerGuiHandlers(IGuiHandlerRegistration registration) {
-        registration.addRecipeClickArea(InfusionTable1Screen.class, 80,30,20,30,
-                InfusionTableRecipeCategory.INFUSION_TABLE_TYPE);
         registration.addRecipeClickArea(HumanGradeInfuserScreen.class, 80,30,20,30,
                 HumanGradeInfuserRecipeCategory.HUMAN_GRADE_INFUSER_RECIPE_TYPE);
     }

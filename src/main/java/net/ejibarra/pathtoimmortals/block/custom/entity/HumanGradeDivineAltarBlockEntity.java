@@ -1,7 +1,6 @@
 package net.ejibarra.pathtoimmortals.block.custom.entity;
 
 import net.ejibarra.pathtoimmortals.block.custom.HumanGradeDivineAltar;
-import net.ejibarra.pathtoimmortals.block.custom.InfusionTableBlock1;
 import net.ejibarra.pathtoimmortals.item.ModItems;
 import net.ejibarra.pathtoimmortals.recipe.HumanGradeInfuserRecipe;
 import net.ejibarra.pathtoimmortals.screen.HumanGradeDivineAltarMenu;
@@ -53,9 +52,9 @@ public class HumanGradeDivineAltarBlockEntity extends BlockEntity implements Men
 
     // === Adjust these to your registry objects ===
     private static final Supplier<Item> INFUSED_JADE  = ModItems.INFUSED_JADE;
-    private static final Supplier<Item> DIVINE_IRON   = ModItems.DIVINE_METAL_TIER1;
-    private static final Supplier<Item> SPIRIT_IRON   = ModItems.SPIRIT_IRON_TIER1;
-    private static final Supplier<Item> DIVINE_STRAND = ModItems.DIVINE_COIN;
+    private static final Supplier<Item> DIVINE_IRON   = ModItems.DIVINE_IRON;
+    private static final Supplier<Item> REINFORCED_JADE_IRON   = ModItems.REINFORCED_JADE_IRON;
+    private static final Supplier<Item> DIVINE_STRAND = ModItems.DIVINE_CRYSTAL;
 
     private final ItemStackHandler itemHandler = new ItemStackHandler(2) {
         @Override
@@ -240,8 +239,8 @@ public class HumanGradeDivineAltarBlockEntity extends BlockEntity implements Men
         if (out.getCount() >= out.getMaxStackSize()) return false;
         Item oi = out.getItem();
         return oi == ModItems.INFUSED_JADE.get()
-                || oi == ModItems.DIVINE_METAL_TIER1.get()
-                || oi == ModItems.SPIRIT_IRON_TIER1.get()
+                || oi == ModItems.DIVINE_IRON.get()
+                || oi == ModItems.REINFORCED_JADE_IRON.get()
                 || oi == ModItems.DIVINE_COIN.get();
     }
 
@@ -298,24 +297,24 @@ public class HumanGradeDivineAltarBlockEntity extends BlockEntity implements Men
     // You can tweak min/max to taste.
     // One reward type per soul; counts vary per roll.
     private static final List<RewardEntry> LOWER_TABLE = List.of(
-            new RewardEntry(INFUSED_JADE,  50, 2, 5),  // 50%
-            new RewardEntry(DIVINE_IRON,   10, 1, 1),  // 10%
-            new RewardEntry(SPIRIT_IRON,   20, 2, 6),  // 20%
-            new RewardEntry(DIVINE_STRAND, 10, 1, 1)   // 10%
-            // sums to 90% → 10% = no reward
+            new RewardEntry(INFUSED_JADE,  20, 2, 5),  // 20%
+            new RewardEntry(DIVINE_IRON,   3, 1, 1),  // 3%
+            new RewardEntry(REINFORCED_JADE_IRON,   10, 1, 1),  // 10%
+            new RewardEntry(DIVINE_STRAND, 40, 3, 15)   // 40%
+            // sums to 73% → 27% = no reward
     );
     private static final List<RewardEntry> MEDIUM_TABLE = List.of(
-            new RewardEntry(INFUSED_JADE,  35, 4, 9),  // 35%
-            new RewardEntry(DIVINE_IRON,   20, 2, 3),  // 20%
-            new RewardEntry(SPIRIT_IRON,   15, 3, 7),  // 15%
-            new RewardEntry(DIVINE_STRAND, 20, 2, 3)   // 20%
-            // sums to 90% → 10% = no reward
+            new RewardEntry(INFUSED_JADE,  35, 5, 10),  // 35%
+            new RewardEntry(DIVINE_IRON,   10, 1, 2),  // 10%
+            new RewardEntry(REINFORCED_JADE_IRON,   20, 2, 3),  // 15%
+            new RewardEntry(DIVINE_STRAND, 20, 18, 36)   // 20%
+            // sums to 85% → 15% = no reward
     );
     private static final List<RewardEntry> UPPER_TABLE = List.of(
-            new RewardEntry(INFUSED_JADE,  10, 8, 13), // 10%
-            new RewardEntry(DIVINE_IRON,   50, 5, 10),  // 50%
-            new RewardEntry(SPIRIT_IRON,   10, 6, 10),  // 10%
-            new RewardEntry(DIVINE_STRAND, 30, 4, 8)   // 30% (sums to 100%)
+            new RewardEntry(INFUSED_JADE,  25, 15, 23), // 25%
+            new RewardEntry(DIVINE_IRON,   25, 1, 3),  // 25%
+            new RewardEntry(REINFORCED_JADE_IRON,   25, 2, 4),  // 25%
+            new RewardEntry(DIVINE_STRAND, 15, 40, 63)   // 15% (sums to 90%) 10% chance no reward
     );
 
     @Nullable

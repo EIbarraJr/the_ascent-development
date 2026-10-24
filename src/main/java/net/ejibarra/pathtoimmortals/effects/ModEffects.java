@@ -15,6 +15,8 @@ public class ModEffects {
             DeferredRegister.create(ForgeRegistries.MOB_EFFECTS, PathToImmortals.MOD_ID);
 
     public static final RegistryObject<MobEffect> CHEESE_TOUCH = MOB_EFFECTS.register("cheesed", CheeseTouch::new);
+    public static final RegistryObject<MobEffect> REINFORCED = MOB_EFFECTS.register("reinforced_icon", ReinforcedEffect::new);
+    public static final RegistryObject<MobEffect> FLIGHT_ACTIVE = MOB_EFFECTS.register("levitation_icon", FlightEffect::new);
 
     public static void register(IEventBus eventBus) {
         MOB_EFFECTS.register(eventBus);

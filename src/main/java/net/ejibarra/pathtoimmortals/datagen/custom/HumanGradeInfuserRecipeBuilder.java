@@ -4,7 +4,6 @@ import com.google.gson.JsonArray;
 import com.google.gson.JsonObject;
 import net.ejibarra.pathtoimmortals.PathToImmortals;
 import net.ejibarra.pathtoimmortals.recipe.HumanGradeInfuserRecipe;
-import net.ejibarra.pathtoimmortals.recipe.InfusionTableRecipe;
 import net.minecraft.advancements.Advancement;
 import net.minecraft.advancements.AdvancementRewards;
 import net.minecraft.advancements.CriterionTriggerInstance;

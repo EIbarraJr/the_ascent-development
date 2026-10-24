@@ -1,19 +1,18 @@
 package net.ejibarra.pathtoimmortals.entity.custom;
 
 import net.ejibarra.pathtoimmortals.entity.ModEntities;
-import net.ejibarra.pathtoimmortals.entity.ai.CastProjectileGoal;
 import net.ejibarra.pathtoimmortals.entity.ai.RangedChargeShootGoal;
 import net.minecraft.network.chat.Component;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.SynchedEntityData;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerBossEvent;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.BossEvent;
 import net.minecraft.world.entity.AnimationState;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.LivingEntity;
-import net.minecraft.world.entity.Pose;
 import net.minecraft.world.entity.ai.attributes.AttributeSupplier;
 import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.ai.goal.FloatGoal;
@@ -169,5 +168,11 @@ public class HoodedSpikedRatEntity extends Monster implements RangedAttackMob {
     public void aiStep() {
         super.aiStep();
         this.bossEvent.setProgress(this.getHealth() / this.getMaxHealth());
+    }
+
+    //Loot table
+    @Override
+    protected ResourceLocation getDefaultLootTable() {
+        return new ResourceLocation("pathtoimmortals", "entities/hooded_spiked_rat");
     }
 }

@@ -5,6 +5,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.SynchedEntityData;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerBossEvent;
 import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.world.BossEvent;
@@ -37,8 +38,8 @@ public class HereticEntity extends Monster implements Enemy {
     public final AnimationState walkState = new AnimationState();
 
     /*Boss Bar*/
-    private final ServerBossEvent bossEvent=
-            new ServerBossEvent(Component.literal("Heretic Pawn"), BossEvent.BossBarColor.RED, BossEvent.BossBarOverlay.NOTCHED_12);
+    /*private final ServerBossEvent bossEvent=
+            new ServerBossEvent(Component.literal("Heretic Pawn"), BossEvent.BossBarColor.RED, BossEvent.BossBarOverlay.NOTCHED_12);*/ //can reenable here and three spots in the bottom
 
     public HereticEntity(EntityType<? extends Monster> pEntityType, Level pLevel) {
         super(pEntityType, pLevel);
@@ -133,18 +134,24 @@ public class HereticEntity extends Monster implements Enemy {
     @Override
     public void startSeenByPlayer(ServerPlayer pServerPlayer) {
         super.startSeenByPlayer(pServerPlayer);
-        this.bossEvent.addPlayer(pServerPlayer);
+        //this.bossEvent.addPlayer(pServerPlayer);
     }
 
     @Override
     public void stopSeenByPlayer(ServerPlayer pServerPlayer) {
         super.stopSeenByPlayer(pServerPlayer);
-        this.bossEvent.removePlayer(pServerPlayer);
+        //this.bossEvent.removePlayer(pServerPlayer);
     }
 
     @Override
     public void aiStep() {
         super.aiStep();
-        this.bossEvent.setProgress(this.getHealth() / this.getMaxHealth());
+        //this.bossEvent.setProgress(this.getHealth() / this.getMaxHealth());
+    }
+
+    //Loot table
+    @Override
+    protected ResourceLocation getDefaultLootTable() {
+        return new ResourceLocation("pathtoimmortals", "entities/heretic");
     }
 }

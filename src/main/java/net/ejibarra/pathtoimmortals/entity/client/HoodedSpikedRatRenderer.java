@@ -1,7 +1,6 @@
 package net.ejibarra.pathtoimmortals.entity.client;
 
 import net.ejibarra.pathtoimmortals.PathToImmortals;
-import net.ejibarra.pathtoimmortals.entity.custom.DarklinEntity;
 import net.ejibarra.pathtoimmortals.entity.custom.HoodedSpikedRatEntity;
 import net.ejibarra.pathtoimmortals.entity.layers.ModModelLayers;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;

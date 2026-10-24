@@ -1,9 +1,7 @@
 package net.ejibarra.pathtoimmortals.block.custom.entity;
 
 import net.ejibarra.pathtoimmortals.block.custom.HumanGradeInfuserBlock;
-import net.ejibarra.pathtoimmortals.block.custom.InfusionTableBlock1;
 import net.ejibarra.pathtoimmortals.recipe.HumanGradeInfuserRecipe;
-import net.ejibarra.pathtoimmortals.recipe.InfusionTableRecipe;
 import net.ejibarra.pathtoimmortals.screen.HumanGradeInfuserMenu;
 import net.ejibarra.pathtoimmortals.util.InventoryDirectionEntry;
 import net.ejibarra.pathtoimmortals.util.InventoryDirectionWrapper;

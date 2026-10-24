@@ -47,7 +47,7 @@ public class ModBiomeModifiers {
         context.register(ADD_END_SAPPHIRE_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_END),
                 HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.END_SAPPHIRE_ORE_PLACED_KEY)),
-                GenerationStep.Decoration.UNDERGROUND_ORES));*/
+                GenerationStep.Decoration.UNDERGROUND_ORES));
 
         context.register(ADD_TREE_FIERO, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(Tags.Biomes.IS_PLAINS),
@@ -72,7 +72,7 @@ public class ModBiomeModifiers {
         context.register(ADD_TREE_JADED, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(Tags.Biomes.IS_PLAINS),
                 HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.JADED_PLACED_KEY)),
-                GenerationStep.Decoration.VEGETAL_DECORATION));
+                GenerationStep.Decoration.VEGETAL_DECORATION));*/
     }
 
 

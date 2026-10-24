@@ -9,6 +9,7 @@ import net.minecraft.network.chat.Component;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
 import net.minecraft.network.syncher.SynchedEntityData;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.server.level.ServerBossEvent;
 import net.minecraft.server.level.ServerLevel;
 import net.minecraft.server.level.ServerPlayer;
@@ -174,4 +175,10 @@ public class ScorpionEntity extends Monster implements Enemy {
     // helper for sounds (optional)
     public void playPinchSound() { this.playSound(SoundEvents.IRON_GOLEM_ATTACK, 1.0f, 1.0f); }
     public void playStingSound() { this.playSound(SoundEvents.BEE_STING, 1.0f, 1.0f); }
+
+    //Loot table
+    @Override
+    protected ResourceLocation getDefaultLootTable() {
+        return new ResourceLocation("pathtoimmortals", "entities/scorpion");
+    }
 }

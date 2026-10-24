@@ -10,7 +10,7 @@ import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
-import net.minecraftforge.client.model.generators.BlockModelBuilder;
+import net.minecraft.world.level.block.state.properties.DoubleBlockHalf;
 import net.minecraftforge.client.model.generators.BlockStateProvider;
 import net.minecraftforge.client.model.generators.ConfiguredModel;
 import net.minecraftforge.client.model.generators.ModelFile;
@@ -57,6 +57,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.TRAPPED_SOUL_SAND);
         blockWithItem(ModBlocks.DESOLATE_SANDSTONE);
         blockWithItem(ModBlocks.DESOLATE_SAND);
+        blockWithItem(ModBlocks.EVES_COBBLESTONE);
+        blockWithItem(ModBlocks.POISON_MUSHROOM_BLOCK);
         simpleBlock(ModBlocks.SPIRIT_MOSS.get(), cubeAll(ModBlocks.SPIRIT_MOSS.get()));
         simpleBlock(ModBlocks.LEMON_MOSS.get(), cubeAll(ModBlocks.LEMON_MOSS.get()));
         simpleBlock(ModBlocks.ROSY_MOSS.get(), cubeAll(ModBlocks.ROSY_MOSS.get()));
@@ -128,12 +130,14 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
 
         //Block Entities
-        simpleBlockWithItem(ModBlocks.INFUSION_TABLE_1.get(),
-                models().getExistingFile(modLoc("block/infusion_table1")));
         horizontalBlock(ModBlocks.HUMAN_GRADE_INFUSER_BLOCK.get(),
                 new ModelFile.UncheckedModelFile(modLoc("block/human_grade_infuser")));
         simpleBlockWithItem(ModBlocks.HUMAN_GRADE_DIVINE_ALTAR_BLOCK.get(),
                 new ModelFile.UncheckedModelFile(modLoc("block/human_grade_divine_altar")));
+        horizontalBlock(ModBlocks.PURPLE_BIOSHROOM.get(),
+                new ModelFile.UncheckedModelFile(modLoc("block/purple_bio_shroom")));
+        horizontalBlock(ModBlocks.PORTAL_BLOCK_HUMAN_REALM.get(),
+                new ModelFile.UncheckedModelFile(modLoc("block/portal_block_human")));
 
 
         //GLOWING BLOCKS ON/OFF
@@ -165,6 +169,22 @@ public class ModBlockStateProvider extends BlockStateProvider {
         //CROPS
         makeCrop(((HumanRealmCropBlock )ModBlocks.HUMAN_REALM_CROP.get()), "human_realm_stage", "human_realm_stage");
 
+        tallFlower(ModBlocks.BLUE_ROSE_BUSH.get(), "blue_rose_bush");
+        tallFlower(ModBlocks.PINK_ROSE_BUSH.get(), "pink_rose_bush");
+        tallFlower(ModBlocks.WHITE_ROSE_BUSH.get(), "white_rose_bush");
+        tallFlower(ModBlocks.PURPLE_ROSE_BUSH.get(), "purple_rose_bush");
+        tallFlower(ModBlocks.LAVENDER_ROSE_BUSH.get(), "lavender_rose_bush");
+        tallFlower(ModBlocks.YELLOW_ROSE_BUSH.get(), "yellow_rose_bush");
+        tallFlower(ModBlocks.ORANGE_ROSE_BUSH.get(), "orange_rose_bush");
+        tallFlower(ModBlocks.FAE_ROSE_BUSH.get(), "fae_rose_bush");
+        tallFlower(ModBlocks.SPIRIT_ROSE_BUSH.get(), "spirit_rose_bush");
+        tallFlower(ModBlocks.SPIRIT_FAE_ROSE_BUSH.get(), "spirit_fae_rose_bush");
+        tallFlower(ModBlocks.MAHOGANY_ROSE_BUSH.get(), "mahogany_rose_bush");
+        tallFlower(ModBlocks.COTTONS_ROSE_BUSH.get(), "cottons_rose_bush");
+        tallFlower(ModBlocks.MIDNIGHTS_REACH.get(), "midnights_reach");
+        tallFlower(ModBlocks.CERULEAN_ROSE_BUSH.get(), "cerulean_rose_bush");
+        tallFlower(ModBlocks.CARMINE_ROSE_BUSH.get(), "carmine_rose_bush");
+
         leavesBlock(ModBlocks.FIERO_LEAVES);
         leavesBlock(ModBlocks.JASMINE_LEAVES);
         leavesBlock(ModBlocks.KINDER_LEAVES);
@@ -179,6 +199,18 @@ public class ModBlockStateProvider extends BlockStateProvider {
         saplingBlock(ModBlocks.JADED_SAPLING);
 
     }
+
+    private void tallFlower(Block block, String name) {
+        ModelFile bottom = models().cross(name + "_bottom", modLoc("block/" + name + "_bottom"));
+        ModelFile top = models().cross(name + "_top", modLoc("block/" + name + "_top"));
+
+        getVariantBuilder(block)
+                .partialState().with(TallFlowerBlock.HALF, DoubleBlockHalf.LOWER)
+                .setModels(new ConfiguredModel(bottom))
+                .partialState().with(TallFlowerBlock.HALF, DoubleBlockHalf.UPPER)
+                .setModels(new ConfiguredModel(top));
+    }
+
     private void budDirectional(Block block, String vanillaParent, String texturePath) {
         String id = ForgeRegistries.BLOCKS.getKey(block).getPath();
         ModelFile model = models()

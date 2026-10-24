@@ -31,12 +31,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.PURPLE_COIN);
         simpleItem(ModItems.SAINT_COIN);
         simpleItem(ModItems.DIVINE_COIN);
-        simpleItem(ModItems.SPIRIT_IRON_TIER1);
-        simpleItem(ModItems.SPIRIT_IRON_TIER2);
-        simpleItem(ModItems.SPIRIT_IRON_TIER3);
+        simpleItem(ModItems.CRUDE_JADED_IRON);
+        simpleItem(ModItems.REFINED_JADE_IRON);
+        simpleItem(ModItems.REINFORCED_JADE_IRON);
         simpleItem(ModItems.SPIRIT_IRON_TIER4);
         simpleItem(ModItems.SPIRIT_IRON_TIER5);
-        simpleItem(ModItems.DIVINE_METAL_TIER1);
+        simpleItem(ModItems.DIVINE_IRON);
         simpleItem(ModItems.BEAST_BLOOD);
         simpleItem(ModItems.BEAST_OIL);
         simpleItem(ModItems.HUMAN_GRADE_SOUL_LOWER);
@@ -45,6 +45,34 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.INFUSED_JADE);
         simpleItem(ModItems.ORIGIN_BERRIES);
         simpleItem(ModItems.HUMAN_REALM_SEEDS);
+        simpleItem(ModItems.SHARD_OF_DIVINITY);
+
+        //Scrolls
+        simpleItem(ModItems.HEAL_SCROLL_T1);
+        simpleItem(ModItems.HEAL_SCROLL_T2);
+        simpleItem(ModItems.HEAL_SCROLL_T3);
+        simpleItem(ModItems.HEAL_SCROLL_T4);
+        simpleItem(ModItems.OVERCHARGED_SCROLL_T1);
+        simpleItem(ModItems.OVERCHARGED_SCROLL_T2);
+        simpleItem(ModItems.OVERCHARGED_SCROLL_T3);
+        simpleItem(ModItems.OVERCHARGED_SCROLL_T4);
+        simpleItem(ModItems.PRESSURE_WAVE_SCROLL_T1);
+        simpleItem(ModItems.PRESSURE_WAVE_SCROLL_T2);
+        simpleItem(ModItems.PRESSURE_WAVE_SCROLL_T3);
+        simpleItem(ModItems.PRESSURE_WAVE_SCROLL_T4);
+        simpleItem(ModItems.ORIGIN_SWORD_SCROLL_T1);
+        simpleItem(ModItems.ORIGIN_SWORD_SCROLL_T2);
+        simpleItem(ModItems.ORIGIN_SWORD_SCROLL_T3);
+        simpleItem(ModItems.ORIGIN_SWORD_SCROLL_T4);
+        simpleItem(ModItems.REINFORCED_SCROLL_T1);
+        simpleItem(ModItems.REINFORCED_SCROLL_T2);
+        simpleItem(ModItems.REINFORCED_SCROLL_T3);
+        simpleItem(ModItems.REINFORCED_SCROLL_T4);
+        simpleItem(ModItems.CLOUD_STEP_SCROLL_T1);
+        simpleItem(ModItems.CLOUD_STEP_SCROLL_T2);
+        simpleItem(ModItems.CLOUD_STEP_SCROLL_T3);
+        simpleItem(ModItems.CLOUD_STEP_SCROLL_T4);
+        simpleItem(ModItems.LEVITATION_SCROLL);
 
         //Armor
         //HUMAN GRADE GEAR
@@ -84,9 +112,14 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         withExistingParent(ModItems.HERETIC_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
         withExistingParent(ModItems.SPIKEDRAT_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
-        withExistingParent(ModItems.DARKLIN_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
         withExistingParent(ModItems.HOODED_RAT_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
         withExistingParent(ModItems.RAT_LORD_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
+        withExistingParent(ModItems.OGRE_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
+        withExistingParent(ModItems.ORC_WARRIOR_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
+        withExistingParent(ModItems.SCORPION_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
+        withExistingParent(ModItems.FUNGI_SWORDSMAN_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
+        withExistingParent(ModItems.SPORE_SPREADER_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
+        withExistingParent(ModItems.BEEFSTEAK_MUSHROOM_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
 
         blockParentItem("turquoise_block");
         blockParentItem("feys_block");
@@ -101,8 +134,8 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         //complexBlock(ModBlocks.GATHERING_FORMATION_T1.get());
         complexBlock(ModBlocks.HUMAN_GRADE_INFUSER_BLOCK.get());
-        String itemId = ForgeRegistries.ITEMS.getKey(ModBlocks.INFUSION_TABLE_1.get().asItem()).getPath();
-        withExistingParent(itemId, modLoc("block/infusion_table1"));
+        complexBlock(ModBlocks.PURPLE_BIOSHROOM.get());
+        complexBlock(ModBlocks.PORTAL_BLOCK_HUMAN_REALM.get());
 
         //Moss
         blockItem(ModBlocks.SPIRIT_MOSS.get());
@@ -125,6 +158,23 @@ public class ModItemModelProvider extends ItemModelProvider {
         saplingItem(ModBlocks.MANGO_SAPLING);
         saplingItem(ModBlocks.SPIRIT_SAPLING);
         saplingItem(ModBlocks.JADED_SAPLING);
+
+        //PLANTS
+        tallFlowerItem(ModBlocks.BLUE_ROSE_BUSH);
+        tallFlowerItem(ModBlocks.PINK_ROSE_BUSH);
+        tallFlowerItem(ModBlocks.WHITE_ROSE_BUSH);
+        tallFlowerItem(ModBlocks.PURPLE_ROSE_BUSH);
+        tallFlowerItem(ModBlocks.LAVENDER_ROSE_BUSH);
+        tallFlowerItem(ModBlocks.YELLOW_ROSE_BUSH);
+        tallFlowerItem(ModBlocks.ORANGE_ROSE_BUSH);
+        tallFlowerItem(ModBlocks.MAHOGANY_ROSE_BUSH);
+        tallFlowerItem(ModBlocks.FAE_ROSE_BUSH);
+        tallFlowerItem(ModBlocks.SPIRIT_FAE_ROSE_BUSH);
+        tallFlowerItem(ModBlocks.SPIRIT_ROSE_BUSH);
+        tallFlowerItem(ModBlocks.MIDNIGHTS_REACH);
+        tallFlowerItem(ModBlocks.COTTONS_ROSE_BUSH);
+        tallFlowerItem(ModBlocks.CARMINE_ROSE_BUSH);
+        tallFlowerItem(ModBlocks.CERULEAN_ROSE_BUSH);
     }
 
     private void blockParentItem(String id) {
@@ -184,5 +234,16 @@ public class ModItemModelProvider extends ItemModelProvider {
         return withExistingParent(item.getId().getPath(),
                 new ResourceLocation("item/generated")).texture("layer0",
                 new ResourceLocation(PathToImmortals.MOD_ID,"block/" + item.getId().getPath()));
+    }
+    private void tallFlowerItem(RegistryObject<Block> block) {
+        String name = ForgeRegistries.BLOCKS.getKey(block.get()).getPath();
+
+        // item model: parent = item/generated, texture = block/<name>_top
+        singleTexture(
+                name,                        // item model name: blue_rose_bush
+                mcLoc("item/generated"),     // parent
+                "layer0",
+                modLoc("block/" + name + "_top")  // use the TOP texture
+        );
     }
 }

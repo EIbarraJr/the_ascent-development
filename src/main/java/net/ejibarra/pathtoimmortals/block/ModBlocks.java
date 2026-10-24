@@ -18,6 +18,7 @@ import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 import net.minecraft.world.level.block.state.properties.NoteBlockInstrument;
 import net.minecraft.world.level.material.MapColor;
+import net.minecraft.world.level.material.PushReaction;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -57,16 +58,20 @@ public class ModBlocks {
     public static final RegistryObject<Block> DESOLATE_SAND = registerBlock("desolate_sand",
             () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_GRAY).strength(0.5F).sound(SoundType.SAND)));
     public static final RegistryObject<Block> TRAPPED_SOUL_SAND = registerBlock("trapped_soul_sand",
-            () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_GRAY).strength(0.5F).sound(SoundType.SOUL_SAND)));
+            () -> new TrappedSoulSandBlock(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_GRAY).strength(0.5F).sound(SoundType.SOUL_SAND)));
     public static final RegistryObject<Block> DESOLATE_SANDSTONE = registerBlock("desolate_sandstone",
             () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_GRAY).instrument(NoteBlockInstrument.BASEDRUM).requiresCorrectToolForDrops().strength(0.8F)));
+    public static final RegistryObject<Block> EVES_COBBLESTONE = registerBlock("eves_cobblestone",
+            () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.STONE).requiresCorrectToolForDrops().strength(1.2F, 6.0F).sound(SoundType.STONE)));
+    public static final RegistryObject<Block> POISON_MUSHROOM_BLOCK = registerBlock("poison_mushroom_block",
+            () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.COLOR_PURPLE).strength(0.1F).sound(SoundType.WART_BLOCK).lightLevel(state-> 15 )));
 
     public static final RegistryObject<Block> LIGHT_DIVINE_BRICK = registerBlock("light_divine_brick",
             () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
                     .requiresCorrectToolForDrops().strength(2.0F, 8.0F).sound(SoundType.STONE)));
 
-    public static final RegistryObject<Block> LIGHT_DIVINE_BRICK_RUNIC = registerBlock("light_divine_brick_runic",
-            () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
+    public static final RegistryObject<Block> LIGHT_DIVINE_BRICK_RUNIC = BLOCKS.register("light_divine_brick_runic",
+            () -> new LightDivineRunicBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
                     .requiresCorrectToolForDrops().strength(2.0F, 8.0F).sound(SoundType.STONE)));
 
     public static final RegistryObject<Block> CHISELED_DIVINE_BLOCK_NORMAL = registerBlock("chiseled_divine_block_normal",
@@ -97,8 +102,8 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
                     .requiresCorrectToolForDrops().strength(2.0F, 8.0F).sound(SoundType.STONE)));
 
-    public static final RegistryObject<Block> DARK_DIVINE_BRICK_RUNIC = registerBlock("dark_divine_brick_runic",
-            () -> new Block(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
+    public static final RegistryObject<Block> DARK_DIVINE_BRICK_RUNIC = BLOCKS.register("dark_divine_brick_runic",
+            () -> new DarkDivineBrickRunicBlock(BlockBehaviour.Properties.of().mapColor(MapColor.METAL).instrument(NoteBlockInstrument.IRON_XYLOPHONE)
                     .requiresCorrectToolForDrops().strength(2.0F, 8.0F).sound(SoundType.STONE)));
 
     public static final RegistryObject<Block> SPIRIT_BRICK = registerBlock("spirit_brick",
@@ -234,10 +239,6 @@ public class ModBlocks {
                     .strength(5f).requiresCorrectToolForDrops(), UniformInt.of(2, 5)));
 
     //Block Entities & Customs
-    /*public static final RegistryObject<Block> GATHERING_FORMATION_T1 = registerBlock("gathering_formation1",
-            ()-> new GatheringFormationBlock1(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.WOOD).noOcclusion()));*/
-    public static final RegistryObject<Block> INFUSION_TABLE_1 = BLOCKS.register("infusion_table1",
-            ()-> new InfusionTableBlock1(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.WOOD).noOcclusion()));
 
     public static final RegistryObject<Block> HUMAN_GRADE_INFUSER_BLOCK = registerBlock("human_grade_infuser",
             ()-> new HumanGradeInfuserBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.STONE).noOcclusion()));
@@ -248,6 +249,8 @@ public class ModBlocks {
     //CROPS
     public static final RegistryObject<Block> HUMAN_REALM_CROP = BLOCKS.register("human_realm_crop",
             ()-> new HumanRealmCropBlock(BlockBehaviour.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission().randomTicks().instabreak(), ModBlocks.INFUSED_JADE_BLOCK.get()));
+
+    public static final RegistryObject<Block> PURPLE_BIOSHROOM =registerBlock("purple_bio_shroom", ()-> new PurpleBioShroom(BlockBehaviour.Properties.copy(Blocks.RED_MUSHROOM).noCollission().noOcclusion().lightLevel(state-> 7 )));
 
     //Trees
     public static final RegistryObject<Block> FIERO_LEAVES = BLOCKS.register("fiero_leaves",
@@ -288,6 +291,21 @@ public class ModBlocks {
     public static final RegistryObject<Block> SPIRIT_SAPLING = registerBlock("spirit_sapling", ()-> new SaplingBlock(new SpiritTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
     public static final RegistryObject<Block> JADED_SAPLING = registerBlock("jaded_sapling", ()-> new SaplingBlock(new JadedTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
 
+    public static final RegistryObject<Block> BLUE_ROSE_BUSH = registerBlock("blue_rose_bush", ()-> new TallFlowerBlock(BlockBehaviour.Properties.copy(Blocks.ROSE_BUSH)));
+    public static final RegistryObject<Block> WHITE_ROSE_BUSH = registerBlock("white_rose_bush", ()-> new TallFlowerBlock(BlockBehaviour.Properties.copy(Blocks.ROSE_BUSH)));
+    public static final RegistryObject<Block> PINK_ROSE_BUSH = registerBlock("pink_rose_bush", ()-> new TallFlowerBlock(BlockBehaviour.Properties.copy(Blocks.ROSE_BUSH)));
+    public static final RegistryObject<Block> PURPLE_ROSE_BUSH = registerBlock("purple_rose_bush", ()-> new TallFlowerBlock(BlockBehaviour.Properties.copy(Blocks.ROSE_BUSH)));
+    public static final RegistryObject<Block> LAVENDER_ROSE_BUSH = registerBlock("lavender_rose_bush", ()-> new TallFlowerBlock(BlockBehaviour.Properties.copy(Blocks.ROSE_BUSH)));
+    public static final RegistryObject<Block> YELLOW_ROSE_BUSH = registerBlock("yellow_rose_bush", ()-> new TallFlowerBlock(BlockBehaviour.Properties.copy(Blocks.ROSE_BUSH)));
+    public static final RegistryObject<Block> ORANGE_ROSE_BUSH = registerBlock("orange_rose_bush", ()-> new TallFlowerBlock(BlockBehaviour.Properties.copy(Blocks.ROSE_BUSH)));
+    public static final RegistryObject<Block> FAE_ROSE_BUSH = registerBlock("fae_rose_bush", ()-> new TallFlowerBlock(BlockBehaviour.Properties.copy(Blocks.ROSE_BUSH)));
+    public static final RegistryObject<Block> SPIRIT_ROSE_BUSH = registerBlock("spirit_rose_bush", ()-> new TallFlowerBlock(BlockBehaviour.Properties.copy(Blocks.ROSE_BUSH)));
+    public static final RegistryObject<Block> SPIRIT_FAE_ROSE_BUSH = registerBlock("spirit_fae_rose_bush", ()-> new TallFlowerBlock(BlockBehaviour.Properties.copy(Blocks.ROSE_BUSH)));
+    public static final RegistryObject<Block> MAHOGANY_ROSE_BUSH = registerBlock("mahogany_rose_bush", ()-> new TallFlowerBlock(BlockBehaviour.Properties.copy(Blocks.ROSE_BUSH)));
+    public static final RegistryObject<Block> COTTONS_ROSE_BUSH = registerBlock("cottons_rose_bush", ()-> new TallFlowerBlock(BlockBehaviour.Properties.copy(Blocks.ROSE_BUSH)));
+    public static final RegistryObject<Block> MIDNIGHTS_REACH = registerBlock("midnights_reach", ()-> new TallFlowerBlock(BlockBehaviour.Properties.copy(Blocks.ROSE_BUSH)));
+    public static final RegistryObject<Block> CERULEAN_ROSE_BUSH = registerBlock("cerulean_rose_bush", ()-> new TallFlowerBlock(BlockBehaviour.Properties.copy(Blocks.ROSE_BUSH)));
+    public static final RegistryObject<Block> CARMINE_ROSE_BUSH = registerBlock("carmine_rose_bush", ()-> new TallFlowerBlock(BlockBehaviour.Properties.copy(Blocks.ROSE_BUSH)));
 
     //Moss
     // Carpet blocks (optional)
@@ -483,6 +501,9 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> HUMAN_REALM_PORTAL = registerBlock("human_portal",
             ()-> new HumanRealmPortalBlock(BlockBehaviour.Properties.copy(Blocks.NETHER_PORTAL).noLootTable().noOcclusion().noCollission()));
+
+    public static final RegistryObject<Block> PORTAL_BLOCK_HUMAN_REALM = registerBlock("portal_block_human",
+            ()-> new PortalBlockHumanRealm(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion().noCollission()));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){

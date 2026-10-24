@@ -54,7 +54,7 @@ public class HumanRealmTeleporter implements ITeleporter {
             }
 
             if (doSetBlock) {
-                destinationWorld.setBlock(destinationPos, ModBlocks.HUMAN_REALM_PORTAL.get().defaultBlockState(), 3);
+                destinationWorld.setBlock(destinationPos, ModBlocks.PORTAL_BLOCK_HUMAN_REALM.get().defaultBlockState(), 3);
             }
         }
 

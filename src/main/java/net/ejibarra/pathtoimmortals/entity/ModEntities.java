@@ -35,16 +35,32 @@ public class ModEntities  {
                             .clientTrackingRange(5)
                             .updateInterval(20)
                             .build("cheese_projectile"));
+    public static final RegistryObject<EntityType<OriginSwordProjectileEntity>> ORIGIN_SWORD_PROJECTILE =
+            ENTITY_TYPES.register("origin_sword_projectile",
+                    () -> EntityType.Builder.<OriginSwordProjectileEntity>of(OriginSwordProjectileEntity::new, MobCategory.MISC)
+                            .sized(0.40f, 0.40f)
+                            .clientTrackingRange(64)
+                            .updateInterval(10)
+                            .build("origin_sword_projectile"));
+    public static final RegistryObject<EntityType<PressureWaveProjectile>> PRESSURE_WAVE =
+            ENTITY_TYPES.register("pressure_wave",
+                    () -> EntityType.Builder.<PressureWaveProjectile>of(PressureWaveProjectile::new, MobCategory.MISC)
+                            .sized(0.25f, 0.25f)
+                            .clientTrackingRange(64)
+                            .updateInterval(1)
+                            .build("pressure_wave"));
+    /**/
+
 
     public static final RegistryObject<EntityType<HereticEntity>> HERETIC =
             ENTITY_TYPES.register("heretic", ()-> EntityType.Builder.of(HereticEntity::new, MobCategory.MONSTER)
                     .sized(0.6f, 2f).build("heretic"));
+    public static final RegistryObject<EntityType<AssassainEntity>> ASSASSAIN =
+            ENTITY_TYPES.register("assassain", ()-> EntityType.Builder.of(AssassainEntity::new, MobCategory.MONSTER)
+                    .sized(0.8f,2.7f).build("assassain"));
     public static final RegistryObject<EntityType<SpikedRatEntity>> SPIKEDRAT =
             ENTITY_TYPES.register("spikedrat", ()-> EntityType.Builder.of(SpikedRatEntity::new, MobCategory.MONSTER)
                     .sized(0.5f,1.6f).build("spikedrat"));
-    public static final RegistryObject<EntityType<DarklinEntity>> DARKLIN =
-            ENTITY_TYPES.register("darklin", ()-> EntityType.Builder.of(DarklinEntity::new, MobCategory.MONSTER)
-                    .sized(0.5f,2f).build("darklin"));
     public static final RegistryObject<EntityType<HoodedSpikedRatEntity>> HOODEDRAT =
             ENTITY_TYPES.register("hooded_spiked_rat", ()-> EntityType.Builder.of(HoodedSpikedRatEntity::new, MobCategory.MONSTER)
                     .sized(0.5f,1.6f).build("hooded_spiked_rat"));
@@ -57,6 +73,18 @@ public class ModEntities  {
     public static final RegistryObject<EntityType<ScorpionEntity>> SCORPION =
             ENTITY_TYPES.register("scorpion", ()-> EntityType.Builder.of(ScorpionEntity::new, MobCategory.MONSTER)
                     .sized(1.2f,3.5f).build("scorpion"));
+    public static final RegistryObject<EntityType<FungiSwordsmanEntity>> FUNGI_SWORDSMAN =
+            ENTITY_TYPES.register("fungi_swordsman", ()-> EntityType.Builder.of(FungiSwordsmanEntity::new, MobCategory.MONSTER)
+                    .sized(0.4f,1.0f).build("fungi_swordsman"));
+    public static final RegistryObject<EntityType<SporeSpreaderEntity>> SPORE_SPREADER =
+            ENTITY_TYPES.register("spore_spreader", ()-> EntityType.Builder.of(SporeSpreaderEntity::new, MobCategory.MONSTER)
+                    .sized(0.6f,2.0f).build("spore_spreader"));
+    public static final RegistryObject<EntityType<BeefsteakMushroomEntity>> BEEFSTEAK_MUSHROOM =
+            ENTITY_TYPES.register("beefsteak_mushroom", ()-> EntityType.Builder.of(BeefsteakMushroomEntity::new, MobCategory.MONSTER)
+                    .sized(0.8f,2.7f).build("beefsteak_mushroom"));
+    public static final RegistryObject<EntityType<OrcWarrior>> ORC_WARRIOR =
+            ENTITY_TYPES.register("orc_warrior", ()-> EntityType.Builder.of(OrcWarrior::new, MobCategory.MONSTER)
+                    .sized(0.8f,3.7f).build("orc_warrior"));
 
     public static void register(IEventBus eventBus){
         ENTITY_TYPES.register(eventBus);

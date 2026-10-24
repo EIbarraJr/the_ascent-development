@@ -11,7 +11,6 @@ import mezz.jei.api.recipe.category.IRecipeCategory;
 import net.ejibarra.pathtoimmortals.PathToImmortals;
 import net.ejibarra.pathtoimmortals.block.ModBlocks;
 import net.ejibarra.pathtoimmortals.recipe.HumanGradeInfuserRecipe;
-import net.ejibarra.pathtoimmortals.recipe.InfusionTableRecipe;
 import net.minecraft.network.chat.Component;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.ItemStack;

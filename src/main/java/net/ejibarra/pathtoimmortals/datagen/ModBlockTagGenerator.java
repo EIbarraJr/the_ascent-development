@@ -25,18 +25,21 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 
         this.tag(Tags.Blocks.NEEDS_NETHERITE_TOOL)
                 .add(ModBlocks.DEEPSLATE_JADE_ORE.get(),
-                        ModBlocks.SPIRIT_ORE.get(),
-                        ModBlocks.DEEPSLATE_SPIRIT_ORE.get(),
-                        ModBlocks.PURPLE_ORE.get(),
-                        ModBlocks.DEEPSLATE_PURPLE_ORE.get(),
-                        ModBlocks.SAINT_ORE.get(),
-                        ModBlocks.DEEPSLATE_SAINT_ORE.get(),
-                        ModBlocks.DIVINE_ORE.get(),
-                        ModBlocks.DEEPSLATE_DIVINE_ORE.get(),
-                        ModBlocks.INFUSION_TABLE_1.get());//END OF NEEDS_NETHERITETOOL
+                        ModBlocks.JADE_ORE.get(),
+                        ModBlocks.DESOLATE_SANDSTONE.get());//END OF NEEDS_NETHERITETOOL
 
         this.tag(ModTags.Blocks.NEEDS_JADED_IRON_TOOL)
-                .add(ModBlocks.JADE_ORE.get());
+                .add(ModBlocks.SPIRIT_ORE.get())
+                .add(ModBlocks.DEEPSLATE_SPIRIT_ORE.get())
+                .add(ModBlocks.PURPLE_ORE.get())
+                .add(ModBlocks.DEEPSLATE_PURPLE_ORE.get())
+                .add(ModBlocks.SAINT_ORE.get())
+                .add(ModBlocks.DEEPSLATE_SAINT_ORE.get())
+                .add(ModBlocks.DIVINE_ORE.get())
+                .add(ModBlocks.DEEPSLATE_DIVINE_ORE.get())
+                .add(ModBlocks.PORTAL_BLOCK_HUMAN_REALM.get())
+                .add(ModBlocks.HUMAN_GRADE_DIVINE_ALTAR_BLOCK.get())
+                .add(ModBlocks.HUMAN_GRADE_INFUSER_BLOCK.get());
         //SWITCH ALL ORES TO THEIR RESPECTIVE TOOL LEVELS IN FUTURE
 
         this.tag(ModTags.Blocks.PAXEL_MINEABLE)
@@ -46,6 +49,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
 
         this.tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.JADE_ORE.get(),
+                        ModBlocks.PORTAL_BLOCK_HUMAN_REALM.get(),
+                        ModBlocks.HUMAN_GRADE_INFUSER_BLOCK.get(),
+                        ModBlocks.HUMAN_GRADE_DIVINE_ALTAR_BLOCK.get(),
                         ModBlocks.DEEPSLATE_JADE_ORE.get(),
                         ModBlocks.SPIRIT_ORE.get(),
                         ModBlocks.DEEPSLATE_SPIRIT_ORE.get(),
@@ -55,8 +61,6 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.DEEPSLATE_SAINT_ORE.get(),
                         ModBlocks.DIVINE_ORE.get(),
                         ModBlocks.DEEPSLATE_DIVINE_ORE.get(),
-                       // ModBlocks.GATHERING_FORMATION_T1.get(),
-                        ModBlocks.INFUSION_TABLE_1.get(),
                         ModBlocks.LIGHT_DIVINE_BRICK.get(),
                         ModBlocks.LIGHT_DIVINE_BRICK_RUNIC.get(),
                         ModBlocks.LIGHT_DIVINE_BRICK_CRACKED.get(),
@@ -70,6 +74,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.SPIRIT_BRICK.get(),
                         ModBlocks.PURPLE_BRICK.get(),
                         ModBlocks.SAINT_BRICK.get(),
+                        ModBlocks.EVES_COBBLESTONE.get(),
+                        ModBlocks.DESOLATE_SANDSTONE.get(),
 
                         //Stairs
                         ModBlocks.LIGHT_DIVINE_BRICK_STAIRS.get(),
@@ -115,6 +121,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.SPIRIT_BRICK.get(),
                         ModBlocks.PURPLE_BRICK.get(),
                         ModBlocks.SAINT_BRICK.get(),
+                        ModBlocks.EVES_COBBLESTONE.get(),
 
                         //STAIRS
                         ModBlocks.LIGHT_DIVINE_BRICK_STAIRS.get(),
@@ -204,6 +211,18 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.OCTOS_GROWTH.get())
                 .add(ModBlocks.FEYS_SORROW.get())
                 .add(ModBlocks.EVES_BLUES.get());
+
+        this.tag(BlockTags.SAND)
+                .add(ModBlocks.DESOLATE_SAND.get())
+                .add(ModBlocks.TRAPPED_SOUL_SAND.get());
+
+        this.tag(BlockTags.LEAVES)
+                .add(ModBlocks.FIERO_LEAVES.get())
+                .add(ModBlocks.SPIRIT_BLOSSOM_LEAVES.get())
+                .add(ModBlocks.MANGO_LEAVES.get())
+                .add(ModBlocks.KINDER_LEAVES.get())
+                .add(ModBlocks.JADED_LEAVES.get())
+                .add(ModBlocks.JASMINE_LEAVES.get());
 
 
     }

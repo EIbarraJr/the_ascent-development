@@ -19,7 +19,7 @@ public class HumanRealmPortalBlock extends Block {
     public HumanRealmPortalBlock(Properties pProperties) {
         super(pProperties);
     }
-
+/*
     @Override
     public InteractionResult use(BlockState pState, Level pLevel, BlockPos pPos, Player pPlayer, InteractionHand pHand, BlockHitResult pHit) {
         if (pPlayer.canChangeDimensions()) {
@@ -45,5 +45,5 @@ public class HumanRealmPortalBlock extends Block {
                 }
             }
         }
-    }
+    }*/
 }
