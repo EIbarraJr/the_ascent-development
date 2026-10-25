@@ -23,3 +23,12 @@ run
 
 # Files from Forge MDK
 forge*changelog.txt
+
+#below newly added
+# Minecraft runtime files
+/run-data/logs/
+/run-data/crash-reports/
+
+# Temporary files
+*.tmp
+*.bak
