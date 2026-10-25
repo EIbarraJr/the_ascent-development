@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "pathtoimmortals:block/portal_block_human",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "pathtoimmortals:block/portal_block_human"
+    },
+    "facing=south": {
+      "model": "pathtoimmortals:block/portal_block_human",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "pathtoimmortals:block/portal_block_human",
+      "y": 270
+    }
+  }
+}

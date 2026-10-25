@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_deepslate_purple_ore": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "pathtoimmortals:deepslate_purple_ore"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "pathtoimmortals:purple_crystal_from_blasting_deepslate_purple_ore"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_deepslate_purple_ore",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "pathtoimmortals:purple_crystal_from_blasting_deepslate_purple_ore"
+    ]
+  },
+  "sends_telemetry_event": false
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "pathtoimmortals:item/human_grade_paxel"
+  }
+}

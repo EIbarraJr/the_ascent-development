@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "pathtoimmortals:block/turquoise_cluster",
+    "particle": "pathtoimmortals:block/turquoise_cluster"
+  }
+}

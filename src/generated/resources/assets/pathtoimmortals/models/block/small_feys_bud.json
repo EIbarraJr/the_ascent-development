@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/small_amethyst_bud",
+  "textures": {
+    "cross": "pathtoimmortals:block/small_feys_bud",
+    "particle": "pathtoimmortals:block/small_feys_bud"
+  }
+}

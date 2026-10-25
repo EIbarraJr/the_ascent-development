@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "pathtoimmortals:purple_crystal"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "pathtoimmortals:purple_coin"
+  }
+}

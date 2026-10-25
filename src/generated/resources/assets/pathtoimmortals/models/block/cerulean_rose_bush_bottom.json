@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "pathtoimmortals:block/cerulean_rose_bush_bottom"
+  }
+}

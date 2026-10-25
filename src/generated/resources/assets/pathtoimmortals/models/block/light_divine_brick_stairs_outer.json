@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/outer_stairs",
+  "textures": {
+    "bottom": "pathtoimmortals:block/light_divine_brick",
+    "side": "pathtoimmortals:block/light_divine_brick",
+    "top": "pathtoimmortals:block/light_divine_brick"
+  }
+}

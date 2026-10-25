@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "pathtoimmortals:block/spirit_brick_slab"
+    },
+    "type=double": {
+      "model": "pathtoimmortals:block/spirit_brick"
+    },
+    "type=top": {
+      "model": "pathtoimmortals:block/spirit_brick_slab_top"
+    }
+  }
+}

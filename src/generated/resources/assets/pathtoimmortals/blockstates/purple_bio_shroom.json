@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "pathtoimmortals:block/purple_bio_shroom",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "pathtoimmortals:block/purple_bio_shroom"
+    },
+    "facing=south": {
+      "model": "pathtoimmortals:block/purple_bio_shroom",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "pathtoimmortals:block/purple_bio_shroom",
+      "y": 270
+    }
+  }
+}

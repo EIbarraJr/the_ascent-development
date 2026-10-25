@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "I": {
+      "item": "minecraft:stick"
+    },
+    "S": {
+      "item": "pathtoimmortals:crude_jaded_iron"
+    }
+  },
+  "pattern": [
+    "SSS",
+    " I ",
+    " I "
+  ],
+  "result": {
+    "item": "pathtoimmortals:human_grade_paxel"
+  },
+  "show_notification": true
+}

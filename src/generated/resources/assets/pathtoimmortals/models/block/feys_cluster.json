@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "pathtoimmortals:block/feys_cluster",
+    "particle": "pathtoimmortals:block/feys_cluster"
+  }
+}

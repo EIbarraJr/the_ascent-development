@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/carpet",
+  "textures": {
+    "wool": "pathtoimmortals:block/rosy_moss_carpet"
+  }
+}

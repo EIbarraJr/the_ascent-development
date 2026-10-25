@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "pathtoimmortals:refined_jade_iron"
+    },
+    {
+      "item": "pathtoimmortals:infused_jade_block"
+    },
+    {
+      "item": "pathtoimmortals:infused_jade_block"
+    }
+  ],
+  "result": {
+    "item": "pathtoimmortals:reinforced_jade_iron"
+  }
+}

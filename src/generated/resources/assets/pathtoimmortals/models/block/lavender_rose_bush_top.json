@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "pathtoimmortals:block/lavender_rose_bush_top"
+  }
+}

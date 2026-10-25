@@ -1,0 +1,17 @@
+// 1.20.1	2026-09-05T10:50:34.3566559	Block Tags
+0efe9b2648759ad6655e65a2a8662aeccfc19c79 data/forge/tags/blocks/needs_netherite_tool.json
+a2327dfd98b57962aa419feab7dabd1f43d58a92 data/minecraft/tags/blocks/dirt.json
+599efad339bec10ea172238cfabe9e1135cca8b9 data/minecraft/tags/blocks/leaves.json
+c04111a4335cf188853cc66ef24f22bfff674d5e data/minecraft/tags/blocks/mineable/pickaxe.json
+3014e012d06fb54d14dda70c799cd0e60a69b05a data/minecraft/tags/blocks/needs_iron_tool.json
+a2327dfd98b57962aa419feab7dabd1f43d58a92 data/minecraft/tags/blocks/nylium.json
+d6603b60c500accee082436ff8fb9601cd025883 data/minecraft/tags/blocks/sand.json
+247f08f106b5f0737a3c8aa70d7444b3db442496 data/minecraft/tags/blocks/walls.json
+724c19896df17ea9183aff482c9503e4f50040dc data/pathtoimmortals/tags/blocks/eves_blues_spreadable.json
+724c19896df17ea9183aff482c9503e4f50040dc data/pathtoimmortals/tags/blocks/feys_sorrow_spreadable.json
+724c19896df17ea9183aff482c9503e4f50040dc data/pathtoimmortals/tags/blocks/lemon_moss_spreadable.json
+82362cfbd1836db13c7e9d36c8712821e795ac55 data/pathtoimmortals/tags/blocks/mineable/paxel.json
+dce5f4f79506d26d05c3e845a4359a27143d3837 data/pathtoimmortals/tags/blocks/needs_jaded_iron_tool.json
+724c19896df17ea9183aff482c9503e4f50040dc data/pathtoimmortals/tags/blocks/octos_growth_spreadable.json
+724c19896df17ea9183aff482c9503e4f50040dc data/pathtoimmortals/tags/blocks/rosy_moss_spreadable.json
+724c19896df17ea9183aff482c9503e4f50040dc data/pathtoimmortals/tags/blocks/spirit_moss_spreadable.json

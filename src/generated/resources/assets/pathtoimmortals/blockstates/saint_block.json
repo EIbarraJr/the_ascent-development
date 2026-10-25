@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "clicked=false": {
+      "model": "pathtoimmortals:block/saint_block"
+    },
+    "clicked=true": {
+      "model": "pathtoimmortals:block/saint_block"
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_spirit_coin": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "pathtoimmortals:spirit_coin"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "pathtoimmortals:spirit/coins_to_shard"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_spirit_coin",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "pathtoimmortals:spirit/coins_to_shard"
+    ]
+  },
+  "sends_telemetry_event": false
+}

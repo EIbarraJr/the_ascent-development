@@ -1,0 +1,19 @@
+{
+  "variants": {
+    "facing=east": {
+      "model": "pathtoimmortals:block/human_grade_infuser",
+      "y": 90
+    },
+    "facing=north": {
+      "model": "pathtoimmortals:block/human_grade_infuser"
+    },
+    "facing=south": {
+      "model": "pathtoimmortals:block/human_grade_infuser",
+      "y": 180
+    },
+    "facing=west": {
+      "model": "pathtoimmortals:block/human_grade_infuser",
+      "y": 270
+    }
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "pathtoimmortals:block/infused_jade_block"
+  }
+}

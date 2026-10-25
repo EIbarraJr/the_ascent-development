@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "I": {
+      "item": "minecraft:stick"
+    },
+    "S": {
+      "item": "pathtoimmortals:reinforced_jade_iron"
+    }
+  },
+  "pattern": [
+    "S",
+    "S",
+    "I"
+  ],
+  "result": {
+    "item": "pathtoimmortals:upper_human_saber"
+  },
+  "show_notification": true
+}

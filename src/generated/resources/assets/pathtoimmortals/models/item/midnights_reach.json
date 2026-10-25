@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "pathtoimmortals:block/midnights_reach_top"
+  }
+}

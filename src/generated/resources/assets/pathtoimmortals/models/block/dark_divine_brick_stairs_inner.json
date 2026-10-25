@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "pathtoimmortals:block/dark_divine_brick",
+    "side": "pathtoimmortals:block/dark_divine_brick",
+    "top": "pathtoimmortals:block/dark_divine_brick"
+  }
+}

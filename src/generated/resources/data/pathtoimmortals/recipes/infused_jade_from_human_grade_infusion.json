@@ -1,0 +1,11 @@
+{
+  "type": "pathtoimmortals:human_grade_infusion",
+  "ingredients": [
+    {
+      "item": "pathtoimmortals:jade"
+    }
+  ],
+  "output": {
+    "item": "pathtoimmortals:infused_jade"
+  }
+}

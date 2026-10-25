@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab_top",
+  "textures": {
+    "bottom": "pathtoimmortals:block/saint_bricks",
+    "side": "pathtoimmortals:block/saint_bricks",
+    "top": "pathtoimmortals:block/saint_bricks"
+  }
+}

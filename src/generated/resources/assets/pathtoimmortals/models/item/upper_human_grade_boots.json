@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "pathtoimmortals:item/upper_human_grade_boots"
+  }
+}

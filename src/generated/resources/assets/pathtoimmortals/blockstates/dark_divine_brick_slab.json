@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "pathtoimmortals:block/dark_divine_brick_slab"
+    },
+    "type=double": {
+      "model": "pathtoimmortals:block/dark_divine_brick"
+    },
+    "type=top": {
+      "model": "pathtoimmortals:block/dark_divine_brick_slab_top"
+    }
+  }
+}

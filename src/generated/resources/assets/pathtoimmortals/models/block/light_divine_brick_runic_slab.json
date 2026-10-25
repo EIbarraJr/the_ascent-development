@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "pathtoimmortals:block/light_divine_brick_runic",
+    "side": "pathtoimmortals:block/light_divine_brick_runic",
+    "top": "pathtoimmortals:block/light_divine_brick_runic"
+  }
+}

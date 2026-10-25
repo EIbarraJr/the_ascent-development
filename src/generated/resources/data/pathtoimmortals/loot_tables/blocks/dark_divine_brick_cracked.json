@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "pathtoimmortals:dark_divine_brick_cracked"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "pathtoimmortals:blocks/dark_divine_brick_cracked"
+}

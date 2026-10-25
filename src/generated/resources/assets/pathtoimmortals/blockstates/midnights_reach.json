@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=lower": {
+      "model": "pathtoimmortals:block/midnights_reach_bottom"
+    },
+    "half=upper": {
+      "model": "pathtoimmortals:block/midnights_reach_top"
+    }
+  }
+}

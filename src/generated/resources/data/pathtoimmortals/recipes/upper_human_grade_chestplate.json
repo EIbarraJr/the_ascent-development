@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "S": {
+      "item": "pathtoimmortals:reinforced_jade_iron"
+    }
+  },
+  "pattern": [
+    "S S",
+    "SSS",
+    "SSS"
+  ],
+  "result": {
+    "item": "pathtoimmortals:upper_human_grade_chestplate"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_crude_jaded_iron": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "pathtoimmortals:crude_jaded_iron"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "pathtoimmortals:lower_human_grade_shield"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_crude_jaded_iron",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "pathtoimmortals:lower_human_grade_shield"
+    ]
+  },
+  "sends_telemetry_event": false
+}

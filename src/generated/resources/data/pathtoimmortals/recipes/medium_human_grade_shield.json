@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "S": {
+      "item": "pathtoimmortals:refined_jade_iron"
+    }
+  },
+  "pattern": [
+    "SS",
+    "SS",
+    "SS"
+  ],
+  "result": {
+    "item": "pathtoimmortals:medium_human_grade_shield"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "pathtoimmortals:item/upper_human_saber"
+  }
+}

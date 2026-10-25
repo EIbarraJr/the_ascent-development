@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "pathtoimmortals:divine_crystal"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "pathtoimmortals:divine_coin"
+  }
+}

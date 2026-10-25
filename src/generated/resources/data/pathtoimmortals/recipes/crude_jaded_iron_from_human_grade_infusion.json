@@ -1,0 +1,11 @@
+{
+  "type": "pathtoimmortals:human_grade_infusion",
+  "ingredients": [
+    {
+      "item": "minecraft:iron_ingot"
+    }
+  ],
+  "output": {
+    "item": "pathtoimmortals:crude_jaded_iron"
+  }
+}

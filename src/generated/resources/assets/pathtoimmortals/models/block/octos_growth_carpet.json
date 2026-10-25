@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/carpet",
+  "textures": {
+    "wool": "pathtoimmortals:block/octos_growth_carpet"
+  }
+}

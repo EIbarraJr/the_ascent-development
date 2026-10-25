@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "clicked=false": {
+      "model": "pathtoimmortals:block/spirit_block"
+    },
+    "clicked=true": {
+      "model": "pathtoimmortals:block/spirit_block"
+    }
+  }
+}

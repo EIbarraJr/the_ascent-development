@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "pathtoimmortals:item/cloud_step_scroll_t2"
+  }
+}

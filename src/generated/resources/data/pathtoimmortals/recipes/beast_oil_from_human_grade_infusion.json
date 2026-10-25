@@ -1,0 +1,11 @@
+{
+  "type": "pathtoimmortals:human_grade_infusion",
+  "ingredients": [
+    {
+      "item": "pathtoimmortals:beast_blood"
+    }
+  ],
+  "output": {
+    "item": "pathtoimmortals:beast_oil"
+  }
+}

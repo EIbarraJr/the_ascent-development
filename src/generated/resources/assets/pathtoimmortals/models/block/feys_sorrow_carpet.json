@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/carpet",
+  "textures": {
+    "wool": "pathtoimmortals:block/feys_sorrow_carpet"
+  }
+}

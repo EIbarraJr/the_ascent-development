@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "pathtoimmortals:block/dark_divine_brick"
+  }
+}
